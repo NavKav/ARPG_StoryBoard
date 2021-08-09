@@ -1,0 +1,14 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=--coverage -DCMAKE_C_FLAGS=--coverage -G "CodeBlocks - MinGW Makefiles" C:\Users\navid\CLionProjects\ProjectTT
+CMake Warning (dev) at C:/Program Files/JetBrains/CLion 2021.1.1/bin/cmake/win/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
+  The package name passed to `find_package_handle_standard_args` (SDL2_image)
+  does not match the name of the calling package (SDL2_Image).  This can lead
+  to problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  SDL2/cmake/FindSDL2_image.cmake:91 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  CMakeLists.txt:17 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/navid/CLionProjects/ProjectTT/cmake-build-debug-coverage

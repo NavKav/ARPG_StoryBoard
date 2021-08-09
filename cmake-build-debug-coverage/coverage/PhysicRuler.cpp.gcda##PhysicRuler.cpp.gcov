@@ -1,0 +1,394 @@
+        -:    0:Source:C:/Users/navid/CLionProjects/ProjectTT/src/GameEngine/PhysicRuler.cpp
+        -:    0:Graph:C:\Users\navid\CLionProjects\ProjectTT\cmake-build-debug-coverage\CMakeFiles\ProjectTT.dir\src\GameEngine\PhysicRuler.cpp.gcno
+        -:    0:Data:C:\Users\navid\CLionProjects\ProjectTT\cmake-build-debug-coverage\CMakeFiles\ProjectTT.dir\src\GameEngine\PhysicRuler.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by navid on 14/05/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include <unistd.h>
+        -:    6:#include "GameEngine/PhysicRuler.h"
+        -:    7:
+        -:    8:
+        -:    9:using namespace  std;
+        -:   10:
+function _ZN11PhysicRulerC2EP4BallP19DisplayerConnection called 1 returned 100% blocks executed 56%
+        1:   11:PhysicRuler::PhysicRuler(Ball* ball, DisplayerConnection* displayerConnection) :
+        -:   12:        DisplayerSource(displayerConnection),
+        1:   13:_ball(ball)
+        1:   13-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+    $$$$$:   13-block  1
+call    4 never executed
+    $$$$$:   13-block  2
+call    5 never executed
+    $$$$$:   13-block  3
+call    6 never executed
+        -:   14:{
+        1:   15:    _thread = thread(&PhysicRuler::start, this);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15-block  0
+call    3 returned 1
+call    4 returned 1
+    $$$$$:   15-block  1
+    $$$$$:   15-block  2
+        1:   16:}
+        -:   17:
+function _ZN11PhysicRuler9addHitboxEP6HitboxNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 59%
+        1:   18:void PhysicRuler::addHitbox(Hitbox *hitbox, string name) {
+        1:   19:    lock();
+        1:   19-block  0
+call    0 returned 1
+        1:   20:    if (_hitboxMap.find(name) != _hitboxMap.end()) {
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   20-block  0
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    $$$$$:   20-block  1
+call    7 never executed
+    #####:   21:        std::cout << "addHitbox() : The given Hitbox key " << "\"" << name << "\"" << "  already exists.(might leads to memory leak)"<< std::endl;
+    %%%%%:   21-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+        -:   22:    } else {
+        1:   23:        _hitboxMap[name] = std::shared_ptr<Hitbox>(hitbox);
+        1:   23-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   23-block  1
+call    4 returned 1
+call    5 returned 1
+    $$$$$:   23-block  2
+call    6 never executed
+        -:   24:    }
+        1:   25:    unlock();
+        1:   25-block  0
+call    0 returned 1
+        1:   26:}
+        -:   27:
+function _ZN11PhysicRuler13checkNSetBallEv called 429 returned 100% blocks executed 46%
+      429:   28:void PhysicRuler::checkNSetBall() {
+      858:   29:    for (auto hitbox : _hitboxMap) {
+      429:   29-block  0
+call    0 returned 429
+call    1 returned 429
+      858:   29-block  1
+call    2 returned 858
+branch  3 taken 429 (fallthrough)
+branch  4 taken 429
+      429:   29-block  2
+call    5 returned 429
+call    6 returned 429
+branch  7 taken 429 (fallthrough)
+branch  8 taken 0 (throw)
+      429:   29-block  3
+call    9 returned 429
+call   10 returned 429
+    $$$$$:   29-block  4
+call   11 never executed
+        -:   30:
+      429:   31:        if (access( ("ressource/image/" + hitbox.first + ".png").c_str(), F_OK ) != -1) {
+      429:   31-block  0
+call    0 returned 429
+branch  1 taken 429 (fallthrough)
+branch  2 taken 0 (throw)
+      429:   31-block  1
+call    3 returned 429
+branch  4 taken 429 (fallthrough)
+branch  5 taken 0 (throw)
+      429:   31-block  2
+call    6 returned 429
+call    7 returned 429
+branch  8 taken 429 (fallthrough)
+branch  9 taken 0 (throw)
+      429:   31-block  3
+call   10 returned 429
+call   11 returned 429
+branch 12 taken 0 (fallthrough)
+branch 13 taken 429
+    $$$$$:   31-block  4
+call   14 never executed
+    $$$$$:   31-block  5
+    $$$$$:   31-block  6
+call   15 never executed
+    $$$$$:   31-block  7
+    #####:   32:            send(hitbox.first + " " + to_string(hitbox.second->getA()) + " " + to_string(hitbox.second->getB()));
+    %%%%%:   32-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   32-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   32-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:   32-block  3
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   32-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   32-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   32-block  6
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:   32-block  7
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    %%%%%:   32-block  8
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    %%%%%:   32-block  9
+call   29 never executed
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+    $$$$$:   32-block 10
+call   35 never executed
+    $$$$$:   32-block 11
+    $$$$$:   32-block 12
+call   36 never executed
+    $$$$$:   32-block 13
+    $$$$$:   32-block 14
+call   37 never executed
+    $$$$$:   32-block 15
+    $$$$$:   32-block 16
+call   38 never executed
+    $$$$$:   32-block 17
+    $$$$$:   32-block 18
+call   39 never executed
+    $$$$$:   32-block 19
+    $$$$$:   32-block 20
+call   40 never executed
+    $$$$$:   32-block 21
+        -:   33:        }
+      429:   34:        if (_ball->getCurrentHitboxName() != hitbox.first && _ball->isIn(hitbox.second->getA(), hitbox.second->getB(), hitbox.second->getC(), hitbox.second->getD())) {
+      429:   34-block  0
+call    0 returned 429
+branch  1 taken 429 (fallthrough)
+branch  2 taken 0 (throw)
+      429:   34-block  1
+call    3 returned 429
+branch  4 taken 1 (fallthrough)
+branch  5 taken 428
+        1:   34-block  2
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   34-block  3
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   34-block  4
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   34-block  5
+call   18 returned 1
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   34-block  6
+call   22 returned 1
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0 (throw)
+        1:   34-block  7
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0
+        1:   34-block  8
+      428:   34-block  9
+      429:   34-block 10
+branch 27 taken 1 (fallthrough)
+branch 28 taken 428
+        1:   35:            _ball->setCurrentHitboxName(hitbox.first);
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:            _ball->newHitbox(hitbox.second.get());
+        1:   36-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        -:   37:        }
+        -:   38:    }
+      429:   39:}
+      429:   39-block  0
+        -:   40:
+function _ZNK11PhysicRuler10manageBallEv called 429 returned 100% blocks executed 100%
+      429:   41:void PhysicRuler::manageBall() const{
+      429:   42:    _ball->move();
+      429:   42-block  0
+call    0 returned 429
+      429:   43:}
+        -:   44:
+function _ZN11PhysicRuler5startEv called 1 returned 100% blocks executed 57%
+      430:   45:void PhysicRuler::start() {
+      430:   46:    while (_boolThread) {
+      430:   46-block  0
+branch  0 taken 429 (fallthrough)
+branch  1 taken 1
+      429:   47:        lock();
+      429:   47-block  0
+call    0 returned 429
+      429:   48:        checkNSetBall();
+call    0 returned 429
+      429:   49:        manageBall();
+call    0 returned 429
+      429:   50:        send("balle " + to_string(_ball->_x) + " " + to_string(_ball->_y));
+call    0 returned 429
+call    1 returned 429
+branch  2 taken 429 (fallthrough)
+branch  3 taken 0 (throw)
+      429:   50-block  0
+call    4 returned 429
+branch  5 taken 429 (fallthrough)
+branch  6 taken 0 (throw)
+      429:   50-block  1
+call    7 returned 429
+branch  8 taken 429 (fallthrough)
+branch  9 taken 0 (throw)
+      429:   50-block  2
+call   10 returned 429
+branch 11 taken 429 (fallthrough)
+branch 12 taken 0 (throw)
+      429:   50-block  3
+call   13 returned 429
+branch 14 taken 429 (fallthrough)
+branch 15 taken 0 (throw)
+      429:   50-block  4
+call   16 returned 429
+call   17 returned 429
+call   18 returned 429
+call   19 returned 429
+call   20 returned 429
+    $$$$$:   50-block  5
+call   21 never executed
+    $$$$$:   50-block  6
+    $$$$$:   50-block  7
+call   22 never executed
+    $$$$$:   50-block  8
+    $$$$$:   50-block  9
+call   23 never executed
+    $$$$$:   50-block 10
+    $$$$$:   50-block 11
+call   24 never executed
+    $$$$$:   50-block 12
+    $$$$$:   50-block 13
+call   25 never executed
+    $$$$$:   50-block 14
+call   26 never executed
+      429:   51:        (*_ball)++;
+call    0 returned 429
+      429:   52:        unlock();
+call    0 returned 429
+      429:   53:        send("");
+call    0 returned 429
+call    1 returned 429
+branch  2 taken 429 (fallthrough)
+branch  3 taken 0 (throw)
+      429:   53-block  0
+call    4 returned 429
+branch  5 taken 429 (fallthrough)
+branch  6 taken 0 (throw)
+      429:   53-block  1
+call    7 returned 429
+call    8 returned 429
+    $$$$$:   53-block  2
+call    9 never executed
+    $$$$$:   53-block  3
+    $$$$$:   53-block  4
+call   10 never executed
+      429:   54:        Sleep(10);
+call    0 returned 429
+        -:   55:    }
+        1:   56:}
+        1:   56-block  0
+        -:   57:
+function _ZN11PhysicRuler4stopEv called 1 returned 100% blocks executed 100%
+        1:   58:void PhysicRuler::stop() {
+        1:   59:    _boolThread = false;
+        1:   60:    _thread.join();
+        1:   60-block  0
+call    0 returned 1
+        1:   61:}
+        -:   62:
+function _ZN11PhysicRulerD2Ev called 1 returned 100% blocks executed 100%
+        1:   63:PhysicRuler::~PhysicRuler() {
+        1:   63-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        1:   64:    stop();
+        1:   64-block  0
+call    0 returned 1
+        1:   65:    delete _ball;
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   65-block  0
+call    2 returned 1
+call    3 returned 1
+        1:   66:}
+        -:   67:
+function _ZN11PhysicRuler4lockEv called 430 returned 100% blocks executed 100%
+      430:   68:void PhysicRuler::lock() {
+      430:   69:    _mutex.lock();
+      430:   69-block  0
+call    0 returned 430
+      430:   70:}
+        -:   71:
+function _ZN11PhysicRuler6unlockEv called 430 returned 100% blocks executed 100%
+      430:   72:void PhysicRuler::unlock() {
+      430:   73:    _mutex.unlock();
+      430:   73-block  0
+call    0 returned 430
+      430:   74:}
+        -:   75:
+function _ZNK11PhysicRuler4sendENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 858 returned 100% blocks executed 71%
+      858:   76:void PhysicRuler::send(std::string s) const {
+      858:   77:    _displayerConnection->receive(s);
+      858:   77-block  0
+call    0 returned 858
+call    1 returned 858
+branch  2 taken 858 (fallthrough)
+branch  3 taken 0 (throw)
+      858:   77-block  1
+call    4 returned 858
+    $$$$$:   77-block  2
+call    5 never executed
+      858:   78:}
