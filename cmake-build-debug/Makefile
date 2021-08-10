@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ProjectTT
+# Target rules for targets named Dice_Game_Project
 
 # Build rule for target.
-ProjectTT: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProjectTT
-.PHONY : ProjectTT
+Dice_Game_Project: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Dice_Game_Project
+.PHONY : Dice_Game_Project
 
 # fast build rule for target.
-ProjectTT/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectTT.dir\build.make CMakeFiles/ProjectTT.dir/build
-.PHONY : ProjectTT/fast
+Dice_Game_Project/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/build
+.PHONY : Dice_Game_Project/fast
 
 src/Window.obj: src/Window.cpp.obj
 .PHONY : src/Window.obj
 
 # target to build an object file
 src/Window.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectTT.dir\build.make CMakeFiles/ProjectTT.dir/src/Window.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/Window.cpp.obj
 .PHONY : src/Window.cpp.obj
 
 src/Window.i: src/Window.cpp.i
@@ -141,7 +141,7 @@ src/Window.i: src/Window.cpp.i
 
 # target to preprocess a source file
 src/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectTT.dir\build.make CMakeFiles/ProjectTT.dir/src/Window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/Window.cpp.i
 .PHONY : src/Window.cpp.i
 
 src/Window.s: src/Window.cpp.s
@@ -149,7 +149,7 @@ src/Window.s: src/Window.cpp.s
 
 # target to generate assembly for a file
 src/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectTT.dir\build.make CMakeFiles/ProjectTT.dir/src/Window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/Window.cpp.s
 .PHONY : src/Window.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -157,7 +157,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectTT.dir\build.make CMakeFiles/ProjectTT.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -165,7 +165,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectTT.dir\build.make CMakeFiles/ProjectTT.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -173,7 +173,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectTT.dir\build.make CMakeFiles/ProjectTT.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -184,7 +184,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... ProjectTT
+	@echo ... Dice_Game_Project
 	@echo ... src/Window.obj
 	@echo ... src/Window.i
 	@echo ... src/Window.s
