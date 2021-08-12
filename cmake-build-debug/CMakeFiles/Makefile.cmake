@@ -55,5 +55,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ProjectTT.dir/DependInfo.cmake"
+  "CMakeFiles/Dice_Game_Project.dir/DependInfo.cmake"
   )

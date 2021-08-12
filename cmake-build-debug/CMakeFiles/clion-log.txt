@@ -1,14 +1,5 @@
 "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" C:\Users\navid\CLionProjects\Dice_Game_Project
-CMake Warning (dev) at C:/Program Files/JetBrains/CLion 2021.1.1/bin/cmake/win/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
-  The package name passed to `find_package_handle_standard_args` (SDL2_image)
-  does not match the name of the calling package (SDL2_Image).  This can lead
-  to problems in calling code that expects `find_package` result variables
-  (e.g., `_FOUND`) to follow a certain pattern.
-Call Stack (most recent call first):
-  SDL2/cmake/FindSDL2_image.cmake:91 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
-  CMakeLists.txt:17 (find_package)
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
+-- Found SDL2_Image: C:/Users/navid/CLionProjects/Dice_Game_Project/SDL2/lib/libSDL2_image.dll.a (found version "2.0.5") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/navid/CLionProjects/Dice_Game_Project/cmake-build-debug
