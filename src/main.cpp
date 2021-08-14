@@ -10,8 +10,8 @@ using namespace std;
 
 int main( int argc, char *argv[] )
 {
-    Window window("test", 1000, 700);
-    window.drawIMG(0, 0, "fond.png");
+    Window window("Dice Game", 0, 0);
+    window.drawIMG(0, 0, "fond.bmp");
     window.refresh();
 
     Sleep(1000);

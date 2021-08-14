@@ -19,11 +19,12 @@ Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY)
         std::cout << "Window::Window() :" << SDL_GetError()
                   << std::endl;
     }
-    _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_SOFTWARE);
+    _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_SOFTWARE );
     _surface = SDL_GetWindowSurface(_actualWindow);
     _texture = SDL_CreateTextureFromSurface(_renderer, _surface);
     _background = SDL_ConvertSurface(_surface, _surface->format, 0);
     SDL_SetRenderTarget(_renderer,_texture);
+    SDL_SetWindowFullscreen(_actualWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
 }
 
 Window::~Window() {
@@ -39,6 +40,7 @@ void Window::setTitle(const std::string &windowTitle) {
 }
 
 void Window::drawIMG(int x, int y, const string &name) {
+    cout << name << endl;
     SDL_Surface* img = LOAD(("ressource/image/" + name).c_str());
 
     if ( img == NULL) {
@@ -67,8 +69,10 @@ void Window::refresh() {
     /*SDL_UpdateTexture(_texture, NULL, _surface->pixels, _surface->pitch);
     SDL_RenderClear(_renderer);
     SDL_RenderCopy(_renderer, _texture, NULL, NULL);
+    SDL_RenderPresent(_renderer);*/
+
     SDL_RenderPresent(_renderer);
-    */SDL_RenderPresent(_renderer);
-    Sleep(20);
-    drawIMG(0, 0, "fond.png");
+    //Sleep(20);
+//    drawIMG(0, 0, "fond.png");
+//    SDL_RenderPresent(_renderer);
 }
