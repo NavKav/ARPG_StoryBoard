@@ -1,3 +1,0 @@
-C:/Users/navid/CLionProjects/ProjectTT/cmake-build-debug-coverage/CMakeFiles/ProjectTT.dir
-C:/Users/navid/CLionProjects/ProjectTT/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
-C:/Users/navid/CLionProjects/ProjectTT/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ilona\CLionProjects\Dice_Game_Project
+CMAKE_SOURCE_DIR = C:\Users\navid\CLionProjects\Dice_Game_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ilona\CLionProjects\Dice_Game_Project\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\navid\CLionProjects\Dice_Game_Project\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/Dice_Game_Project.dir/clean
 CMakeFiles/Dice_Game_Project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ilona\CLionProjects\Dice_Game_Project\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Dice_Game_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\navid\CLionProjects\Dice_Game_Project\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Dice_Game_Project"
 .PHONY : CMakeFiles/Dice_Game_Project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Dice_Game_Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ilona\CLionProjects\Dice_Game_Project\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\navid\CLionProjects\Dice_Game_Project\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Dice_Game_Project.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ilona\CLionProjects\Dice_Game_Project\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\navid\CLionProjects\Dice_Game_Project\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Dice_Game_Project.dir/rule
 
 # Convenience name for target.
