@@ -24,7 +24,7 @@ Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY)
     _texture = SDL_CreateTextureFromSurface(_renderer, _surface);
     _background = SDL_ConvertSurface(_surface, _surface->format, 0);
     SDL_SetRenderTarget(_renderer,_texture);
-    SDL_SetWindowFullscreen(_actualWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
+    //SDL_SetWindowFullscreen(_actualWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
 }
 
 Window::~Window() {
