@@ -19,12 +19,12 @@ Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY)
         std::cout << "Window::Window() :" << SDL_GetError()
                   << std::endl;
     }
-    _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_SOFTWARE );
+    _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_SOFTWARE);
     _surface = SDL_GetWindowSurface(_actualWindow);
     _texture = SDL_CreateTextureFromSurface(_renderer, _surface);
     _background = SDL_ConvertSurface(_surface, _surface->format, 0);
     SDL_SetRenderTarget(_renderer,_texture);
-    SDL_SetWindowFullscreen(_actualWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
+    //SDL_SetWindowFullscreen(_actualWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
 }
 
 Window::~Window() {

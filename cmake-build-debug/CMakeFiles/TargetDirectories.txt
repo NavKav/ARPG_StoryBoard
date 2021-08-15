@@ -1,3 +1,0 @@
-C:/Users/ilona/CLionProjects/Dice_Game_Project/cmake-build-debug/CMakeFiles/Dice_Game_Project.dir
-C:/Users/ilona/CLionProjects/Dice_Game_Project/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ilona/CLionProjects/Dice_Game_Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

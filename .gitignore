@@ -1,0 +1,4 @@
+# git rm --cached cmake-build-debug -r
+/cmake-build-debug/
+
+
