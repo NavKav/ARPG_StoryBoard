@@ -12,15 +12,18 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <iostream>
+#include "Window.h"
 
 #define NUM_SDLK 1000 // maximum range of SDL key number
 
 class Player {
 public :
-    Player();
+    Player(Window* x);
     void start();
     void stop();
     ~Player();
+    bool isPressed(SDL_KeyCode key);
+    void getMousePosition(int& x, int& y);
 private :
     bool _boolLoop = true;
 
@@ -31,8 +34,9 @@ private :
     };
     Input _inputArr[NUM_SDLK] = {{false, 0, 0}};
 
-    void manageInput();
     void takeInput(const SDL_Event& event);
+
+    Window* x;
 };
 
 

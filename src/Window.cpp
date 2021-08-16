@@ -25,6 +25,18 @@ Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY)
     _background = SDL_ConvertSurface(_surface, _surface->format, 0);
     SDL_SetRenderTarget(_renderer,_texture);
     //SDL_SetWindowFullscreen(_actualWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
+    _thread = std::thread(&Window::start, this);
+}
+
+void Window::start() {
+    while(_boolThread) {
+
+    }
+}
+
+void Window::stop() {
+    _boolThread = false;
+    _thread.join();
 }
 
 Window::~Window() {
@@ -40,7 +52,6 @@ void Window::setTitle(const std::string &windowTitle) {
 }
 
 void Window::drawIMG(int x, int y, const string &name) {
-    cout << name << endl;
     SDL_Surface* img = LOAD(("ressource/image/" + name).c_str());
 
     if ( img == NULL) {
@@ -72,7 +83,9 @@ void Window::refresh() {
     SDL_RenderPresent(_renderer);*/
 
     SDL_RenderPresent(_renderer);
-    //Sleep(20);
-//    drawIMG(0, 0, "fond.png");
-//    SDL_RenderPresent(_renderer);
+    Sleep(20);
+}
+
+void Window::setBoolThread(bool boolThread) {
+    _boolThread = boolThread;
 }

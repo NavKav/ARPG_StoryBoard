@@ -12,7 +12,7 @@ int main( int argc, char *argv[] )
     window.drawIMG(0, 0, "fond.bmp");
     window.refresh();
 
-    Player player;
+    Player player(&window);
     player.start();
     return 0;
 
