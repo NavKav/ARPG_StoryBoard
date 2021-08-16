@@ -4,7 +4,7 @@
 
 #include "Player.h"
 
-Player::Player(Window* x) : x(x) {
+Player::Player() {
 }
 
 void Player::start() {
@@ -38,12 +38,7 @@ void Player::takeInput(const SDL_Event &event) {
         _inputArr[event.key.keysym.sym] = {false, 0, 0};
     }
     if (_inputArr[SDLK_ESCAPE].pressed) {
-        std::cout << "ok";
-        x->drawIMG(a,b, "table.png");
-        a += 100;
-        b += 100;
-        std::cout <<"done";
-       // stop();
+        stop();
     }
 }
 

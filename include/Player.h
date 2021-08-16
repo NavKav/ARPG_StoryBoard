@@ -18,7 +18,7 @@
 
 class Player {
 public :
-    Player(Window* x);
+    Player();
     void start();
     void stop();
     ~Player();
@@ -35,8 +35,6 @@ private :
     Input _inputArr[NUM_SDLK] = {{false, 0, 0}};
 
     void takeInput(const SDL_Event& event);
-
-    Window* x;
 };
 
 
