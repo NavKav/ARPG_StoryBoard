@@ -41,7 +41,7 @@ void Window::setTitle(const std::string &windowTitle) {
 
 void Window::drawIMG(int x, int y, const string &name) {
     cout << name << endl;
-    SDL_Surface* img = LOAD(("ressource/image/" + name).c_str());
+    SDL_Surface* img = IMG_Load(("ressource/image/" + name).c_str());
 
     if ( img == NULL) {
         cout << "Window::drawIMG() : " << SDL_GetError() << endl;
