@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <memory>
-#include <windows.h>
 
 #include "Window.h"
 #include "Player.h"
