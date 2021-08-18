@@ -18,7 +18,7 @@ file(GLOB SOURCES
         src/*.cpp
         include/*.h
         )
-add_executable(Dice_Game_Project ${SOURCES})
+add_executable(Dice_Game_Project ${SOURCES} include/recquirement.h)
 include_directories(${PROJECT_SOURCE_DIR}/include ${SDL2_IMAGE_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
 #développement avec SDL2
 target_link_libraries(Dice_Game_Project ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ) #inclusion des bibliothèques nécessaire pour
