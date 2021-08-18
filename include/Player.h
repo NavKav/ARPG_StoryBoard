@@ -9,10 +9,7 @@
 #ifndef PROJECTTT_PLAYER_H
 #define PROJECTTT_PLAYER_H
 
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <iostream>
-#include "Window.h"
+#include "recquirement.h"
 
 #define NUM_SDLK 1000 // maximum range of SDL key number
 

@@ -1,11 +1,8 @@
 //
 // Created by navid on 13/05/2021.
 //
-
-#include <iostream>
-
+#include "recquirement.h"
 #include "Window.h"
-#include <windows.h>
 
 using namespace std;
 

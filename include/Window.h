@@ -5,13 +5,8 @@
 #ifndef PROJECTTT_WINDOW_H
 #define PROJECTTT_WINDOW_H
 
-#include <memory>
-#include <iostream>
+#include "recquirement.h"
 
-#include <SDL2/SDL.h>
-#include <thread>
-
-#include "SDL2/SDL_image.h"
 #ifdef SDL_IMAGE_H_
 #define LOAD IMG_Load
 #else
