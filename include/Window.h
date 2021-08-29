@@ -7,12 +7,6 @@
 
 #include "recquirement.h"
 
-#ifdef SDL_IMAGE_H_
-#define LOAD IMG_Load
-#else
-#define LOAD SDL_LoadBMP
-#endif
-
 
 typedef std::string string;
 

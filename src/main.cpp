@@ -15,7 +15,7 @@ int main( int argc, char *argv[] )
     window.drawIMG(600, 550, "exit_button.bmp");
     window.refresh();
 
-    Player player(&window);
+    Player player;
     player.start();
     return 0;
 
