@@ -5,7 +5,7 @@
 #ifndef PROJECTTT_WINDOW_H
 #define PROJECTTT_WINDOW_H
 
-#include "recquirement.h"
+#include "requirement.h"
 
 
 typedef std::string string;

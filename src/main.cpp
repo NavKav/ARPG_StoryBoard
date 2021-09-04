@@ -1,5 +1,6 @@
 
 #include "Window.h"
+#include "WindowContent.h"
 #include "Player.h"
 
 #undef main
@@ -15,7 +16,8 @@ int main( int argc, char *argv[] )
     window.drawIMG(600, 550, "exit_button.bmp");
     window.refresh();
 
-    Player player;
+    Player player(nullptr);
+
     player.start();
     return 0;
 

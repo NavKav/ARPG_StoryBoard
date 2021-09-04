@@ -9,29 +9,29 @@
 #ifndef PROJECTTT_PLAYER_H
 #define PROJECTTT_PLAYER_H
 
-#include "recquirement.h"
+#include "requirement.h"
+#include "WindowContent.h"
+#include "Input.h"
 
 #define NUM_SDLK 1000 // maximum range of SDL key number
 
 class Player {
 public :
-    Player();
+    Player(WindowContent* windowContent);
     void start();
     void stop();
     ~Player();
-    bool isPressed(SDL_KeyCode key);
     void getMousePosition(int& x, int& y);
+    bool keyDown();
+    void send(const Input& input);
+
 private :
     bool _boolLoop = true;
+    unsigned int _numberKeyDown = 0;
+    WindowContent* _windowContent;
 
-    /* Inside range class definition of an Input */
-    struct Input {
-        bool pressed;
-        unsigned int u,v; // get start and end of keystroke
-    };
-    Input _inputArr[NUM_SDLK] = {{false, 0, 0}};
 
-    void takeInput(const SDL_Event& event);
+    Input takeInput(const SDL_Event& event);
 };
 
 

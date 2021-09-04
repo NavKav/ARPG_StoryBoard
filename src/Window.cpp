@@ -1,7 +1,7 @@
 //
 // Created by navid on 13/05/2021.
 //
-#include "recquirement.h"
+#include "requirement.h"
 #include "Window.h"
 
 using namespace std;
