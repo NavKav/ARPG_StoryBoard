@@ -8,8 +8,11 @@
 #include "requirement.h"
 
 struct Input {
-    SDL_KeyCode key;
-    unsigned int u,v; // get start and end of keystroke
+    SDL_KeyCode key = SDLK_UNKNOWN;
+    unsigned int u = 0,v = 0; // get start and end of keystroke
+
+    bool isMouseEvent = false;
+    Uint8 button = 0;
 };
 
 #endif //DICE_GAME_PROJECT_INPUT_H
