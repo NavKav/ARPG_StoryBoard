@@ -53,11 +53,13 @@ Input Player::takeInput(const SDL_Event &event) {
         if (!pressedButtons.count(event.button.button)) {
             input.isMouseEvent = true;
             input.button = event.button.button;
+            SDL_GetMouseState(reinterpret_cast<int *>(&(input.x)), reinterpret_cast<int *>(&(input.y)));
             input.u = time(nullptr);
         }
     } else if (event.type == SDL_MOUSEBUTTONUP ) {
         input.isMouseEvent = true;
         input.button = event.button.button;
+        SDL_GetMouseState(reinterpret_cast<int *>(&(input.x)), reinterpret_cast<int *>(&(input.y)));
         input.v = time(nullptr);
         pressedButtons.erase(event.button.button);
     }
