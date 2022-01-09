@@ -19,7 +19,7 @@
 #include <set>
 
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+#include <SDL_image.h>
 
 #define LOAD IMG_Load
 
