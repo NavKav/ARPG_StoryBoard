@@ -11,6 +11,7 @@
 class WindowContent {
 public :
     virtual void receive(const Input& input) = 0;
+    virtual void process() = 0;
 };
 
 
