@@ -23,7 +23,7 @@ void Player::stop() {
 }
 
 void Player::send(const Input& input) {
-    if (_windowContent) {
+    if (_windowContent != nullptr && (input.u != 0 || input.v != 0)) {
         _windowContent->receive(input);
     }
 }
@@ -33,26 +33,41 @@ Player::~Player() {
 
 
 Input Player::takeInput(const SDL_Event &event) {
-    Input input = {SDLK_UNKNOWN, 0, 0};
+    static std::set<SDL_KeyCode> pressedKeys;
+    static std::set<Uint8> pressedButtons;
+    Input input;
 
-    if (event.type == SDL_QUIT) {
-        stop();
-    }
     if (event.type == SDL_KEYDOWN) {
-        input.key = static_cast<SDL_KeyCode>(event.key.keysym.sym);
-        input.u = time(nullptr);
-        _numberKeyDown++;
+        if (!pressedKeys.count(static_cast<SDL_KeyCode>(event.key.keysym.sym))) {
+            input.key = static_cast<SDL_KeyCode>(event.key.keysym.sym);
+            input.u = time(nullptr);
+            _numberKeyDown++;
+            pressedKeys.insert(static_cast<SDL_KeyCode>(event.key.keysym.sym));
+        }
     } else if (event.type == SDL_KEYUP) {
         input.key = static_cast<SDL_KeyCode>(event.key.keysym.sym);
         input.v = time(nullptr);
+        pressedKeys.erase(static_cast<SDL_KeyCode>(event.key.keysym.sym));
+
+    } else if (event.type == SDL_MOUSEBUTTONDOWN ) {
+        if (!pressedButtons.count(event.button.button)) {
+            input.isMouseEvent = true;
+            input.button = event.button.button;
+            SDL_GetMouseState(reinterpret_cast<int *>(&(input.x)), reinterpret_cast<int *>(&(input.y)));
+            input.u = time(nullptr);
+        }
+    } else if (event.type == SDL_MOUSEBUTTONUP ) {
+        input.isMouseEvent = true;
+        input.button = event.button.button;
+        SDL_GetMouseState(reinterpret_cast<int *>(&(input.x)), reinterpret_cast<int *>(&(input.y)));
+        input.v = time(nullptr);
+        pressedButtons.erase(event.button.button);
     }
-    if (event.key.keysym.sym == SDLK_ESCAPE) {
+
+    if (event.key.keysym.sym == SDLK_ESCAPE || event.type == SDL_QUIT ) {
         stop();
     }
-}
-
-void Player::getMousePosition(int& x, int& y) {
-    SDL_GetMouseState(&x, &y);
+    return input;
 }
 
 bool Player::keyDown() {
