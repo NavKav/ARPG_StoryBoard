@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9)
-project(Dice_Game_Project CXX)
+project(ARPG_StoryBoard CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -10,7 +10,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/SDL2/cmake") #
 set(SDL2_IMAGE_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/SDL2/include")
 set(SDL2_IMAGE_LIBRARY "${PROJECT_SOURCE_DIR}/SDL2/lib/libSDL2_image.dll.a")
 
-
+set(SDL2_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/SDL2/include")
+set(SDL2_LIBRARY "${PROJECT_SOURCE_DIR}/SDL2/lib/libSDL2.dll.a")
 find_package(SDL2 REQUIRED)
 find_package(SDL2_Image REQUIRED)
 
@@ -18,7 +19,7 @@ file(GLOB SOURCES
         src/*.cpp
         include/*.h
         )
-add_executable(Dice_Game_Project ${SOURCES} include/requirement.h src/WindowContent.cpp include/WindowContent.h include/Input.h)
+add_executable(Dice_Game_Project ${SOURCES} include)
 include_directories(${PROJECT_SOURCE_DIR}/include ${SDL2_IMAGE_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
 #développement avec SDL2
 target_link_libraries(Dice_Game_Project ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ) #inclusion des bibliothèques nécessaire pour

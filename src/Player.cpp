@@ -15,6 +15,7 @@ void Player::start() {
             Input input = takeInput(event);
             send(input);
         }
+
     }
 }
 
