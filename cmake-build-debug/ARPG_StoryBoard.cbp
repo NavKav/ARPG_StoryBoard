@@ -88,6 +88,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/ConcurrentRunnerBase.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/Input.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
