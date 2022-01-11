@@ -1350,18 +1350,30 @@ CMakeFiles/Dice_Game_Project.dir/src/WindowContent.cpp.obj: ../src/WindowContent
   ../include/Input.h
 
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
-  ../include/Window.h \
-  ../include/requirement.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/windows.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/atomic \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  ../include/Window.h \
+  ../include/requirement.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/windows.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sdkddkver.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/excpt.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdarg.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
@@ -1384,8 +1396,6 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/x86intrin.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/x86gprintrin.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/ia32intrin.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/adxintrin.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/bmiintrin.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/bmi2intrin.h \
@@ -1424,9 +1434,6 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
@@ -1627,8 +1634,6 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
@@ -1645,8 +1650,6 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
@@ -1730,8 +1733,6 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/concurrence.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/io.h \
@@ -1799,7 +1800,26 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
   ../include/WindowContent.h \
   ../include/Input.h \
   ../include/Player.h \
-  ../include/WindowContent.h
+  ../include/WindowContent.h \
+  ../include/ConcurrentRunnerBase.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/mutex \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_mutex.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_lock.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/condition_variable \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/thread \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_thread.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/this_thread_sleep.h
 
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/tmmintrin.h:
@@ -1956,6 +1976,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/lwpintrin.h:
 
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/atomic:
+
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/stddef.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h:
@@ -2025,6 +2047,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/xtestintrin.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/immintrin.h:
 
@@ -2133,6 +2157,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/avx5124fmapsintrin.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/avx512vpopcntdqintrin.h:
 
@@ -2332,6 +2358,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/wnnc.h:
 
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector:
+
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/virtdisk.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h:
@@ -2420,7 +2448,11 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/rpcndr.h:
 
+../include/ConcurrentRunnerBase.h:
+
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/rpcnsip.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_lock.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/wtypesbase.h:
 
@@ -2435,6 +2467,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/objidl.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/unknwn.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_mutex.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/oleidl.h:
 
@@ -2510,6 +2544,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h:
 
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_thread.h:
+
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h:
@@ -2543,6 +2579,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/signal.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/this_thread_sleep.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/time.h:
 
@@ -2688,6 +2726,8 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include
 
 ../SDL2/include/SDL2/SDL_locale.h:
 
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/condition_variable:
+
 ../SDL2/include/SDL2/SDL_misc.h:
 
 ../SDL2/include/SDL.h:
@@ -2699,3 +2739,23 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include
 ../src/Window.cpp:
 
 ../src/main.cpp:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/mutex:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional:
+
+C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/thread:

@@ -1,17 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\navid\CLionProjects\ARPG_StoryBoard
--- The CXX compiler identification is GNU 11.2.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/g++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Looking for C++ include pthread.h
--- Looking for C++ include pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
--- Found SDL2: C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/lib/libSDL2.dll.a  
--- Found SDL2_Image: C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/lib/libSDL2_image.dll.a (found version "2.0.5") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/navid/CLionProjects/ARPG_StoryBoard/cmake-build-debug
