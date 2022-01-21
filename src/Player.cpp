@@ -13,7 +13,7 @@ void Player::start() {
         SDL_Event input;
         while(SDL_PollEvent(&input)) {
             takeInput(input);
-            std::cout << (*this)[SDLK_a].pressed << std::endl;
+            if (_windowContent) {_windowContent->process();}
         }
     }
 }
@@ -34,19 +34,22 @@ void Player::takeInput(const SDL_Event &event) {
     if (event.type == SDL_QUIT || event.key.keysym.sym == SDLK_ESCAPE) {
         stop();
     }
-    //std::cout << "(Player) received : " + event.key.keysym.scancode << std::endl;
     if (event.type == SDL_KEYDOWN) {
-        std::cout << "une touche est enfoncée\n";
         _inputArr[event.key.keysym.sym] = {true, 0, 0};
     } else if (event.type == SDL_KEYUP) {
-        std::cout << "une touche est relâchée\n";
         _inputArr[event.key.keysym.sym] = {false, 0, 0};
     } else if (event.type == SDL_MOUSEBUTTONDOWN) {
-        std::cout << "une touche de la souris est enfoncée\n";
-        _inputArr[event.key.keysym.sym] = {false, 0, 0};
+        if (event.button.button == SDL_BUTTON_RIGHT) {
+            _inputArr[SDLK_RIGHTCLICK] = {true, 0, 0, event.button.x, event.button.y};
+        } else { // SDL_BUTTON_LEFT
+            _inputArr[SDLK_LEFTCLICK] = {true, 0, 0, event.button.x, event.button.y};
+        }
     } else if (event.type == SDL_MOUSEBUTTONUP) {
-        std::cout << "une touche de la souris est relâchée\n";
-        _inputArr[event.key.keysym.sym] = {false, 0, 0};
+        if (event.button.button == SDL_BUTTON_RIGHT) {
+            _inputArr[SDLK_RIGHTCLICK] = {false, 0, 0, event.button.x, event.button.y};
+        } else { // SDL_BUTTON_LEFT
+            _inputArr[SDLK_LEFTCLICK] = {false, 0, 0, event.button.x, event.button.y};
+        }
     }
 }
 

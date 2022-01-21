@@ -112,9 +112,6 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/Window.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/WindowContent.cpp">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>

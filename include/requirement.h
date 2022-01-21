@@ -26,6 +26,7 @@
 struct Input {
     bool pressed;
     unsigned int u,v;
+    Sint32 mouseX = 0, mouseY = 0;
 };
 
 

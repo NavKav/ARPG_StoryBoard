@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/Player.cpp" "CMakeFiles/Dice_Game_Project.dir/src/Player.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/Player.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/Window.cpp" "CMakeFiles/Dice_Game_Project.dir/src/Window.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/Window.cpp.obj.d"
-  "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/WindowContent.cpp" "CMakeFiles/Dice_Game_Project.dir/src/WindowContent.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/WindowContent.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp" "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj.d"
   )
 
