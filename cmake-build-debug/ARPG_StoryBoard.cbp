@@ -94,6 +94,9 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/Input.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/MenuContent.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/Player.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
@@ -104,6 +107,9 @@
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/requirement.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/MenuContent.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/Player.cpp">

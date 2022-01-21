@@ -128,6 +128,30 @@ Dice_Game_Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/build
 .PHONY : Dice_Game_Project/fast
 
+src/MenuContent.obj: src/MenuContent.cpp.obj
+.PHONY : src/MenuContent.obj
+
+# target to build an object file
+src/MenuContent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/MenuContent.cpp.obj
+.PHONY : src/MenuContent.cpp.obj
+
+src/MenuContent.i: src/MenuContent.cpp.i
+.PHONY : src/MenuContent.i
+
+# target to preprocess a source file
+src/MenuContent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/MenuContent.cpp.i
+.PHONY : src/MenuContent.cpp.i
+
+src/MenuContent.s: src/MenuContent.cpp.s
+.PHONY : src/MenuContent.s
+
+# target to generate assembly for a file
+src/MenuContent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/MenuContent.cpp.s
+.PHONY : src/MenuContent.cpp.s
+
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
 
@@ -209,6 +233,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Dice_Game_Project
+	@echo ... src/MenuContent.obj
+	@echo ... src/MenuContent.i
+	@echo ... src/MenuContent.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s

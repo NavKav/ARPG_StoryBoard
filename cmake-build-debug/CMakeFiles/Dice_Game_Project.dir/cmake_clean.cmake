@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Dice_Game_Project.dir/src/MenuContent.cpp.obj"
+  "CMakeFiles/Dice_Game_Project.dir/src/MenuContent.cpp.obj.d"
   "CMakeFiles/Dice_Game_Project.dir/src/Player.cpp.obj"
   "CMakeFiles/Dice_Game_Project.dir/src/Player.cpp.obj.d"
   "CMakeFiles/Dice_Game_Project.dir/src/Window.cpp.obj"
