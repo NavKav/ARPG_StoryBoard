@@ -10,6 +10,57 @@ Player::Player(WindowContent* windowContent) : _windowContent(windowContent)
 
 void Player::start() {
     while(_boolLoop) {
+        SDL_Event input;
+        while(SDL_PollEvent(&input)) {
+            takeInput(input);
+            std::cout << (*this)[SDLK_a].pressed << std::endl;
+        }
+    }
+}
+
+void Player::stop() {
+    _boolLoop = false;
+}
+
+
+Player::~Player() {
+}
+
+bool Player::keyDown() {
+    return !(_numberKeyDown == 0);
+}
+
+void Player::takeInput(const SDL_Event &event) {
+    if (event.type == SDL_QUIT || event.key.keysym.sym == SDLK_ESCAPE) {
+        stop();
+    }
+    //std::cout << "(Player) received : " + event.key.keysym.scancode << std::endl;
+    if (event.type == SDL_KEYDOWN) {
+        std::cout << "une touche est enfoncée\n";
+        _inputArr[event.key.keysym.sym] = {true, 0, 0};
+    } else if (event.type == SDL_KEYUP) {
+        std::cout << "une touche est relâchée\n";
+        _inputArr[event.key.keysym.sym] = {false, 0, 0};
+    } else if (event.type == SDL_MOUSEBUTTONDOWN) {
+        std::cout << "une touche de la souris est enfoncée\n";
+        _inputArr[event.key.keysym.sym] = {false, 0, 0};
+    } else if (event.type == SDL_MOUSEBUTTONUP) {
+        std::cout << "une touche de la souris est relâchée\n";
+        _inputArr[event.key.keysym.sym] = {false, 0, 0};
+    }
+}
+
+Input Player::operator[](unsigned int i) {
+    return _inputArr[i];
+}
+
+void Player::getMousePosition(int& x, int& y) {
+    SDL_GetMouseState(&x, &y);
+}
+
+/*
+void Player::start() {
+    while(_boolLoop) {
         SDL_Event event;
         while(SDL_PollEvent(&event)) {
             Input input = takeInput(event);
@@ -18,20 +69,6 @@ void Player::start() {
 
     }
 }
-
-void Player::stop() {
-    _boolLoop = false;
-}
-
-void Player::send(const Input& input) {
-    if (_windowContent != nullptr && (input.u != 0 || input.v != 0)) {
-        _windowContent->receive(input);
-    }
-}
-
-Player::~Player() {
-}
-
 
 Input Player::takeInput(const SDL_Event &event) {
     static std::set<SDL_KeyCode> pressedKeys;
@@ -70,7 +107,4 @@ Input Player::takeInput(const SDL_Event &event) {
     }
     return input;
 }
-
-bool Player::keyDown() {
-    return !(_numberKeyDown == 0);
-}
+*/

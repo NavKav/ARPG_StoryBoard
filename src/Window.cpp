@@ -31,6 +31,7 @@ Window::~Window() {
     SDL_DestroyWindow(_actualWindow);
 
     SDL_Quit();
+    std::cout << "Window destroyed" << std::endl;
 }
 
 void Window::setTitle(const std::string &windowTitle) {

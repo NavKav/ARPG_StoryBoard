@@ -23,4 +23,10 @@
 
 #define LOAD IMG_Load
 
+struct Input {
+    bool pressed;
+    unsigned int u,v;
+};
+
+
 #endif //DICE_GAME_PROJECT_REQUIREMENT_H

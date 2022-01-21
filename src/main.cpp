@@ -15,6 +15,7 @@ void f(Window* w, const std::string& s, int x) {
         w->drawIMG(x, i, s);
         w->refresh();
     }
+    std::cout << "thread" << x << std::endl;
 }
 
 void g(Window* w) {
@@ -25,6 +26,7 @@ void g(Window* w) {
         x += (i%4 == 0) - 2*(i%4 == 2);
         y += (i%4 == 1) - 2*(i%4 == 3);
     }
+    std::cout << "thread g" << std::endl;
 }
 
 int main( int argc, char *argv[] )
@@ -35,8 +37,9 @@ int main( int argc, char *argv[] )
     window.drawIMG(250, 0, "option_button.bmp");
     window.drawIMG(500, 0, "exit_button.bmp");
     window.refresh();
+    std::cout << &window << std::endl;
 
-        ConcurrentRunner runner{[&]() { f(&window,"start_button.bmp", 0); },
+       /* ConcurrentRunner runner{[&]() { f(&window,"start_button.bmp", 0); },
                                 [&]() { f(&window,"option_button.bmp", 250); },
                                 [&]() { f(&window,"option_button.bmp", 300); },
                                 [&]() { f(&window,"option_button.bmp", 350); },
@@ -46,9 +49,10 @@ int main( int argc, char *argv[] )
                                 [&]() { f(&window,"option_button.bmp", 650); },
                                 [&]() { f(&window,"exit_button.bmp", 500); },
                                 [&]() { g(&window);}};
-    runner.run();
+    runner.run();*/
     std::cout << "end" << std::endl;
-
+    Player p(nullptr);
+    p.start();
     return 0;
 
 }

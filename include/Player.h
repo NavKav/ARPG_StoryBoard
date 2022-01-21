@@ -11,9 +11,11 @@
 
 #include "requirement.h"
 #include "WindowContent.h"
-#include "Input.h"
+//#include "Input.h"
 
 #define NUM_SDLK 1000 // maximum range of SDL key number
+#define SDLK_RIGHTCLICK NUM_SDLK - 1
+#define SDLK_LEFTCLICK NUM_SDLK - 2
 
 class Player {
 public :
@@ -24,14 +26,15 @@ public :
     void getMousePosition(int& x, int& y);
     bool keyDown();
     void send(const Input& input);
+    Input operator[](unsigned int i);
 
 private :
     bool _boolLoop = true;
+    Input _inputArr[NUM_SDLK] = {{false, 0, 0}};
+    void manageInput();
+    void takeInput(const SDL_Event& event);
     unsigned int _numberKeyDown = 0;
     WindowContent* _windowContent;
-
-
-    Input takeInput(const SDL_Event& event);
 };
 
 
