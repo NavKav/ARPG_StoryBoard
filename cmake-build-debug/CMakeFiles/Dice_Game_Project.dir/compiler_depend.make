@@ -449,7 +449,7 @@ CMakeFiles/Dice_Game_Project.dir/src/Player.cpp.obj: ../src/Player.cpp \
   ../SDL2/include/begin_code.h \
   ../SDL2/include/close_code.h \
   ../include/WindowContent.h \
-  ../include/Input.h
+  ../include/Window.h
 
 CMakeFiles/Dice_Game_Project.dir/src/Window.cpp.obj: ../src/Window.cpp \
   ../include/requirement.h \
@@ -2283,11 +2283,11 @@ C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 ../SDL2/include/close_code.h:
 
-../include/Input.h:
-
 ../src/Window.cpp:
 
 ../src/main.cpp:
+
+../include/Input.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/mutex:
 

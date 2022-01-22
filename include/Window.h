@@ -19,6 +19,7 @@ public :
     void refresh();
     Window() = delete;
     ~Window();
+    void clear();
 
 private :
     SDL_Window *_actualWindow;

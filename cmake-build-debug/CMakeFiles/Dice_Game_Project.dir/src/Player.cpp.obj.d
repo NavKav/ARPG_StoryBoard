@@ -447,4 +447,4 @@ CMakeFiles/Dice_Game_Project.dir/src/Player.cpp.obj: \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/begin_code.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/WindowContent.h \
- C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/Input.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/Window.h

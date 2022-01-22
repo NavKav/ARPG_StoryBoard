@@ -71,3 +71,7 @@ void Window::refresh() {
     SDL_RenderPresent(_renderer);
     Sleep(20);
 }
+
+void Window::clear() {
+    SDL_RenderClear(_renderer);
+}
