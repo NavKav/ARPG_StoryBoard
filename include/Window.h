@@ -26,6 +26,7 @@ private :
     SDL_Surface *_surface;
     SDL_Surface *_background;
     SDL_Texture *_texture;
+    unsigned int _sizeX = 0, _sizeY = 0;
 
 };
 

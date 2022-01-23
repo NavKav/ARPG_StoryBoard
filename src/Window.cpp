@@ -6,7 +6,9 @@
 
 using namespace std;
 
-Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY) {
+Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY) : _sizeX(sizeX),
+_sizeY(sizeY)
+{
     SDL_Init(SDL_INIT_VIDEO);
     _actualWindow = SDL_CreateWindow(windowName.c_str(),
                                      SDL_WINDOWPOS_UNDEFINED,
