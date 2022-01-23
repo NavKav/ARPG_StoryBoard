@@ -7,6 +7,6 @@
 MenuContent::MenuContent(Window* window) : WindowContent(window) {
 
 }
-void MenuContent::process() {
+void MenuContent::process(Player* player) {
     // ici
 }

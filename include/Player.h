@@ -27,6 +27,7 @@ public :
     bool keyDown();
     void send(const Input& input);
     Input operator[](unsigned int i);
+    Player() = delete;
 
 private :
     bool _boolLoop = true;

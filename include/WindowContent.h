@@ -8,10 +8,12 @@
 #include "requirement.h"
 #include "Window.h"
 
+class Player;
+
 class WindowContent {
 public :
     WindowContent(Window* window) : _window(window){};
-    virtual void process() = 0;
+    virtual void process(Player* player) = 0;
 protected :
     Window* _window = nullptr;
 

@@ -11,7 +11,7 @@
 class MenuContent : public WindowContent{
 public :
     MenuContent(Window* window);
-    void process();
+    void process(Player* player);
 private :
 };
 
