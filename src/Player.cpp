@@ -13,7 +13,7 @@ void Player::start() {
         SDL_Event input;
         while(SDL_PollEvent(&input)) {
             takeInput(input);
-            if (_windowContent) {_windowContent->process();}
+            if (_windowContent) {_windowContent->process(*this);}
         }
     }
 }

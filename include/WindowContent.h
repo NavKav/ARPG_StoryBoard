@@ -8,9 +8,11 @@
 #include "requirement.h"
 #include "Input.h"
 
+class Player;
+
 class WindowContent {
 public :
-    virtual void process() = 0;
+    virtual void process(Player& player) = 0;
 };
 
 
