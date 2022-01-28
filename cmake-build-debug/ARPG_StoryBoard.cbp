@@ -88,28 +88,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/ConcurrentRunnerBase.h">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/Input.h">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/Player.h">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Player.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/Window.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/WindowContent.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/requirement.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/Player.cpp">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/Window.cpp">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp">

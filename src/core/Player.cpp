@@ -2,7 +2,7 @@
 // Created by navid on 15/08/2021.
 //
 
-#include "Player.h"
+#include "core/Player.h"
 
 Player::Player(WindowContent* windowContent) : _windowContent(windowContent)
 {

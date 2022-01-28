@@ -1,9 +1,6 @@
 
-#include <atomic>
-#include "Window.h"
-#include "WindowContent.h"
-#include "Player.h"
-#include "ConcurrentRunnerBase.h"
+#include "core/Window.h"
+#include "core/Player.h"
 
 #undef main
 
