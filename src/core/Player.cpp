@@ -33,12 +33,9 @@ bool Player::keyDown() {
 }
 
 void Player::takeInput(const SDL_Event &event) {
-    if (event.type == SDL_QUIT /*|| event.key.keysym.sym == SDLK_ESCAPE*/) {
+    if (event.type == SDL_QUIT || event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
         stop();
-        return ;
-    } else if (event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
-        stop();
-        return ;
+        return;
     }
     if (event.type == SDL_KEYDOWN) {
         _inputArr[event.key.keysym.sym] = {true, 0, 0};
