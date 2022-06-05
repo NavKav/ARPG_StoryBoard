@@ -37,7 +37,6 @@ void Player::takeInput(const SDL_Event &event) {
         stop();
         return ;
     } else if (event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
-        cout << "la";
         stop();
         return ;
     }
