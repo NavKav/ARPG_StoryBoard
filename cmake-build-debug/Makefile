@@ -152,6 +152,30 @@ src/core/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.s
 .PHONY : src/core/Player.cpp.s
 
+src/core/TestWindowContent.obj: src/core/TestWindowContent.cpp.obj
+.PHONY : src/core/TestWindowContent.obj
+
+# target to build an object file
+src/core/TestWindowContent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj
+.PHONY : src/core/TestWindowContent.cpp.obj
+
+src/core/TestWindowContent.i: src/core/TestWindowContent.cpp.i
+.PHONY : src/core/TestWindowContent.i
+
+# target to preprocess a source file
+src/core/TestWindowContent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.i
+.PHONY : src/core/TestWindowContent.cpp.i
+
+src/core/TestWindowContent.s: src/core/TestWindowContent.cpp.s
+.PHONY : src/core/TestWindowContent.s
+
+# target to generate assembly for a file
+src/core/TestWindowContent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.s
+.PHONY : src/core/TestWindowContent.cpp.s
+
 src/core/Window.obj: src/core/Window.cpp.obj
 .PHONY : src/core/Window.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo ... src/core/Player.obj
 	@echo ... src/core/Player.i
 	@echo ... src/core/Player.s
+	@echo ... src/core/TestWindowContent.obj
+	@echo ... src/core/TestWindowContent.i
+	@echo ... src/core/TestWindowContent.s
 	@echo ... src/core/Window.obj
 	@echo ... src/core/Window.i
 	@echo ... src/core/Window.s

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Player.cpp" "CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj.d"
+  "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/TestWindowContent.cpp" "CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.cpp" "CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp" "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj.d"
   )

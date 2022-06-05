@@ -83,11 +83,26 @@ CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\core\Player.cpp -o CMakeFiles\Dice_Game_Project.dir\src\core\Player.cpp.s
 
+CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj: CMakeFiles/Dice_Game_Project.dir/flags.make
+CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj: CMakeFiles/Dice_Game_Project.dir/includes_CXX.rsp
+CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj: ../src/core/TestWindowContent.cpp
+CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj: CMakeFiles/Dice_Game_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj -MF CMakeFiles\Dice_Game_Project.dir\src\core\TestWindowContent.cpp.obj.d -o CMakeFiles\Dice_Game_Project.dir\src\core\TestWindowContent.cpp.obj -c C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\core\TestWindowContent.cpp
+
+CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\core\TestWindowContent.cpp > CMakeFiles\Dice_Game_Project.dir\src\core\TestWindowContent.cpp.i
+
+CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\core\TestWindowContent.cpp -o CMakeFiles\Dice_Game_Project.dir\src\core\TestWindowContent.cpp.s
+
 CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj: CMakeFiles/Dice_Game_Project.dir/flags.make
 CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj: CMakeFiles/Dice_Game_Project.dir/includes_CXX.rsp
 CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj: ../src/core/Window.cpp
 CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj: CMakeFiles/Dice_Game_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj -MF CMakeFiles\Dice_Game_Project.dir\src\core\Window.cpp.obj.d -o CMakeFiles\Dice_Game_Project.dir\src\core\Window.cpp.obj -c C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\core\Window.cpp
 
 CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.i: cmake_force
@@ -102,7 +117,7 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: CMakeFiles/Dice_Game_Project.
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: CMakeFiles/Dice_Game_Project.dir/includes_CXX.rsp
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: CMakeFiles/Dice_Game_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj -MF CMakeFiles\Dice_Game_Project.dir\src\main.cpp.obj.d -o CMakeFiles\Dice_Game_Project.dir\src\main.cpp.obj -c C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\main.cpp
 
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.i: cmake_force
@@ -116,6 +131,7 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.s: cmake_force
 # Object files for target Dice_Game_Project
 Dice_Game_Project_OBJECTS = \
 "CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj" \
+"CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj" \
 "CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj" \
 "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj"
 
@@ -123,6 +139,7 @@ Dice_Game_Project_OBJECTS = \
 Dice_Game_Project_EXTERNAL_OBJECTS =
 
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj
+Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/core/TestWindowContent.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/build.make
@@ -131,7 +148,7 @@ Dice_Game_Project.exe: ../SDL2/lib/libSDL2_image.dll.a
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/linklibs.rsp
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/objects1.rsp
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Dice_Game_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Dice_Game_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Dice_Game_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
