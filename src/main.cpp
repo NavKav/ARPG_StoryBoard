@@ -5,7 +5,7 @@
 #undef main
 
 using namespace std;
-
+// test
 int main( int argc, char *argv[] )
 {
     Window window("ARPG_StoryBoard", 700, 700);
