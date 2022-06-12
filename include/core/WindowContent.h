@@ -7,12 +7,13 @@
 
 #include "requirement.h"
 #include "core/Input.h"
+#include "core/Window.h"
 
 class Player;
 
 class WindowContent {
 public :
-    virtual void process(Player& player) = 0;
+    virtual void process(Player& player, Window& window) = 0;
 };
 
 

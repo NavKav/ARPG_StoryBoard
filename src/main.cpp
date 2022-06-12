@@ -1,6 +1,6 @@
-
 #include "core/Window.h"
 #include "core/Player.h"
+#include "game/GameWindowContent.h"
 
 #undef main
 
@@ -15,7 +15,9 @@ int main( int argc, char *argv[] )
     window.drawIMG(500, 0, "exit_button.bmp");
     window.refresh();
 
-    Player p(nullptr);
+    GameWindowContent gameWindowContent = GameWindowContent();
+
+    Player p(window, reinterpret_cast<WindowContent *>(&gameWindowContent));
     p.start();
     return 0;
 

@@ -11,6 +11,7 @@
 
 #include "requirement.h"
 #include "WindowContent.h"
+#include "Window.h"
 //#include "Input.h"
 
 #define NUM_SDLK 1000 // maximum range of SDL key number
@@ -19,7 +20,7 @@
 
 class Player {
 public :
-    Player(WindowContent* windowContent);
+    Player(Window& window, WindowContent* windowContent);
     void start();
     void stop();
     ~Player();
@@ -27,6 +28,7 @@ public :
     bool keyDown();
     void send(const Input& input);
     Input operator[](unsigned int i);
+    void setWindowContent(WindowContent *windowContent);
 
 private :
     bool _boolLoop = true;
@@ -35,6 +37,7 @@ private :
     void takeInput(const SDL_Event& event);
     unsigned int _numberKeyDown = 0;
     WindowContent* _windowContent;
+    Window& _window;
 };
 
 

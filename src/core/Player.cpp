@@ -6,17 +6,18 @@
 
 using namespace std;
 
-Player::Player(WindowContent* windowContent) : _windowContent(windowContent)
+Player::Player(Window& window, WindowContent* windowContent) : _windowContent(windowContent),
+_window(window)
 {
 }
 
 void Player::start() {
     while(_boolLoop) {
         SDL_Event input;
-        while(SDL_PollEvent(&input)) {
-            takeInput(input);
-            if (_windowContent) {_windowContent->process(*this);}
-        }
+        SDL_WaitEvent(&input);
+        takeInput(input);
+        if (_windowContent) {_windowContent->process(*this, _window);}
+        _window.refresh();
     }
 }
 
@@ -63,6 +64,11 @@ Input Player::operator[](unsigned int i) {
 void Player::getMousePosition(int& x, int& y) {
     SDL_GetMouseState(&x, &y);
 }
+
+void Player::setWindowContent(WindowContent *windowContent) {
+    _windowContent = windowContent;
+}
+
 
 /*
 void Player::start() {

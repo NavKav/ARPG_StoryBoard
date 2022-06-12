@@ -1,7 +1,7 @@
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: \
  C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\main.cpp \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h \
- C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/requirement.h \
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/requirement.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/windows.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -448,4 +448,7 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Player.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h \
- C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Input.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Input.h \
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h \
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/GameWindowContent.h \
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h
