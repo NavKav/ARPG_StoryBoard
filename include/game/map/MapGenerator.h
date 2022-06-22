@@ -11,12 +11,15 @@
 
 class MapGenerator {
 public:
+    MapGenerator(){};
     MapGenerator(unsigned int X, unsigned int Y, unsigned int seed);
     ~MapGenerator();
     void generate();
     void blank();
     void display();
-private:
+    unsigned int& operator()(unsigned int x, unsigned int y);
+    bool sameTile(unsigned int x, unsigned int y, unsigned int d);
+        private:
     unsigned int _X, _Y;
     unsigned int _seed;
     unsigned int** _map;

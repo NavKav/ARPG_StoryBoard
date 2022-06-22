@@ -25,7 +25,11 @@ file(GLOB INCLUDES
         include/*/*.h
         include/*/*/*.h
         )
-add_executable(Dice_Game_Project ${SOURCES} ${INCLUDES})
+
+file(GLOB_RECURSE A src/*.cpp)
+file(GLOB_RECURSE B include/*.h)
+
+add_executable(Dice_Game_Project ${A} ${B})
 include_directories(${PROJECT_SOURCE_DIR}/include ${SDL2_IMAGE_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
 #développement avec SDL2
 target_link_libraries(Dice_Game_Project ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ) #inclusion des bibliothèques nécessaire pour

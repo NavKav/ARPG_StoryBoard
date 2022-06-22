@@ -7,6 +7,7 @@
 
 #include "core/WindowContent.h"
 #include "core/Player.h"
+#include "game/map/MapView.h"
 
 class GameWindowContent : public WindowContent {
 public :

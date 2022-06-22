@@ -39,9 +39,9 @@ void Player::takeInput(const SDL_Event &event) {
         return;
     }
     if (event.type == SDL_KEYDOWN) {
-        _inputArr[event.key.keysym.sym] = {true, 0, 0};
+        _inputArr[event.key.keysym.scancode] = {true, 0, 0};
     } else if (event.type == SDL_KEYUP) {
-        _inputArr[event.key.keysym.sym] = {false, 0, 0};
+        _inputArr[event.key.keysym.scancode] = {false, 0, 0};
     } else if (event.type == SDL_MOUSEBUTTONDOWN) {
         if (event.button.button == SDL_BUTTON_RIGHT) {
             _inputArr[SDLK_RIGHTCLICK] = {true, 0, 0, event.button.x, event.button.y};

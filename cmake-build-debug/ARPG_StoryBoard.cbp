@@ -103,13 +103,16 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/requirement.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/GameWindowContent.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/Map/MapGenerator.h">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapGenerator.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/requirement.h">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapView.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Player.cpp">
@@ -121,7 +124,10 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/GameWindowContent.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/Map/MapGenerator.cpp">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapGenerator.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapView.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp">

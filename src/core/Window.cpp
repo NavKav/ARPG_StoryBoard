@@ -30,6 +30,10 @@ Window::~Window() {
     SDL_DestroyRenderer(_renderer);
     SDL_DestroyWindow(_actualWindow);
 
+    for (auto d : _hashmap) {
+        SDL_FreeSurface(d.second);
+    }
+
     SDL_Quit();
 }
 
@@ -40,7 +44,7 @@ void Window::setTitle(const std::string &windowTitle) {
 void Window::drawIMG(int x, int y, const string &name) {
     SDL_Surface* img = LOAD(("ressource/image/" + name).c_str());
 
-    if ( img == NULL) {
+    if (img == NULL) {
         cout << "Window::drawIMG() : " << SDL_GetError() << endl;
     }
 
@@ -74,4 +78,76 @@ void Window::refresh() {
 
 void Window::clear() {
     SDL_RenderClear(_renderer);
+}
+
+void Window::drawPartIMG(unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d, const string &name) {
+    SDL_Surface* img = LOAD(("ressource/image/" + name).c_str());
+
+    if (img == NULL) {
+        cout << "Window::drawPartIMG() : " << SDL_GetError() << endl;
+    }
+
+    SDL_Rect p;
+    p.x = x;
+    p.y = y;
+
+    SDL_Rect r;
+    r.x = a;
+    r.y = b;
+    r.w = c;
+    r.h = d;
+
+    SDL_BlitSurface(img,&r, _surface, &p);
+    SDL_FreeSurface(img);
+}
+
+void Window::open(string name, string file) {
+    SDL_Surface* img = LOAD(("ressource/image/" + file).c_str());
+    if (img != NULL) {
+        _hashmap.insert({name, img});
+    } else {
+        cout << "Window::open() : " << SDL_GetError() << endl;
+    }
+}
+
+void Window::close(string name) {
+    if (_hashmap.find(name) == _hashmap.end()) {
+        cout << "Window::close() : \"" << name << "\" wasn't found" << endl;
+        return ;
+    }
+    _hashmap.erase(name);
+}
+
+void Window::drawIMG(const string &name, int x, int y) {
+    SDL_Surface* img = _hashmap.at(name);
+
+    if (img == NULL) {
+        cout << "Window::drawIMG() : " << SDL_GetError() << endl;
+    }
+
+    SDL_Rect p;
+    p.x = x;
+    p.y = y;
+
+    SDL_BlitSurface(img,NULL, _surface, &p);
+}
+
+void Window::drawPartIMG(const string &name, unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d) {
+    SDL_Surface* img = _hashmap.at(name);
+
+    if (img == NULL) {
+        cout << "Window::drawPartIMG() : " << SDL_GetError() << endl;
+    }
+
+    SDL_Rect p;
+    p.x = x;
+    p.y = y;
+
+    SDL_Rect r;
+    r.x = a;
+    r.y = b;
+    r.w = c;
+    r.h = d;
+
+    SDL_BlitSurface(img,&r, _surface, &p);
 }
