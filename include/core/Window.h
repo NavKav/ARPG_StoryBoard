@@ -32,7 +32,6 @@ private :
     SDL_Window *_actualWindow;
     SDL_Renderer *_renderer;
     SDL_Surface *_surface;
-    SDL_Surface *_background;
     SDL_Texture *_texture;
 
     hashmap _hashmap = hashmap();

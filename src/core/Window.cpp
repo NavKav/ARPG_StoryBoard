@@ -18,15 +18,14 @@ Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY)
     }
     _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_SOFTWARE);
     _surface = SDL_GetWindowSurface(_actualWindow);
-    _texture = SDL_CreateTextureFromSurface(_renderer, _surface);
-    _background = SDL_ConvertSurface(_surface, _surface->format, 0);
-    SDL_SetRenderTarget(_renderer,_texture);
+   // _texture = SDL_CreateTextureFromSurface(_renderer, _surface);
+    //SDL_SetRenderTarget(_renderer,_texture);
     //SDL_SetWindowFullscreen(_actualWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
 }
 
 
 Window::~Window() {
-    SDL_DestroyTexture(_texture);
+    //SDL_DestroyTexture(_texture);
     SDL_DestroyRenderer(_renderer);
     SDL_DestroyWindow(_actualWindow);
 
@@ -53,16 +52,6 @@ void Window::drawIMG(int x, int y, const string &name) {
     p.y = y;
 
     SDL_BlitSurface(img,NULL, _surface, &p);
-    SDL_FreeSurface(img);
-}
-
-void Window::drawBackgroundIMG(int x, int y, const string &name) {
-    SDL_Surface* img = LOAD(name.c_str());
-    SDL_Rect p;
-    p.x = x;
-    p.y = y;
-
-    SDL_BlitSurface(img,NULL, _background, &p);
     SDL_FreeSurface(img);
 }
 

@@ -16,7 +16,7 @@ void Player::start() {
         SDL_Event input;
         SDL_WaitEvent(&input);
         takeInput(input);
-        if (_windowContent) {_windowContent->process(*this, _window);}
+        //if (_windowContent) {_windowContent->process(*this, _window);}
         _window.refresh();
     }
 }

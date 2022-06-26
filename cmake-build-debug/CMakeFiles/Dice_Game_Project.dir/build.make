@@ -179,6 +179,7 @@ Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/build.make
 Dice_Game_Project.exe: ../SDL2/lib/libSDL2.dll.a
 Dice_Game_Project.exe: ../SDL2/lib/libSDL2_image.dll.a
+Dice_Game_Project.exe: ../SDL2/lib/libSDL2_ttf.dll.a
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/linklibs.rsp
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/objects1.rsp
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/link.txt

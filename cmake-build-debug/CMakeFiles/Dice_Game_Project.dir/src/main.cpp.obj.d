@@ -450,6 +450,7 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_version.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/begin_code.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h \
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_ttf.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Player.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Input.h \

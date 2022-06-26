@@ -7,13 +7,20 @@ set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Wno-dev") #Affiche TOUS les 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/SDL2/cmake") #chemin pour accéder au fichier cmake
 #qui vont trouver les différents fichiers nécessaire pour utiliser SDL2
 
+
 set(SDL2_IMAGE_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/SDL2/include")
 set(SDL2_IMAGE_LIBRARY "${PROJECT_SOURCE_DIR}/SDL2/lib/libSDL2_image.dll.a")
 
 set(SDL2_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/SDL2/include")
 set(SDL2_LIBRARY "${PROJECT_SOURCE_DIR}/SDL2/lib/libSDL2.dll.a")
+#TFF
+set(SDL2_TTF_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/SDL2/include")
+set(SDL2_TTF_LIBRARY "${PROJECT_SOURCE_DIR}/SDL2/lib/libSDL2_ttf.dll.a")
+
 find_package(SDL2 REQUIRED)
 find_package(SDL2_Image REQUIRED)
+#TFF
+find_package(SDL2_ttf REQUIRED)
 
 file(GLOB SOURCES
         src/*.cpp
@@ -30,7 +37,9 @@ file(GLOB_RECURSE A src/*.cpp)
 file(GLOB_RECURSE B include/*.h)
 
 add_executable(Dice_Game_Project ${A} ${B})
-include_directories(${PROJECT_SOURCE_DIR}/include ${SDL2_IMAGE_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
+#TFF
+include_directories(${PROJECT_SOURCE_DIR}/include ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
 #développement avec SDL2
-target_link_libraries(Dice_Game_Project ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ) #inclusion des bibliothèques nécessaire pour
+#TFF
+target_link_libraries(Dice_Game_Project ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ${SDL2_TTF_LIBRARY}) #inclusion des bibliothèques nécessaire pour
 #le développement avec SDL2

@@ -233,6 +233,12 @@ SDL2MAIN_LIBRARY:FILEPATH=SDL2MAIN_LIBRARY-NOTFOUND
 //Path to a library.
 SDL2_LIBRARY_TEMP:FILEPATH=SDL2_LIBRARY_TEMP-NOTFOUND
 
+//Disable search SDL2_ttf Library in default path
+SDL2_TTF_NO_DEFAULT_PATH:BOOL=OFF
+
+//Custom SDL2_ttf Library path
+SDL2_TTF_PATH:STRING=
+
 
 ########################
 # INTERNAL cache entries
@@ -386,6 +392,12 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/lib/libSDL2.dll.a][C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include][v()]
 //Details about finding SDL2_Image
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2_Image:INTERNAL=[C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/lib/libSDL2_image.dll.a][C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include][v2.0.5()]
+//Details about finding SDL2_ttf
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2_ttf:INTERNAL=[C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/lib/libSDL2_ttf.dll.a][C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include][v2.19.2()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: SDL2_TTF_NO_DEFAULT_PATH
+SDL2_TTF_NO_DEFAULT_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_TTF_PATH
+SDL2_TTF_PATH-ADVANCED:INTERNAL=1
 
