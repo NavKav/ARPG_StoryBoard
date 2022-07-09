@@ -12,12 +12,14 @@ _window(window)
 }
 
 void Player::start() {
+    unsigned int i= 0;
     while(_boolLoop) {
         SDL_Event input;
-        SDL_WaitEvent(&input);
-        takeInput(input);
-        //if (_windowContent) {_windowContent->process(*this, _window);}
+        do {SDL_WaitEvent(&input);}
+        while(!takeInput(input));
+        if (_windowContent) {_windowContent->process(*this, _window);}
         _window.refresh();
+        cout << "turn " << i++ << '\n';
     }
 }
 
@@ -33,28 +35,35 @@ bool Player::keyDown() {
     return !(_numberKeyDown == 0);
 }
 
-void Player::takeInput(const SDL_Event &event) {
+bool Player::takeInput(const SDL_Event &event) {
     if (event.type == SDL_QUIT || event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
         stop();
-        return;
+        return true;
     }
     if (event.type == SDL_KEYDOWN) {
         _inputArr[event.key.keysym.scancode] = {true, 0, 0};
+        return true;
     } else if (event.type == SDL_KEYUP) {
         _inputArr[event.key.keysym.scancode] = {false, 0, 0};
+        return true;
     } else if (event.type == SDL_MOUSEBUTTONDOWN) {
         if (event.button.button == SDL_BUTTON_RIGHT) {
             _inputArr[SDLK_RIGHTCLICK] = {true, 0, 0, event.button.x, event.button.y};
+            return true;
         } else { // SDL_BUTTON_LEFT
             _inputArr[SDLK_LEFTCLICK] = {true, 0, 0, event.button.x, event.button.y};
+            return true;
         }
     } else if (event.type == SDL_MOUSEBUTTONUP) {
         if (event.button.button == SDL_BUTTON_RIGHT) {
             //_inputArr[SDLK_RIGHTCLICK] = {false, 0, 0, event.button.x, event.button.y};
+            return true;
         } else { // SDL_BUTTON_LEFT
             //_inputArr[SDLK_LEFTCLICK] = {false, 0, 0, event.button.x, event.button.y};
+            return true;
         }
     }
+    return false;
 }
 
 Input Player::operator[](unsigned int i) {

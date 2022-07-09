@@ -7,19 +7,26 @@
 using namespace std;
 
 void GameWindowContent::process(Player& player, Window& window) {
+    static unsigned int a = 0, b = 0;
+    static MapGenerator mapGenerator(200, 100, 15);
+    static MapView mapView(window, mapGenerator);
+    static bool c = true;
 
-    static bool initialized = false;
-    if (!initialized) {
-        MapGenerator mapGenerator(100, 100, 1);
-        mapGenerator(0, 0) = 1;
-        mapGenerator(0, 1) = 1;
-        mapGenerator(1, 0) = 1;
-        mapGenerator(1, 1) = 1;
-        mapGenerator(1, 2) = 5;
-        mapGenerator(1, 3) = 5;
-        MapView mapView(window, mapGenerator);
-        mapView.display(0, 0, 22, 22);
-        window.refresh();
-        initialized = true;
+    if (c) {
+        mapGenerator.generate();
+        c = false;
     }
+
+    if (player[SDL_SCANCODE_UP].pressed)
+        b > 0 ? b -- : b = b;
+    if (player[SDL_SCANCODE_DOWN].pressed)
+        b ++;
+    if (player[SDL_SCANCODE_LEFT].pressed)
+        a > 0 ? a -- : a = a;
+    if (player[SDL_SCANCODE_RIGHT].pressed){
+        a ++;
+    }
+
+    mapView.display(a, b, 22, 22);
+    window.refresh();
 }

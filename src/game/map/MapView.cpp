@@ -14,24 +14,25 @@ _mapGenerator(mapGenerator)
 
 void MapView::display(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
     _window.open("floor", "floor.jpg");
-    for (unsigned int i = x; i < x + w; i++) {
-        for (unsigned int j = y; j < y + h; j++) {
-            drawLeftUp(i, j);
-            drawRightUp(i, j);
-            drawBottomLeft(i, j);
-            drawBottomRight(i, j);
+    for (unsigned int i = 0; i < w; i++) {
+        for (unsigned int j = 0; j < h; j++) {
+            drawLeftUp(x + i, y + j, i, j);
+            drawRightUp(x + i, y + j, i, j);
+            drawBottomLeft(x + i, y + j, i, j);
+            drawBottomRight(x + i, y + j, i, j);
         }
     }
     _window.close("floor");
 }
 
 
-void MapView::drawLeftUp(unsigned int x, unsigned int y) {
+void MapView::drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
     unsigned int X0 = 0, Y0 = 0;
-    unsigned int n = _mapGenerator(x ,y);
-    X0 += n * 64;
+    unsigned int f = _mapGenerator(x ,y).first, s = _mapGenerator(x ,y).second;
+    X0 += f * 64;
+    Y0 += s * 96;
     unsigned int A = X0, B = Y0;
-    unsigned int X = x * 32, Y = y * 32;
+    unsigned int X = a * 32, Y = b * 32;
     if (_mapGenerator.sameTile(x, y, 2)
         && _mapGenerator.sameTile(x, y, 8)) {
         if (_mapGenerator.sameTile(x, y, 1)) {
@@ -51,12 +52,13 @@ void MapView::drawLeftUp(unsigned int x, unsigned int y) {
     _window.drawPartIMG("floor", X, Y, A, B, 16, 16);
 }
 
-void MapView::drawRightUp(unsigned int x, unsigned int y) {
+void MapView::drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
     unsigned int X0 = 0, Y0 = 0;
-    unsigned int n = _mapGenerator(x ,y);
-    X0 += n * 64;
+    unsigned int f = _mapGenerator(x ,y).first, s = _mapGenerator(x ,y).second;
+    X0 += f * 64;
+    Y0 += s * 96;
     unsigned int A = X0, B = Y0;
-    unsigned int X = x * 32 + 16, Y = y * 32;
+    unsigned int X = a * 32 + 16, Y = b * 32;
     if (_mapGenerator.sameTile(x, y, 2)
         && _mapGenerator.sameTile(x, y, 4)) {
         if (_mapGenerator.sameTile(x, y, 3)) {
@@ -76,12 +78,13 @@ void MapView::drawRightUp(unsigned int x, unsigned int y) {
     _window.drawPartIMG("floor", X, Y, A, B, 16, 16);
 }
 
-void MapView::drawBottomLeft(unsigned int x, unsigned int y) {
+void MapView::drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
     unsigned int X0 = 0, Y0 = 0;
-    unsigned int n = _mapGenerator(x ,y);
-    X0 += n * 64;
+    unsigned int f = _mapGenerator(x ,y).first, s = _mapGenerator(x ,y).second;
+    X0 += f * 64;
+    Y0 += s * 96;
     unsigned int A = X0, B = Y0;
-    unsigned int X = x * 32, Y = y * 32 + 16;
+    unsigned int X = a * 32, Y = b * 32 + 16;
     if (_mapGenerator.sameTile(x, y, 6)
         && _mapGenerator.sameTile(x, y, 8)) {
         if (_mapGenerator.sameTile(x, y, 7)) {
@@ -101,12 +104,13 @@ void MapView::drawBottomLeft(unsigned int x, unsigned int y) {
     _window.drawPartIMG("floor", X, Y, A, B, 16, 16);
 }
 
-void MapView::drawBottomRight(unsigned int x, unsigned int y) {
+void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
     unsigned int X0 = 0, Y0 = 0;
-    unsigned int n = _mapGenerator(x ,y);
-    X0 += n * 64;
+    unsigned int f = _mapGenerator(x ,y).first, s = _mapGenerator(x ,y).second;
+    X0 += f * 64;
+    Y0 += s * 96;
     unsigned int A = X0, B = Y0;
-    unsigned int X = x * 32 + 16, Y = y * 32 + 16;
+    unsigned int X = a * 32 + 16, Y = b * 32 + 16;
     if (_mapGenerator.sameTile(x, y, 4)
         && _mapGenerator.sameTile(x, y, 6)) {
         if (_mapGenerator.sameTile(x, y, 5)) {

@@ -16,10 +16,10 @@ private :
     MapGenerator& _mapGenerator;
     Window& _window;
 
-    void drawBottomLeft(unsigned int x, unsigned int y);
-    void drawBottomRight(unsigned int x, unsigned int y);
-    void drawLeftUp(unsigned int x, unsigned int y);
-    void drawRightUp(unsigned int x, unsigned int y);
+    void drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
+    void drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
+    void drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
+    void drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
 };
 
 

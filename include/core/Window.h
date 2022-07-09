@@ -27,12 +27,18 @@ public :
     void clear();
     void close(string name);
     void open(string name, string file);
+    void writeText(const string& s, unsigned x,unsigned y);
+    void changeFont(const string& name, unsigned int points);
+    void changeColor( Uint8 r, Uint8 v, Uint8 b);
 
 private :
     SDL_Window *_actualWindow;
     SDL_Renderer *_renderer;
     SDL_Surface *_surface;
     SDL_Texture *_texture;
+
+    TTF_Font * _font;
+    SDL_Color _color = { 255, 255, 255 };
 
     hashmap _hashmap = hashmap();
 

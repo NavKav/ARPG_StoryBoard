@@ -449,6 +449,7 @@ CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_version.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/begin_code.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_ttf.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Input.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h
@@ -905,6 +906,7 @@ CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_version.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/begin_code.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_ttf.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable.h
@@ -1361,6 +1363,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_version.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/begin_code.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_ttf.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Input.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map
@@ -1372,6 +1375,26 @@ CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapView.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapGenerator.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/ground.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/numeric
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_numeric.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h
 
 CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapGenerator.cpp
@@ -1508,6 +1531,31 @@ CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/ground.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/numeric
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_numeric.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bit
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h
 
 CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapView.cpp
@@ -1645,14 +1693,37 @@ CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/ground.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/numeric
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_numeric.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bit
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tuple
- C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility
- C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/array
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h
@@ -1886,11 +1957,8 @@ CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/mcx.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/imm.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory
- C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h
- C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h
- C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bit
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h
@@ -1963,6 +2031,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_version.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/begin_code.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_ttf.h
 
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp
@@ -2416,6 +2485,7 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_version.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/begin_code.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_ttf.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Player.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Input.h
@@ -2424,4 +2494,24 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapView.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapGenerator.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/ground.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/numeric
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_numeric.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h
+ C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h
 

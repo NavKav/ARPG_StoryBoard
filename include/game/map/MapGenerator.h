@@ -7,22 +7,26 @@
 
 #include <iostream>
 #include <stdlib.h>
+#include <utility>
+#include "ground.h"
+#include "game/map/PerlinNoise.h"
 
+typedef std::pair<unsigned int, unsigned int> Upair;
 
 class MapGenerator {
 public:
     MapGenerator(){};
     MapGenerator(unsigned int X, unsigned int Y, unsigned int seed);
     ~MapGenerator();
-    void generate();
+    void generate() const;
     void blank();
     void display();
-    unsigned int& operator()(unsigned int x, unsigned int y);
+    Upair& operator()(unsigned int x, unsigned int y);
     bool sameTile(unsigned int x, unsigned int y, unsigned int d);
         private:
     unsigned int _X, _Y;
     unsigned int _seed;
-    unsigned int** _map;
+    Upair** _mapGround;
 };
 
 
