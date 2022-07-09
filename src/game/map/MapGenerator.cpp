@@ -11,9 +11,9 @@ _Y(Y),
 _seed(seed)
 {
     srand(_seed);
-    _mapGround = new Upair*[_X];
+    _mapGround = new Uint*[_X];
     for (unsigned int i = 0; i < _X; i++) {
-        _mapGround[i] = new Upair[_Y];
+        _mapGround[i] = new Uint[_Y];
     }
 
     blank();
@@ -29,7 +29,7 @@ MapGenerator::~MapGenerator() {
 void MapGenerator::blank() {
     for (unsigned int i = 0; i < _X; i++) {
         for (unsigned int j = 0; j < _Y; j++) {
-            _mapGround[i][j] = GRASS;
+            _mapGround[i][j] = 1;
         }
     }
 }
@@ -37,13 +37,13 @@ void MapGenerator::blank() {
 void MapGenerator::display() {
     for (unsigned int i = 0; i < _X; i++) {
         for (unsigned int j = 0; j < _Y; j++) {
-            cout << '(' << _mapGround[i][j].first << ", " << _mapGround[i][j].second << ')';
+            cout << _mapGround[i][j];
         }
         cout << endl;
     }
 }
 
-Upair& MapGenerator::operator()(unsigned int x, unsigned int y) {
+Uint& MapGenerator::operator()(unsigned int x, unsigned int y) {
     if (x <_X && x >= 0 && y >= 0 && y <_Y) {
         return _mapGround[x][y];
     }

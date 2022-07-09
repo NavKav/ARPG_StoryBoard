@@ -20,6 +20,8 @@ private :
     void drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
     void drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
     void drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
+    void getCaseView(unsigned int& f, unsigned int& s, string& file,unsigned int& x, unsigned int& y);
+
 };
 
 

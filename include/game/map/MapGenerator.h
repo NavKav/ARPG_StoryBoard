@@ -11,7 +11,7 @@
 #include "ground.h"
 #include "game/map/PerlinNoise.h"
 
-typedef std::pair<unsigned int, unsigned int> Upair;
+typedef unsigned int Uint;
 
 class MapGenerator {
 public:
@@ -21,12 +21,12 @@ public:
     void generate() const;
     void blank();
     void display();
-    Upair& operator()(unsigned int x, unsigned int y);
+    Uint& operator()(unsigned int x, unsigned int y);
     bool sameTile(unsigned int x, unsigned int y, unsigned int d);
         private:
     unsigned int _X, _Y;
     unsigned int _seed;
-    Upair** _mapGround;
+    Uint** _mapGround;
 };
 
 
