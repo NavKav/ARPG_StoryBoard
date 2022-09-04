@@ -23,7 +23,7 @@ public:
     void display();
     Uint& operator()(unsigned int x, unsigned int y);
     bool sameTile(unsigned int x, unsigned int y, unsigned int d);
-        private:
+private:
     unsigned int _X, _Y;
     unsigned int _seed;
     Uint** _mapGround;

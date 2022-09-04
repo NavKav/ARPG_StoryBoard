@@ -19,7 +19,6 @@ void Player::start() {
         while(!takeInput(input));
         if (_windowContent) {_windowContent->process(*this, _window);}
         _window.refresh();
-        cout << "turn " << i++ << '\n';
     }
 }
 

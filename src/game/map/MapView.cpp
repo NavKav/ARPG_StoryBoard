@@ -13,7 +13,7 @@ _mapGenerator(mapGenerator)
 }
 
 void MapView::display(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
-    _window.open("floor", "floor.jpg");
+    _window.open("grounds", "grounds.jpg");
     for (unsigned int i = 0; i < w; i++) {
         for (unsigned int j = 0; j < h; j++) {
             drawLeftUp(x + i, y + j, i, j);
@@ -22,7 +22,7 @@ void MapView::display(unsigned int x, unsigned int y, unsigned int w, unsigned i
             drawBottomRight(x + i, y + j, i, j);
         }
     }
-    _window.close("floor");
+    _window.close("grounds");
 }
 
 
@@ -112,7 +112,7 @@ void MapView::drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, uns
 
 void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
     unsigned int X0 = 0, Y0 = 0;
-    unsigned int f , s;
+    unsigned int f , s; // first, second
     string file;
     getCaseView(f, s, file, x, y);
     X0 += f * 64;
@@ -140,7 +140,7 @@ void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, un
 
 void MapView::getCaseView(unsigned int& f, unsigned int& s, string& file,unsigned int& x, unsigned int& y) {
     unsigned int c = _mapGenerator(x, y);
-    f = (c % 8) - 1;
-    s = c / 8;
-    file = "floor";
+    f = c % 6;
+    s = c / 6;
+    file = "grounds";
 }

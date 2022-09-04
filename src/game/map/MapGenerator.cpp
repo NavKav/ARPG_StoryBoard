@@ -140,16 +140,32 @@ void MapGenerator::generate() const {
                 minNoiseHeight = noiseHeight;
             }
 */
+            Uint a = i, b = j;
             if (noiseHeight < -0.1)
+            {
                 cout << ' ';
+                _mapGround[a][b] = 80;
+            }
             else if (noiseHeight < 0.4)
+            {
                 cout << (char)176;
+                _mapGround[a][b] = 81;
+            }
             else if (noiseHeight < 0.8)
+            {
                 cout << (char)177;
+                _mapGround[a][b] = 39;
+            }
             else if (noiseHeight < 0.9)
+            {
                 cout <<(char)178;
+                _mapGround[a][b] = 39;
+            }
             else
+            {
                 cout << (char)219;
+                _mapGround[a][b] = 39;
+            }
         }
         cout << '\n';
     }
