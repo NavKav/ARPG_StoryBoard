@@ -8,8 +8,11 @@
 #include <iostream>
 #include <stdlib.h>
 #include <utility>
-#include "ground.h"
 #include "game/map/PerlinNoise.h"
+
+#define GROUND 1
+#define LIQUID 2
+#define MOUNT 3
 
 typedef unsigned int Uint;
 
@@ -23,10 +26,13 @@ public:
     void display();
     Uint& operator()(unsigned int x, unsigned int y);
     bool sameTile(unsigned int x, unsigned int y, unsigned int d);
-private:
+    void setCurrentMap(unsigned int cm);
+        private:
     unsigned int _X, _Y;
     unsigned int _seed;
     Uint** _mapGround;
+    Uint** _mapLiquid;
+    Uint** _currentMap = _mapGround;
 };
 
 

@@ -1375,7 +1375,6 @@ CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapView.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapGenerator.h
- C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/ground.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h
@@ -1533,7 +1532,6 @@ CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
- C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/ground.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h
@@ -1695,7 +1693,6 @@ CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
- C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/ground.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h
@@ -2494,7 +2491,6 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapView.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapGenerator.h
- C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/ground.h
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector
  C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h

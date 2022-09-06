@@ -12,24 +12,28 @@ _seed(seed)
 {
     srand(_seed);
     _mapGround = new Uint*[_X];
+    _mapLiquid = new Uint*[_X];
     for (unsigned int i = 0; i < _X; i++) {
         _mapGround[i] = new Uint[_Y];
+        _mapLiquid[i] = new Uint[_Y];
     }
-
     blank();
 }
 
 MapGenerator::~MapGenerator() {
     for (unsigned int i = 0; i < _X; i++) {
-        delete _mapGround[i];
+        delete[] _mapGround[i];
+        delete[] _mapLiquid[i];
     }
-    delete _mapGround;
+    delete[] _mapGround;
+    delete[] _mapLiquid;
 }
 
 void MapGenerator::blank() {
     for (unsigned int i = 0; i < _X; i++) {
         for (unsigned int j = 0; j < _Y; j++) {
             _mapGround[i][j] = 1;
+            _mapLiquid[i][j] = 143;
         }
     }
 }
@@ -38,50 +42,65 @@ void MapGenerator::display() {
     for (unsigned int i = 0; i < _X; i++) {
         for (unsigned int j = 0; j < _Y; j++) {
             cout << _mapGround[i][j];
+            cout << _mapLiquid[i][j];
         }
         cout << endl;
     }
 }
 
+void MapGenerator::setCurrentMap(unsigned int cm) {
+    switch (cm) {
+        case GROUND:
+            _currentMap = _mapGround;
+            break;
+        case LIQUID:
+            _currentMap = _mapLiquid;
+            break;
+        default :
+            _currentMap = _mapGround;
+            break;
+    }
+}
+
 Uint& MapGenerator::operator()(unsigned int x, unsigned int y) {
     if (x <_X && x >= 0 && y >= 0 && y <_Y) {
-        return _mapGround[x][y];
+        return _currentMap[x][y];
     }
-    return _mapGround[0][0];
+    return _currentMap[0][0];
 }
 
 bool MapGenerator::sameTile(unsigned int x, unsigned int y, unsigned int d) {
     switch (d) {
         case 1:
-            if (x <= 0 || y <= 0 || _mapGround[x - 1][y - 1] != _mapGround[x][y])
+            if (x <= 0 || y <= 0 || _currentMap[x - 1][y - 1] != _currentMap[x][y])
                 return false;
             return true;
         case 2:
-            if (y <= 0 || _mapGround[x][y - 1] != _mapGround[x][y])
+            if (y <= 0 || _currentMap[x][y - 1] != _currentMap[x][y])
                 return false;
             return true;
         case 3:
-            if (x >= _X - 1 || y <= 0 || _mapGround[x + 1][y - 1] != _mapGround[x][y])
+            if (x >= _X - 1 || y <= 0 || _currentMap[x + 1][y - 1] != _currentMap[x][y])
                 return false;
             return true;
         case 4:
-            if (x >= _X - 1 || _mapGround[x + 1][y] != _mapGround[x][y])
+            if (x >= _X - 1 || _currentMap[x + 1][y] != _currentMap[x][y])
                 return false;
             return true;
         case 5:
-            if (x >= _X - 1 || y >= _Y - 1 || _mapGround[x + 1][y + 1] != _mapGround[x][y])
+            if (x >= _X - 1 || y >= _Y - 1 || _currentMap[x + 1][y + 1] != _currentMap[x][y])
                 return false;
             return true;
         case 6:
-            if (y >= _Y - 1 || _mapGround[x][y + 1] != _mapGround[x][y])
+            if (y >= _Y - 1 || _currentMap[x][y + 1] != _currentMap[x][y])
                 return false;
             return true;
         case 7:
-            if (x <= 0 || y >= _Y - 1 || _mapGround[x - 1][y + 1] != _mapGround[x][y])
+            if (x <= 0 || y >= _Y - 1 || _currentMap[x - 1][y + 1] != _currentMap[x][y])
                 return false;
             return true;
         default :
-            if (x <= 0 || _mapGround[x - 1][y] != _mapGround[x][y])
+            if (x <= 0 || _currentMap[x - 1][y] != _currentMap[x][y])
                 return false;
             return true;
     }
@@ -145,6 +164,7 @@ void MapGenerator::generate() const {
             {
                 cout << ' ';
                 _mapGround[a][b] = 80;
+                _mapLiquid[a][b] = 66;
             }
             else if (noiseHeight < 0.4)
             {

@@ -11,11 +11,15 @@
 class MapView {
 public :
     MapView(Window& window, MapGenerator& mapGenerator);
-    void display(unsigned int x, unsigned int y, unsigned int w, unsigned int h);
+    void displayGround(unsigned int x, unsigned int y, unsigned int w, unsigned int h);
+    void displayLiquid(unsigned int x, unsigned int y, unsigned int w, unsigned int h);
 private :
+
     MapGenerator& _mapGenerator;
     Window& _window;
+    string _floorName = "ground";
 
+    void displayFloor(unsigned int x, unsigned int y, unsigned int w, unsigned int h);
     void drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
     void drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
     void drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b);

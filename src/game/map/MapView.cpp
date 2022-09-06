@@ -12,17 +12,31 @@ _mapGenerator(mapGenerator)
 {
 }
 
-void MapView::display(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
-    _window.open("grounds", "grounds.jpg");
+void MapView::displayGround(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
+    _floorName = "ground";
+    _mapGenerator.setCurrentMap(GROUND);
+    displayFloor(x, y, w, h);
+}
+
+void MapView::displayLiquid(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
+    _floorName = "liquid";
+    _mapGenerator.setCurrentMap(LIQUID);
+    displayFloor(x, y, w, h);
+}
+
+void MapView::displayFloor(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
+    _window.open(_floorName, _floorName + ".jpg");
     for (unsigned int i = 0; i < w; i++) {
         for (unsigned int j = 0; j < h; j++) {
-            drawLeftUp(x + i, y + j, i, j);
-            drawRightUp(x + i, y + j, i, j);
-            drawBottomLeft(x + i, y + j, i, j);
-            drawBottomRight(x + i, y + j, i, j);
+            if (_mapGenerator(x + i, y + j) != 143) {
+                drawLeftUp(x + i, y + j, i, j);
+                drawRightUp(x + i, y + j, i, j);
+                drawBottomLeft(x + i, y + j, i, j);
+                drawBottomRight(x + i, y + j, i, j);
+            }
         }
     }
-    _window.close("grounds");
+    _window.close(_floorName);
 }
 
 
@@ -142,5 +156,5 @@ void MapView::getCaseView(unsigned int& f, unsigned int& s, string& file,unsigne
     unsigned int c = _mapGenerator(x, y);
     f = c % 6;
     s = c / 6;
-    file = "grounds";
+    file = _floorName;
 }
