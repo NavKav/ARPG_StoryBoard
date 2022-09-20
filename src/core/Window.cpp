@@ -6,7 +6,10 @@
 
 using namespace std;
 
-Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY) {
+Window::Window(const string &windowName, unsigned int sizeX, unsigned int sizeY) :
+_X(sizeX),
+_Y(sizeY)
+{
     SDL_Init(SDL_INIT_VIDEO);
     TTF_Init();
     _actualWindow = SDL_CreateWindow(windowName.c_str(),
@@ -167,4 +170,12 @@ void Window::writeText(const string& s, unsigned x,unsigned y) {
     p.h = 0;
 
     SDL_BlitSurface(text,NULL, _surface, &p);
+}
+
+unsigned int Window::getX() const {
+    return _X;
+}
+
+unsigned int Window::getY() const {
+    return _Y;
 }

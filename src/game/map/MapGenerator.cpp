@@ -32,7 +32,7 @@ MapGenerator::~MapGenerator() {
 void MapGenerator::blank() {
     for (unsigned int i = 0; i < _X; i++) {
         for (unsigned int j = 0; j < _Y; j++) {
-            _mapGround[i][j] = 1;
+            _mapGround[i][j] = 0;
             _mapLiquid[i][j] = 143;
         }
     }
@@ -115,7 +115,7 @@ bool MapGenerator::sameTile(unsigned int x, unsigned int y, unsigned int d) {
  * frequency = 1
  * */
 void MapGenerator::generate() const {
-    float scale = 25, persistance= 0.5, lacunarity = 2;
+    float scale = 100, persistance= 0.5, lacunarity = 2;
     int octave = 5;
     double tmp;
 /*
@@ -162,28 +162,27 @@ void MapGenerator::generate() const {
             Uint a = i, b = j;
             if (noiseHeight < -0.1)
             {
-                cout << ' ';
                 _mapGround[a][b] = 80;
                 _mapLiquid[a][b] = 66;
             }
+            else if (noiseHeight < -0.07)
+            {
+                _mapGround[a][b] = 80;
+            }
             else if (noiseHeight < 0.4)
             {
-                cout << (char)176;
                 _mapGround[a][b] = 81;
             }
             else if (noiseHeight < 0.8)
             {
-                cout << (char)177;
                 _mapGround[a][b] = 39;
             }
             else if (noiseHeight < 0.9)
             {
-                cout <<(char)178;
                 _mapGround[a][b] = 39;
             }
             else
             {
-                cout << (char)219;
                 _mapGround[a][b] = 39;
             }
         }

@@ -8,7 +8,7 @@ using namespace std;
 
 void GameWindowContent::process(Player& player, Window& window) {
     static unsigned int a = 0, b = 0;
-    static MapGenerator mapGenerator(200, 100, 1);
+    static MapGenerator mapGenerator(400, 200, 1);
     static MapView mapView(window, mapGenerator);
     static bool c = true;
 
@@ -27,7 +27,7 @@ void GameWindowContent::process(Player& player, Window& window) {
         a += 10;
     }
 
-    mapView.displayGround(a, b, 22, 22);
-    mapView.displayLiquid(a, b, 22, 22);
+    mapView.displayGround(a, b, window.getX()/32, window.getY()/32);
+    mapView.displayLiquid(a, b, window.getX()/32, window.getY()/32);
     window.refresh();
 }

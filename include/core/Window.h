@@ -30,6 +30,8 @@ public :
     void writeText(const string& s, unsigned x,unsigned y);
     void changeFont(const string& name, unsigned int points);
     void changeColor( Uint8 r, Uint8 v, Uint8 b);
+    unsigned int getY() const;
+    unsigned int getX() const;
 
 private :
     SDL_Window *_actualWindow;
@@ -41,6 +43,8 @@ private :
     SDL_Color _color = { 255, 255, 255 };
 
     hashmap _hashmap = hashmap();
+
+    unsigned int _X = 0, _Y = 0;
 
 };
 

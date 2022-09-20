@@ -8,10 +8,8 @@ using namespace std;
 
 int main( int argc, char *argv[] )
 {
-    Window window("ARPG_StoryBoard", 32 * 22, 32 * 22);
+    Window window("ARPG_StoryBoard", 32 * 29, 32 * 29);
     window.drawIMG(0, 0, "fond.bmp");
-    window.changeFont("arial", 290);
-    window.writeText("salut", 0, 0);
     window.refresh();
 
     GameWindowContent gameWindowContent = GameWindowContent();
