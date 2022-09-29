@@ -23,11 +23,14 @@ public:
     ~MapGenerator();
     void generate() const;
     void blank();
-    void display();
+    void display(); /* debug */
     Uint& operator()(unsigned int x, unsigned int y);
     bool sameTile(unsigned int x, unsigned int y, unsigned int d);
     void setCurrentMap(unsigned int cm);
-        private:
+
+private:
+    void blockFromPerlin(double i, double j, float noiseHeight) const;
+
     unsigned int _X, _Y;
     unsigned int _seed;
     Uint** _mapGround;

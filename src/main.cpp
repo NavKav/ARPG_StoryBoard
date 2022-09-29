@@ -8,7 +8,7 @@ using namespace std;
 
 int main( int argc, char *argv[] )
 {
-    Window window("ARPG_StoryBoard", 32 * 29, 32 * 29);
+    Window window("ARPG_StoryBoard", 32 * 22, 32 * 22);
     window.drawIMG(0, 0, "fond.bmp");
     window.refresh();
 
@@ -16,6 +16,7 @@ int main( int argc, char *argv[] )
 
     Player p(window, reinterpret_cast<WindowContent *>(&gameWindowContent));
     p.start();
+
     return 0;
 
 }

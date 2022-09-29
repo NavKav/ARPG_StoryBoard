@@ -118,24 +118,11 @@ void MapGenerator::generate() const {
     float scale = 100, persistance= 0.5, lacunarity = 2;
     int octave = 5;
     double tmp;
-/*
-    double offsetX = 0, offsetY = 0;
-
-    Upair offset[octave];
-    for (unsigned int index = 0; index < octave; index ++) {
-        offset[index].first = (rand()%20) - 10 + offsetX;
-        offset[index].second = (rand()%20) - 10 + offsetY;
-    }
-*/
     PerlinNoise perlinNoise(_seed);
     double i, j;
     auto X = (double)_X, Y = (double) _Y;
 
     double hX = X/2., hY =Y/2.;
-/*
-    double maxNoiseHeight = 3.40282347E+38;
-    double minNoiseHeight = -3.40282347E+38;
-*/
 
     for (j = 0; j < Y; j++) {
         for (i = 0; i < X; i++) {
@@ -151,41 +138,36 @@ void MapGenerator::generate() const {
                 amplitude *= persistance;
                 frequency *= lacunarity;
             }
-
-/*
-            if (noiseHeight > maxNoiseHeight) {
-                maxNoiseHeight = noiseHeight;
-            } else if (noiseHeight < minNoiseHeight) {
-                minNoiseHeight = noiseHeight;
-            }
-*/
-            Uint a = i, b = j;
-            if (noiseHeight < -0.1)
-            {
-                _mapGround[a][b] = 80;
-                _mapLiquid[a][b] = 66;
-            }
-            else if (noiseHeight < -0.07)
-            {
-                _mapGround[a][b] = 80;
-            }
-            else if (noiseHeight < 0.4)
-            {
-                _mapGround[a][b] = 81;
-            }
-            else if (noiseHeight < 0.8)
-            {
-                _mapGround[a][b] = 39;
-            }
-            else if (noiseHeight < 0.9)
-            {
-                _mapGround[a][b] = 39;
-            }
-            else
-            {
-                _mapGround[a][b] = 39;
-            }
+            blockFromPerlin(i, j,noiseHeight);
         }
-        cout << '\n';
+    }
+}
+
+void MapGenerator::blockFromPerlin(double i, double j, float noiseHeight) const {
+    Uint a = i, b = j;
+    if (noiseHeight < -0.1)
+    {
+        _mapGround[a][b] = 80;
+        _mapLiquid[a][b] = 66;
+    }
+    else if (noiseHeight < -0.07)
+    {
+        _mapGround[a][b] = 80;
+    }
+    else if (noiseHeight < 0.4)
+    {
+        _mapGround[a][b] = 81;
+    }
+    else if (noiseHeight < 0.8)
+    {
+        _mapGround[a][b] = 39;
+    }
+    else if (noiseHeight < 0.9)
+    {
+        _mapGround[a][b] = 39;
+    }
+    else
+    {
+        _mapGround[a][b] = 39;
     }
 }

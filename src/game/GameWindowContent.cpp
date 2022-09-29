@@ -7,8 +7,8 @@
 using namespace std;
 
 void GameWindowContent::process(Player& player, Window& window) {
-    static unsigned int a = 0, b = 0;
-    static MapGenerator mapGenerator(400, 200, 1);
+    static int a = 0, b = 0;
+    static MapGenerator mapGenerator(200, 200, 1);
     static MapView mapView(window, mapGenerator);
     static bool c = true;
 
@@ -18,15 +18,15 @@ void GameWindowContent::process(Player& player, Window& window) {
     }
 
     if (player[SDL_SCANCODE_UP].pressed)
-        b - 10 > 0 ? b -= 10 : b = b;
+        b - 10 >= 0 ? b -= 10 : b = b;
     if (player[SDL_SCANCODE_DOWN].pressed)
         b += 10;
     if (player[SDL_SCANCODE_LEFT].pressed)
-        a - 10 > 0 ? a -= 10 : a = a;
+        a - 10 >= 0 ? a -= 10 : a = a;
     if (player[SDL_SCANCODE_RIGHT].pressed){
         a += 10;
     }
-
+    cout << a <<" " << b << endl;
     mapView.displayGround(a, b, window.getX()/32, window.getY()/32);
     mapView.displayLiquid(a, b, window.getX()/32, window.getY()/32);
     window.refresh();
