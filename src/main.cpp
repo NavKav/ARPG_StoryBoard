@@ -1,6 +1,6 @@
 #include "core/Window.h"
 #include "core/Player.h"
-#include "game/GameWindowContent.h"
+#include "game/menu/MenuWindowContent.h"
 
 #undef main
 
@@ -12,9 +12,9 @@ int main( int argc, char *argv[] )
     window.drawIMG(0, 0, "fond.bmp");
     window.refresh();
 
-    GameWindowContent gameWindowContent = GameWindowContent();
+    MenuWindowContent menuWindowContent = MenuWindowContent();
 
-    Player p(window, reinterpret_cast<WindowContent *>(&gameWindowContent));
+    Player p(window, reinterpret_cast<WindowContent *>(&menuWindowContent));
     p.start();
 
     return 0;
