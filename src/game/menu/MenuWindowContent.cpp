@@ -5,5 +5,5 @@
 #include "game/menu/MenuWindowContent.h"
 
 void MenuWindowContent::process(Player& player, Window& window) {
-    // ici
+    window.drawIMG(0, 0, "ground.jpg");
 }
