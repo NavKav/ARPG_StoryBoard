@@ -27,7 +27,7 @@ public :
     void clear();
     void close(string name);
     void open(string name, string file);
-    void writeText(const string& s, unsigned x,unsigned y);
+    void writeText(unsigned x,unsigned y, const string& s);
     void changeFont(const string& name, unsigned int points);
     void changeColor( Uint8 r, Uint8 v, Uint8 b);
     unsigned int getY() const;
