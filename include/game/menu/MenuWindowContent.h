@@ -7,6 +7,8 @@
 
 #include "core/Window.h"
 #include "core/WindowContent.h"
+#include "core/Player.h"
+
 
 class MenuWindowContent : public WindowContent{
 public :
