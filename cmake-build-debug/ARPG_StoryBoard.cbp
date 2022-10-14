@@ -118,6 +118,9 @@
 		<Unit filename="C:/Users/33783/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/33783/CLionProjects/ARPG_StoryBoard/include/game/menu/MenuButton.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/33783/CLionProjects/ARPG_StoryBoard/include/game/menu/MenuWindowContent.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
@@ -134,6 +137,9 @@
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/33783/CLionProjects/ARPG_StoryBoard/src/game/map/MapView.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/33783/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuButton.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/33783/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuWindowContent.cpp">

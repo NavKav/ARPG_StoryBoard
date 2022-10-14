@@ -37,7 +37,7 @@ file(GLOB INCLUDES
 file(GLOB_RECURSE A src/*.cpp)
 file(GLOB_RECURSE B include/*.h)
 
-add_executable(Dice_Game_Project ${A} ${B})
+add_executable(Dice_Game_Project ${A} ${B} src/game/menu/MenuButton.cpp include/game/menu/MenuButton.h)
 #TFF
 include_directories(${PROJECT_SOURCE_DIR}/include ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
 #développement avec SDL2

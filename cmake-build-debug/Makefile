@@ -248,6 +248,30 @@ src/game/map/MapView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.s
 .PHONY : src/game/map/MapView.cpp.s
 
+src/game/menu/MenuButton.obj: src/game/menu/MenuButton.cpp.obj
+.PHONY : src/game/menu/MenuButton.obj
+
+# target to build an object file
+src/game/menu/MenuButton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.obj
+.PHONY : src/game/menu/MenuButton.cpp.obj
+
+src/game/menu/MenuButton.i: src/game/menu/MenuButton.cpp.i
+.PHONY : src/game/menu/MenuButton.i
+
+# target to preprocess a source file
+src/game/menu/MenuButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.i
+.PHONY : src/game/menu/MenuButton.cpp.i
+
+src/game/menu/MenuButton.s: src/game/menu/MenuButton.cpp.s
+.PHONY : src/game/menu/MenuButton.s
+
+# target to generate assembly for a file
+src/game/menu/MenuButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.s
+.PHONY : src/game/menu/MenuButton.cpp.s
+
 src/game/menu/MenuWindowContent.obj: src/game/menu/MenuWindowContent.cpp.obj
 .PHONY : src/game/menu/MenuWindowContent.obj
 
@@ -320,6 +344,9 @@ help:
 	@echo ... src/game/map/MapView.obj
 	@echo ... src/game/map/MapView.i
 	@echo ... src/game/map/MapView.s
+	@echo ... src/game/menu/MenuButton.obj
+	@echo ... src/game/menu/MenuButton.i
+	@echo ... src/game/menu/MenuButton.s
 	@echo ... src/game/menu/MenuWindowContent.obj
 	@echo ... src/game/menu/MenuWindowContent.i
 	@echo ... src/game/menu/MenuWindowContent.s
