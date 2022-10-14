@@ -47,18 +47,18 @@ bool Player::takeInput(const SDL_Event &event) {
         return true;
     } else if (event.type == SDL_MOUSEBUTTONDOWN) {
         if (event.button.button == SDL_BUTTON_RIGHT) {
-            _inputArr[SDLK_RIGHTCLICK] = {true, 0, 0, event.button.x, event.button.y};
+            _inputArr[SDL_SCANCODE_RIGHTCLICK] = {true, 0, 0, event.button.x, event.button.y};
             return true;
         } else { // SDL_BUTTON_LEFT
-            _inputArr[SDLK_LEFTCLICK] = {true, 0, 0, event.button.x, event.button.y};
+            _inputArr[SDL_SCANCODE_LEFTCLICK] = {true, 0, 0, event.button.x, event.button.y};
             return true;
         }
     } else if (event.type == SDL_MOUSEBUTTONUP) {
         if (event.button.button == SDL_BUTTON_RIGHT) {
-            //_inputArr[SDLK_RIGHTCLICK] = {false, 0, 0, event.button.x, event.button.y};
+            _inputArr[SDL_SCANCODE_RIGHTCLICK] = {false, 0, 0, event.button.x, event.button.y};
             return true;
         } else { // SDL_BUTTON_LEFT
-            //_inputArr[SDLK_LEFTCLICK] = {false, 0, 0, event.button.x, event.button.y};
+            _inputArr[SDL_SCANCODE_LEFTCLICK] = {false, 0, 0, event.button.x, event.button.y};
             return true;
         }
     }

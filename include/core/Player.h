@@ -15,8 +15,8 @@
 //#include "Input.h"
 
 #define NUM_SDLK 1000 // maximum range of SDL key number
-#define SDLK_RIGHTCLICK NUM_SDLK - 1
-#define SDLK_LEFTCLICK NUM_SDLK - 2
+#define SDL_SCANCODE_RIGHTCLICK NUM_SDLK - 1
+#define SDL_SCANCODE_LEFTCLICK NUM_SDLK - 2
 
 class Player {
 public :

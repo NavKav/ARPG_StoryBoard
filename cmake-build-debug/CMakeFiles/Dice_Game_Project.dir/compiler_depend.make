@@ -2478,8 +2478,11 @@ CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj: ../src
   ../SDL2/include/begin_code.h \
   ../SDL2/include/close_code.h \
   ../SDL2/include/SDL_ttf.h \
+  ../include/core/Player.h \
   ../include/core/WindowContent.h \
-  ../include/core/Input.h
+  ../include/core/Input.h \
+  ../include/core/Window.h \
+  ../include/core/WindowContent.h
 
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
   ../include/core/Window.h \
@@ -2938,6 +2941,7 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: ../src/main.cpp \
   ../include/core/Input.h \
   ../include/core/Window.h \
   ../include/game/menu/MenuWindowContent.h \
+  ../include/core/Player.h \
   ../include/core/WindowContent.h
 
 

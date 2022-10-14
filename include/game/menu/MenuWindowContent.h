@@ -6,6 +6,7 @@
 #define ARPG_STORYBOARD_MENUWINDOWCONTENT_H
 
 #include "core/Window.h"
+#include "core/player.h"
 #include "core/WindowContent.h"
 
 class MenuWindowContent : public WindowContent{

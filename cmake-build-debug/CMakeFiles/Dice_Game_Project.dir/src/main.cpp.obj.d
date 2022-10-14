@@ -456,4 +456,5 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Input.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/menu/MenuWindowContent.h \
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/player.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h

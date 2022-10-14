@@ -10,7 +10,7 @@ int main( int argc, char *argv[] )
 {
     Window window("ARPG_StoryBoard", 32 * 22, 32 * 22);
     window.drawIMG(0, 0, "fond.bmp");
-    window.writeText(0, 0, "salut");
+    window.writeText(0, 0, "titre");
     window.refresh();
 
     MenuWindowContent menuWindowContent = MenuWindowContent();
