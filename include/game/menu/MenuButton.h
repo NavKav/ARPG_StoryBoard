@@ -14,7 +14,6 @@ public :
     void display(Window& window) const;
     bool isInside(int X, int Y);
 
-
 private :
     int _abs,_ord,_dimAbs,_dimOrd;
     string _path = "/menu/option.png";

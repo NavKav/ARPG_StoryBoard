@@ -6,9 +6,11 @@
 
 void MenuWindowContent::process(Player& player, Window& window) {
     bool truc = false;
-    MenuButton menuHitboxQuit(1, 500, 250, 70, "/menu/Quit.png"),
-    menuHitboxOption(5, 600, 250, 70, "/menu/Option.png"),
-    menuHitboxStart(450, 580, 250, 70, "/menu/Start.png");
+    // images must be 250*70, if you want to change the dimensions, change the width and length parameters respectively
+    // - 125 is width/2 to make the buttons centered
+    MenuButton menuHitboxQuit(0.5*window.getX() - 125, 0.7*window.getY(), 250, 70, "/menu/Quit.png"),
+    menuHitboxOption(0.5*window.getX() - 125, 0.6*window.getY(), 250, 70, "/menu/Option.png"),
+    menuHitboxStart(0.5*window.getX() - 125, 0.5*window.getY(), 250, 70, "/menu/Start.png");
 
     if (player[SDLK_LEFTCLICK].pressed && menuHitboxQuit.isInside(player[SDLK_LEFTCLICK].mouseX,player[SDLK_LEFTCLICK].mouseY)) {
         std::cout << "quit"  << std::endl;
