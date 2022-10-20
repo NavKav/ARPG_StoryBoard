@@ -8,6 +8,8 @@
 #include "core/Window.h"
 #include "core/player.h"
 #include "core/WindowContent.h"
+#include "core/Player.h"
+#include "game/menu/MenuButton.h"
 
 class MenuWindowContent : public WindowContent{
 public :

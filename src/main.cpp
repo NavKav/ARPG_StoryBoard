@@ -8,7 +8,7 @@ using namespace std;
 
 int main( int argc, char *argv[] )
 {
-    Window window("ARPG_StoryBoard", 32 * 22, 32 * 22);
+    Window window("ARPG_StoryBoard", 32 * 30, 32 * 30);
     window.drawIMG(0, 0, "fond.bmp");
     window.writeText(0, 0, "titre");
     window.refresh();
