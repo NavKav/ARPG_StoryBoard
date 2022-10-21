@@ -18,7 +18,6 @@ void Player::start() {
         while(SDL_PollEvent(&input));
         takeInput(input);
         if (_windowContent) {_windowContent->process(*this, _window);}
-        _window.refresh();
     }
 }
 
@@ -28,6 +27,7 @@ void Player::stop() {
 
 
 Player::~Player() {
+    if (_windowContent) {delete _windowContent;}
 }
 
 bool Player::keyDown() {
@@ -74,6 +74,7 @@ void Player::getMousePosition(int& x, int& y) {
 }
 
 void Player::setWindowContent(WindowContent *windowContent) {
+    if (_windowContent) {delete _windowContent;}
     _windowContent = windowContent;
 }
 

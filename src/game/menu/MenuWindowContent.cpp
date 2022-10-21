@@ -12,17 +12,18 @@ void MenuWindowContent::process(Player& player, Window& window) {
     menuHitboxOption(0.5*window.getX() - 125, 0.6*window.getY(), 250, 70, "/menu/Option.png"),
     menuHitboxStart(0.5*window.getX() - 125, 0.5*window.getY(), 250, 70, "/menu/Start.png");
 
-    if (player[SDLK_LEFTCLICK].pressed && menuHitboxQuit.isInside(player[SDLK_LEFTCLICK].mouseX,player[SDLK_LEFTCLICK].mouseY)) {
+    if (player[SDL_SCANCODE_LEFTCLICK].pressed && menuHitboxQuit.isInside(player[SDL_SCANCODE_LEFTCLICK].mouseX,player[SDL_SCANCODE_LEFTCLICK].mouseY)) {
         std::cout << "quit"  << std::endl;
     }
-    if (player[SDLK_LEFTCLICK].pressed && menuHitboxOption.isInside(player[SDLK_LEFTCLICK].mouseX,player[SDLK_LEFTCLICK].mouseY)) {
-        std::cout << "option"  << std::endl;
+    if (player[SDL_SCANCODE_LEFTCLICK].pressed && menuHitboxOption.isInside(player[SDL_SCANCODE_LEFTCLICK].mouseX,player[SDL_SCANCODE_LEFTCLICK].mouseY)) {
+        player.setWindowContent(new OptionWindowContent());
     }
-    if (player[SDLK_LEFTCLICK].pressed && menuHitboxStart.isInside(player[SDLK_LEFTCLICK].mouseX,player[SDLK_LEFTCLICK].mouseY)) {
+    if (player[SDL_SCANCODE_LEFTCLICK].pressed && menuHitboxStart.isInside(player[SDL_SCANCODE_LEFTCLICK].mouseX,player[SDL_SCANCODE_LEFTCLICK].mouseY)) {
         std::cout << "start"  << std::endl;
     }
 
     if (truc == false) {
+        window.drawIMG(0, 0, "fond.bmp");
         menuHitboxStart.display(window);
         menuHitboxOption.display(window);
         menuHitboxQuit.display(window);

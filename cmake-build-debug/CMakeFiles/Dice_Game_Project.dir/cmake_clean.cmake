@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.obj.d"
   "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj"
   "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj.d"
+  "CMakeFiles/Dice_Game_Project.dir/src/game/option/OptionWindowContent.cpp.obj"
+  "CMakeFiles/Dice_Game_Project.dir/src/game/option/OptionWindowContent.cpp.obj.d"
   "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj"
   "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj.d"
   "Dice_Game_Project.exe"

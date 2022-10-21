@@ -10,6 +10,7 @@
 #include "core/WindowContent.h"
 #include "core/Player.h"
 #include "game/menu/MenuButton.h"
+#include "game/option/OptionWindowContent.h"
 
 class MenuWindowContent : public WindowContent{
 public :
