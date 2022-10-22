@@ -11,7 +11,8 @@ int main( int argc, char *argv[] )
     Window window("ARPG_StoryBoard", 32 * 30, 32 * 30);
     window.refresh();
 
-    Player p(window, new MenuWindowContent);
+    //Player p(window, new MenuWindowContent());
+    Player p(window, new OptionWindowContent());
     p.start();
 
     return 0;
