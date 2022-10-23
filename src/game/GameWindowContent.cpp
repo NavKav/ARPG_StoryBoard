@@ -26,8 +26,9 @@ void GameWindowContent::process(Player& player, Window& window) {
     if (player[SDL_SCANCODE_RIGHT].pressed){
         a += 10;
     }
-    cout << a <<" " << b << endl;
+
     mapView.displayGround(a, b, window.getX()/32, window.getY()/32);
     mapView.displayLiquid(a, b, window.getX()/32, window.getY()/32);
+    Sleep(50);
     window.refresh();
 }

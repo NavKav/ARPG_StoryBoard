@@ -36,7 +36,7 @@ Window::~Window() {
     SDL_DestroyWindow(_actualWindow);
 
     for (auto d : _hashmap) {
-        SDL_FreeSurface(d.second);
+        SDL_DestroyTexture(d.second);
     }
 
     TTF_CloseFont(_font);
@@ -50,18 +50,38 @@ void Window::setTitle(const std::string &windowTitle) {
 }
 
 void Window::drawIMG(int x, int y, const string &name) {
-    SDL_Surface* img = LOAD(("ressource/image/" + name).c_str());
+    SDL_Texture* texture = IMG_LoadTexture(_renderer, ("ressource/image/" + name).c_str());
 
-    if (img == NULL) {
+    if (texture == NULL) {
         cout << "Window::drawIMG() : " << SDL_GetError() << endl;
     }
 
     SDL_Rect p;
     p.x = x;
     p.y = y;
+    SDL_QueryTexture(texture, NULL, NULL, &(p.w), &(p.h));
 
-    SDL_BlitSurface(img,NULL, _surface, &p);
-    SDL_FreeSurface(img);
+    SDL_RenderCopy(_renderer, texture, NULL, &p);
+
+    SDL_DestroyTexture(texture);
+}
+
+void Window::scaleIMG(int x, int y, int width, int height, const string &name) {
+    SDL_Texture * texture = IMG_LoadTexture(_renderer, ("ressource/image/" + name).c_str());
+
+    if (texture == NULL) {
+        cout << "Window::drawTexture() : " << SDL_GetError() << endl;
+    }
+
+    SDL_Rect p;
+    p.x = x;
+    p.y = y;
+    p.w = width;
+    p.h = height;
+
+    SDL_RenderCopy(_renderer, texture, NULL, &p);
+
+    SDL_DestroyTexture(texture);
 }
 
 void Window::refresh() {
@@ -70,8 +90,8 @@ void Window::refresh() {
     SDL_RenderCopy(_renderer, _texture, NULL, NULL);
     SDL_RenderPresent(_renderer);*/
 
-    _texture = SDL_CreateTextureFromSurface(_renderer, _surface);
-    SDL_RenderCopy(_renderer, _texture, NULL, NULL);
+    //_texture = SDL_CreateTextureFromSurface(_renderer, _surface);
+    //SDL_RenderCopy(_renderer, _texture, NULL, NULL);
     SDL_RenderPresent(_renderer);
     Sleep(20);
 }
@@ -81,15 +101,16 @@ void Window::clear() {
 }
 
 void Window::drawPartIMG(unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d, const string &name) {
-    SDL_Surface* img = LOAD(("ressource/image/" + name).c_str());
+    SDL_Texture* texture = IMG_LoadTexture(_renderer, ("ressource/image/" + name).c_str());
 
-    if (img == NULL) {
-        cout << "Window::drawPartIMG() : " << SDL_GetError() << endl;
+    if (texture == NULL) {
+        cout << "Window::drawIMG() : " << SDL_GetError() << endl;
     }
 
     SDL_Rect p;
     p.x = x;
     p.y = y;
+    SDL_QueryTexture(texture, NULL, NULL, &(p.w), &(p.h));
 
     SDL_Rect r;
     r.x = a;
@@ -97,14 +118,15 @@ void Window::drawPartIMG(unsigned int x, unsigned int y, unsigned int a, unsigne
     r.w = c;
     r.h = d;
 
-    SDL_BlitSurface(img,&r, _surface, &p);
-    SDL_FreeSurface(img);
+    SDL_RenderCopy(_renderer, texture, &r, &p);
+
+    SDL_DestroyTexture(texture);
 }
 
 void Window::open(string name, string file) {
-    SDL_Surface* img = LOAD(("ressource/image/" + file).c_str());
-    if (img != NULL) {
-        _hashmap.insert({name, img});
+    SDL_Texture* texture = IMG_LoadTexture(_renderer, ( "ressource/image/" + file).c_str());
+    if (texture != NULL) {
+        _hashmap.insert({name, texture});
     } else {
         cout << "Window::open() : " << SDL_GetError() << endl;
     }
@@ -115,33 +137,37 @@ void Window::close(string name) {
         cout << "Window::close() : \"" << name << "\" wasn't found" << endl;
         return ;
     }
+    SDL_DestroyTexture(_hashmap.at(name));
     _hashmap.erase(name);
 }
 
 void Window::drawIMG(const string &name, int x, int y) {
-    SDL_Surface* img = _hashmap.at(name);
+    SDL_Texture* texture = _hashmap.at(name);
 
-    if (img == NULL) {
+    if (texture == NULL) {
         cout << "Window::drawIMG() : " << SDL_GetError() << endl;
     }
 
     SDL_Rect p;
     p.x = x;
     p.y = y;
+    SDL_QueryTexture(texture, NULL, NULL, &(p.w), &(p.h));
 
-    SDL_BlitSurface(img,NULL, _surface, &p);
+    SDL_RenderCopy(_renderer, texture, NULL, &p);
 }
 
 void Window::drawPartIMG(const string &name, unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d) {
-    SDL_Surface* img = _hashmap.at(name);
+    SDL_Texture* texture = _hashmap.at(name);
 
-    if (img == NULL) {
-        cout << "Window::drawPartIMG() : " << SDL_GetError() << endl;
+    if (texture == NULL) {
+        cout << "Window::drawIMG() : " << SDL_GetError() << endl;
     }
 
     SDL_Rect p;
     p.x = x;
     p.y = y;
+    p.w = c;
+    p.h = d;
 
     SDL_Rect r;
     r.x = a;
@@ -149,7 +175,7 @@ void Window::drawPartIMG(const string &name, unsigned int x, unsigned int y, uns
     r.w = c;
     r.h = d;
 
-    SDL_BlitSurface(img,&r, _surface, &p);
+    SDL_RenderCopy(_renderer, texture, &r, &p);
 }
 
 void Window::changeFont(const string& name, unsigned int points) {

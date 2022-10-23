@@ -10,7 +10,7 @@
 
 
 typedef std::string string;
-typedef std:: unordered_map<string, SDL_Surface*> hashmap;
+typedef std:: unordered_map<string, SDL_Texture*> hashmap;
 
 class Window {
 public :
@@ -18,6 +18,7 @@ public :
     void setTitle(const string &windowTitle);
     void drawIMG(int x, int y, const string &name);
     void drawIMG(const string &name, int x, int y);
+    void scaleIMG(int x, int y, int width, int height, const string &name);
     void drawBackgroundIMG(int x, int y, const string &name);
     void drawPartIMG(unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d, const string &name);
     void drawPartIMG(const string &name, unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d);

@@ -5,10 +5,8 @@
 #include "game/option/OptionWindowContent.h"
 
 void OptionWindowContent::process(Player& player, Window& window) {
-    bool truc = false;
-    if (truc == false) {
-        window.drawIMG(0, 0, "fond.bmp");
-        window.refresh();
-        truc = true;
-    }
+    static int i, j;
+    window.scaleIMG(0, 0, i, j, "fond.bmp");
+    i ++; j++;
+    window.refresh();
 }
