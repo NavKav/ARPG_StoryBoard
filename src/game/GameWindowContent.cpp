@@ -29,6 +29,5 @@ void GameWindowContent::process(Player& player, Window& window) {
 
     mapView.displayGround(a, b, window.getX()/32, window.getY()/32);
     mapView.displayLiquid(a, b, window.getX()/32, window.getY()/32);
-    Sleep(50);
     window.refresh();
 }

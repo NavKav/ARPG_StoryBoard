@@ -12,8 +12,8 @@ int main( int argc, char *argv[] )
     window.refresh();
 
     //Player p(window, new MenuWindowContent());
-    //Player p(window, new OptionWindowContent());
-    Player p(window, new GameWindowContent());
+    Player p(window, new OptionWindowContent());
+    //Player p(window, new GameWindowContent());
     p.start();
 
     return 0;
