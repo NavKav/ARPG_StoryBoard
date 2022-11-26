@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuWindowContent.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionWindowContent.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/option/OptionWindowContent.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/option/OptionWindowContent.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp" "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj.d"
+  "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.cpp" "CMakeFiles/Dice_Game_Project.dir/src/util/FrameRate.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/util/FrameRate.cpp.obj.d"
   )
 
 # Targets to which this target links.

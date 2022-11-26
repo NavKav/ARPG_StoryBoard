@@ -27,15 +27,20 @@ public:
     Uint& operator()(unsigned int x, unsigned int y);
     bool sameTile(unsigned int x, unsigned int y, unsigned int d);
     void setCurrentMap(unsigned int cm);
+    unsigned int getY() const;
+    unsigned int getX() const;
 
 private:
     void blockFromPerlin(double i, double j, float noiseHeight) const;
 
-    unsigned int _X, _Y;
+    unsigned int _X = 1, _Y = 1;
+
+private:
     unsigned int _seed;
+    Uint trashBlock = 695;
     Uint** _mapGround;
     Uint** _mapLiquid;
-    Uint** _currentMap = _mapGround;
+    Uint** _currentMap;
 };
 
 

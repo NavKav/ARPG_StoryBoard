@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dice_Game_Project.dir/src/game/option/OptionWindowContent.cpp.obj.d"
   "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj"
   "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj.d"
+  "CMakeFiles/Dice_Game_Project.dir/src/util/FrameRate.cpp.obj"
+  "CMakeFiles/Dice_Game_Project.dir/src/util/FrameRate.cpp.obj.d"
   "Dice_Game_Project.exe"
   "Dice_Game_Project.exe.manifest"
   "Dice_Game_Project.pdb"

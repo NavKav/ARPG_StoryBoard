@@ -17,6 +17,8 @@ _seed(seed)
         _mapGround[i] = new Uint[_Y];
         _mapLiquid[i] = new Uint[_Y];
     }
+    _currentMap = _mapGround;
+
     blank();
 }
 
@@ -32,8 +34,9 @@ MapGenerator::~MapGenerator() {
 void MapGenerator::blank() {
     for (unsigned int i = 0; i < _X; i++) {
         for (unsigned int j = 0; j < _Y; j++) {
-            _mapGround[i][j] = 0;
-            _mapLiquid[i][j] = 143;
+            /*_mapGround[i][j] = 0;
+            _mapLiquid[i][j] = 143;*/
+            _mapGround[i][j] = ((i+j)%2 ? 17 : 80);
         }
     }
 }
@@ -66,10 +69,12 @@ Uint& MapGenerator::operator()(unsigned int x, unsigned int y) {
     if (x <_X && x >= 0 && y >= 0 && y <_Y) {
         return _currentMap[x][y];
     }
-    return _currentMap[0][0];
+    return trashBlock;
 }
 
 bool MapGenerator::sameTile(unsigned int x, unsigned int y, unsigned int d) {
+    if (x < 0 || y < 0 || x >= _X || y >= _Y)
+        return false;
     switch (d) {
         case 1:
             if (x <= 0 || y <= 0 || _currentMap[x - 1][y - 1] != _currentMap[x][y])
@@ -160,14 +165,22 @@ void MapGenerator::blockFromPerlin(double i, double j, float noiseHeight) const 
     }
     else if (noiseHeight < 0.8)
     {
-        _mapGround[a][b] = 39;
+        _mapGround[a][b] = 83;
     }
     else if (noiseHeight < 0.9)
     {
-        _mapGround[a][b] = 39;
+        _mapGround[a][b] = 83;
     }
     else
     {
-        _mapGround[a][b] = 39;
+        _mapGround[a][b] = 83;
     }
+}
+
+unsigned int MapGenerator::getX() const {
+    return _X;
+}
+
+unsigned int MapGenerator::getY() const {
+    return _Y;
 }

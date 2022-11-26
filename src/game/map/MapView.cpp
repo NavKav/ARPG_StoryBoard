@@ -10,29 +10,54 @@ MapView::MapView(Window& window, MapGenerator& mapGenerator) :
 _window(window),
 _mapGenerator(mapGenerator)
 {
+    _X = (int)window.getX()/BLOCK_SIZE;
+    _Y = (int)window.getY()/BLOCK_SIZE;
+
+    _drawBlock = new bool*[_X + 1];
+    for (unsigned int i = 0; i < _X + 1; i++)
+        _drawBlock[i] = new bool[_Y + 1];
+
+    setDrawBlockValue(true);
 }
 
-void MapView::displayGround(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
+void MapView::setDrawBlockValue(bool v) {
+    for (unsigned int i = 0; i < _X + 1; i++) {
+        for (unsigned int j = 0; j < _Y + 1; j++) {
+            _drawBlock[i][j] = v;
+        }
+    }
+}
+
+MapView::~MapView() {
+    for (unsigned int i = 0; i < _X + 1; i++) {
+        delete[] _drawBlock[i];
+    }
+    delete[] _drawBlock;
+}
+
+void MapView::displayGround(int x, int y) {
     _floorName = "ground";
     _mapGenerator.setCurrentMap(GROUND);
-    displayFloor(x, y, w, h);
+    display(x, y);
 }
 
-void MapView::displayLiquid(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
+void MapView::displayLiquid(int x, int y) {
     _floorName = "liquid";
     _mapGenerator.setCurrentMap(LIQUID);
-    displayFloor(x, y, w, h);
+    display(x, y);
 }
 
-void MapView::displayFloor(unsigned int x, unsigned int y, unsigned int w, unsigned int h) {
+void MapView::display(unsigned int x, unsigned int y) {
     _window.open(_floorName, _floorName + ".jpg");
-    for (unsigned int i = 0; i < w; i++) {
-        for (unsigned int j = 0; j < h; j++) {
-            if (_mapGenerator(x + i, y + j) != 143) {
-                drawLeftUp(x + i, y + j, i, j);
-                drawRightUp(x + i, y + j, i, j);
-                drawBottomLeft(x + i, y + j, i, j);
-                drawBottomRight(x + i, y + j, i, j);
+    for (unsigned int i = 0; i < _X + 1; i++) {
+        for (unsigned int j = 0; j < _Y + 1; j++) {
+            if (_drawBlock[i][j]) {
+                if (_mapGenerator(x + i, y + j) != 143) {
+                    drawLeftUp(x + i, y + j, i, j);
+                    drawRightUp(x + i, y + j, i, j);
+                    drawBottomLeft(x + i, y + j, i, j);
+                    drawBottomRight(x + i, y + j, i, j);
+                }
             }
         }
     }
@@ -48,7 +73,8 @@ void MapView::drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigne
     X0 += f * 64;
     Y0 += s * 96;
     unsigned int A = X0, B = Y0;
-    unsigned int X = a * 32, Y = b * 32;
+    int X = a * 32, Y = b * 32;
+    X -= _XShift; Y -= _YShift;
     if (_mapGenerator.sameTile(x, y, 2)
         && _mapGenerator.sameTile(x, y, 8)) {
         if (_mapGenerator.sameTile(x, y, 1)) {
@@ -76,7 +102,8 @@ void MapView::drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsign
     X0 += f * 64;
     Y0 += s * 96;
     unsigned int A = X0, B = Y0;
-    unsigned int X = a * 32 + 16, Y = b * 32;
+    int X = a * 32 + 16, Y = b * 32;
+    X -= _XShift; Y -= _YShift;
     if (_mapGenerator.sameTile(x, y, 2)
         && _mapGenerator.sameTile(x, y, 4)) {
         if (_mapGenerator.sameTile(x, y, 3)) {
@@ -104,7 +131,8 @@ void MapView::drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, uns
     X0 += f * 64;
     Y0 += s * 96;
     unsigned int A = X0, B = Y0;
-    unsigned int X = a * 32, Y = b * 32 + 16;
+    int X = a * 32, Y = b * 32 + 16;
+    X -= _XShift; Y -= _YShift;
     if (_mapGenerator.sameTile(x, y, 6)
         && _mapGenerator.sameTile(x, y, 8)) {
         if (_mapGenerator.sameTile(x, y, 7)) {
@@ -132,7 +160,8 @@ void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, un
     X0 += f * 64;
     Y0 += s * 96;
     unsigned int A = X0, B = Y0;
-    unsigned int X = a * 32 + 16, Y = b * 32 + 16;
+    int X = a * 32 + 16, Y = b * 32 + 16;
+    X -= _XShift; Y -= _YShift;
     if (_mapGenerator.sameTile(x, y, 4)
         && _mapGenerator.sameTile(x, y, 6)) {
         if (_mapGenerator.sameTile(x, y, 5)) {
@@ -158,3 +187,108 @@ void MapView::getCaseView(unsigned int& f, unsigned int& s, string& file,unsigne
     s = c / 6;
     file = _floorName;
 }
+
+void MapView::displayFromCoordinate(double x, double y) {
+    _XShift = BLOCK_SIZE * modf(x, NULL) + (_X%2 ? BLOCK_SIZE/2 : 0);
+    _YShift = BLOCK_SIZE * modf(y, NULL) + (_Y%2 ? BLOCK_SIZE/2 : 0);
+
+    int xCenter, yCenter;
+    cornerFromCenter(x, y, xCenter, yCenter);
+
+    setDrawBlockValue(true);
+    displayAll(xCenter, yCenter);
+}
+
+void MapView::shiftMap(long double newX, long double newY, long double aBlock, long double bBlock) {
+    _window.shift(aBlock * BLOCK_SIZE, bBlock * BLOCK_SIZE);
+
+    _XShift = BLOCK_SIZE * modf(newX, NULL) + (_X%2 ? BLOCK_SIZE/2 : 0);
+    _YShift = BLOCK_SIZE * modf(newY, NULL) + (_Y%2 ? BLOCK_SIZE/2 : 0);
+
+    int a = 0, b = 0, c = 0, d = 0;
+    if (aBlock > 0) {
+        a = 0;
+        b = 0;
+        c = BLOCK_SIZE *(int)aBlock + 1;
+        d = _Y;
+    } else if (aBlock < 0) {
+        a = _X + (int)aBlock - 1;
+        b = 0;
+        c = _X;
+        d = _Y;
+    }
+    setDrawBlockValue();
+    changeDrawBlockValue(a, b, c,  d);
+
+    if (bBlock > 0) {
+        a = 0;
+        b = 0;
+        c = _X ;
+        d = (int)bBlock + 1;
+    } else if (bBlock < 0) {
+        a = 0;
+        b = _Y + (int)bBlock - 1;
+        c = _X;
+        d = _Y;
+    }
+    setDrawBlockValue();
+    changeDrawBlockValue(a, b, c,  d);
+
+    int xCenter, yCenter;
+    cornerFromCenter(newX, newY, xCenter, yCenter);
+    displayAll(xCenter, yCenter);
+}
+
+
+void MapView::displayAll(int x, int y) {
+    displayLiquid(x, y);
+    displayGround(x, y);
+}
+
+void MapView::cornerFromCenter(double x, double y, int& a, int& b) {
+    a = (int)x - _X/2 - _X%2;
+    b = (int)y - _Y/2 - _Y%2;
+
+    if (_XShift >= BLOCK_SIZE) {
+        _XShift = _XShift%BLOCK_SIZE;
+        a ++;
+    }
+    if (_YShift >= BLOCK_SIZE) {
+        _YShift = _YShift%BLOCK_SIZE;
+        b ++;
+    }
+}
+
+void MapView::changeDrawBlockValue(unsigned int a, unsigned int b, unsigned int c, unsigned int d) {
+    for (unsigned int i = a; i <= c; i++) {
+        for (unsigned int j = b; j <= d; j++) {
+            _drawBlock[i][j] = true;
+        }
+    }
+}
+
+
+/*
+void MapView::shiftMap(double newX, double newY, double aCase, double bCase) {
+    _window.shift((int)(aCase * BLOCK_SIZE), (int)(bCase * BLOCK_SIZE));
+
+    if (aCase > 0) {
+        _XShift = BLOCK_SIZE * modf(newX, NULL);
+        _YShift = BLOCK_SIZE * modf(newY, NULL);
+        displayAll((int)newX - halve(_X), (int)newY - halve(_Y), (int)aCase + 1, _Y + 1);
+    } else if (aCase < 0) {
+        _XShift = BLOCK_SIZE * (-(_X + (int)aCase) + modf(newX, NULL));
+        _YShift = BLOCK_SIZE * modf(newY, NULL);
+        displayAll((int)(newX + aCase) + halve(_X), (int)(newY + bCase) - halve(_Y), -(int)aCase + 1, _Y + 1);
+    }
+    if (bCase > 0) {
+        _XShift = BLOCK_SIZE * modf(newX, NULL);
+        _YShift = BLOCK_SIZE * modf(newY, NULL);
+        displayAll((int)newX - halve(_X), (int)newY - halve(_Y), _X + 1, (int)bCase + 1);
+    } else if (bCase < 0) {
+        _XShift = BLOCK_SIZE * modf(newX, NULL);
+        _YShift = BLOCK_SIZE * (-(_Y + (int)bCase) + modf(newY, NULL));
+        displayAll((int)(newX + aCase) - halve(_X), (int)(newY + bCase) + halve(_Y), _X + 1, -(int)bCase + 1);
+    }
+}
+*/

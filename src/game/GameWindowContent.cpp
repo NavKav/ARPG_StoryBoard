@@ -3,31 +3,43 @@
 //
 
 #include "game/GameWindowContent.h"
+#define PAS 0.25
 
 using namespace std;
 
 void GameWindowContent::process(Player& player, Window& window) {
-    static int a = 0, b = 0;
-    static MapGenerator mapGenerator(200, 200, 1);
+    //_frameRate.display();
+
+    static double a = 132.3, b = 210.9;
+    static MapGenerator mapGenerator(400, 400, 1);
     static MapView mapView(window, mapGenerator);
-    static bool c = true;
+    static bool firstTime = true;
 
-    if (c) {
-        mapGenerator.generate();
-        c = false;
+    if (firstTime) {
+        //mapGenerator.generate();
+        //mapGenerator(132, 210) = 17;
+        window.drawOn(BACKGROUND);
+        mapView.displayFromCoordinate(a, b);
+        firstTime = false;
     }
 
-    if (player[SDL_SCANCODE_UP].pressed)
-        b - 10 >= 0 ? b -= 10 : b = b;
-    if (player[SDL_SCANCODE_DOWN].pressed)
-        b += 10;
-    if (player[SDL_SCANCODE_LEFT].pressed)
-        a - 10 >= 0 ? a -= 10 : a = a;
+    window.drawOn(BACKGROUND);
+    if (player[SDL_SCANCODE_UP].pressed) {
+        b -= PAS;
+        mapView.shiftMap(a, b, 0, PAS);
+    }
+    if (player[SDL_SCANCODE_DOWN].pressed) {
+        b += PAS;
+        mapView.shiftMap(a, b, 0, -PAS);
+    }
+    if (player[SDL_SCANCODE_LEFT].pressed) {
+        a -= PAS;
+        mapView.shiftMap(a, b, PAS, 0);
+    }
     if (player[SDL_SCANCODE_RIGHT].pressed){
-        a += 10;
+        a += PAS;
+        mapView.shiftMap(a, b, -PAS, 0);
     }
-
-    mapView.displayGround(a, b, window.getX()/32, window.getY()/32);
-    mapView.displayLiquid(a, b, window.getX()/32, window.getY()/32);
+    window.drawBackgroundIMG();
     window.refresh();
 }

@@ -20,18 +20,34 @@ _Y(sizeY)
         std::cout << "Window::Window() :" << SDL_GetError()
                   << std::endl;
     }
-    _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC );
-    _surface = SDL_GetWindowSurface(_actualWindow);
-    _texture = SDL_CreateTextureFromSurface(_renderer, _surface);
-    //SDL_SetRenderTarget(_renderer,_texture);
+    _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC | SDL_RENDERER_TARGETTEXTURE);
+
+    _defaultTexture = SDL_CreateTexture(_renderer,
+                                SDL_PIXELFORMAT_RGBA8888,
+                                SDL_TEXTUREACCESS_TARGET,
+                                _X, _Y);
+    SDL_SetTextureBlendMode(_defaultTexture, SDL_BLENDMODE_BLEND);
+    _backgroundTexture = SDL_CreateTexture(_renderer,
+                                SDL_PIXELFORMAT_RGBA8888,
+                                SDL_TEXTUREACCESS_TARGET,
+                                _X, _Y);
+    SDL_SetTextureBlendMode(_backgroundTexture, SDL_BLENDMODE_BLEND);
+    _auxTexture = SDL_CreateTexture(_renderer,
+                                    SDL_PIXELFORMAT_RGBA8888,
+                                    SDL_TEXTUREACCESS_TARGET,
+                                    _X, _Y);
+    SDL_SetTextureBlendMode(_backgroundTexture, SDL_BLENDMODE_BLEND);
+
+    SDL_SetRenderTarget(_renderer, _defaultTexture);
+
     //SDL_SetWindowFullscreen(_actualWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
     _font = TTF_OpenFont("ressource/font/arial.ttf", 25);
-
 }
 
 
 Window::~Window() {
-    SDL_DestroyTexture(_texture);
+    SDL_DestroyTexture(_backgroundTexture);
+    SDL_DestroyTexture(_defaultTexture);
     SDL_DestroyRenderer(_renderer);
     SDL_DestroyWindow(_actualWindow);
 
@@ -85,19 +101,28 @@ void Window::scaleIMG(int x, int y, int width, int height, const string &name) {
 }
 
 void Window::refresh() {
-    /*SDL_UpdateTexture(_texture, NULL, _surface->pixels, _surface->pitch);
-    SDL_RenderClear(_renderer);
-    SDL_RenderCopy(_renderer, _texture, NULL, NULL);
-    SDL_RenderPresent(_renderer);*/
+    SDL_SetRenderTarget(_renderer, NULL);
+    SDL_RenderCopy(_renderer, _backgroundTexture, NULL, NULL);
+    SDL_RenderCopy(_renderer, _defaultTexture, NULL, NULL);
 
-    //_texture = SDL_CreateTextureFromSurface(_renderer, _surface);
-    //SDL_RenderCopy(_renderer, _texture, NULL, NULL);
     SDL_RenderPresent(_renderer);
-    Sleep(20);
+
+    SDL_SetRenderTarget(_renderer, _defaultTexture);
+    SDL_RenderClear(_renderer);
+
+    //Sleep(20);
 }
 
 void Window::clear() {
-    SDL_RenderClear(_renderer);
+    SDL_Texture * texture = IMG_LoadTexture(_renderer, "ressource/image/clear.bmp");
+
+    if (texture == NULL) {
+        cout << "Window::drawTexture() : " << SDL_GetError() << endl;
+    }
+
+    SDL_RenderCopy(_renderer, texture, NULL, NULL);
+
+    SDL_DestroyTexture(texture);
 }
 
 void Window::drawPartIMG(unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d, const string &name) {
@@ -156,7 +181,7 @@ void Window::drawIMG(const string &name, int x, int y) {
     SDL_RenderCopy(_renderer, texture, NULL, &p);
 }
 
-void Window::drawPartIMG(const string &name, unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d) {
+void Window::drawPartIMG(const string &name, int x, int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d) {
     SDL_Texture* texture = _hashmap.at(name);
 
     if (texture == NULL) {
@@ -195,7 +220,8 @@ void Window::writeText(unsigned x,unsigned y, const string& s) {
     p.w = 0;
     p.h = 0;
 
-    SDL_BlitSurface(text,NULL, _surface, &p);
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(_renderer, text);
+    SDL_RenderCopy(_renderer, texture, NULL, &p);
 }
 
 unsigned int Window::getX() const {
@@ -204,4 +230,35 @@ unsigned int Window::getX() const {
 
 unsigned int Window::getY() const {
     return _Y;
+}
+
+void Window::drawBackgroundIMG() {
+    drawIMG(_X/2, _Y/2,"clear.bmp");
+}
+
+void Window::drawOn(unsigned int layer) {
+    switch(layer) {
+        case BACKGROUND :
+            SDL_SetRenderTarget(_renderer, _backgroundTexture);
+            _currentTexture = _backgroundTexture;
+            break;
+        case DEFAULT :
+            SDL_SetRenderTarget(_renderer, _defaultTexture);
+            _currentTexture = _defaultTexture;
+            break;
+        default :
+            break;
+    }
+}
+/* //!\\ SDL_GetRenderTarget wrong return bug isn't patched in SDL2 */
+void Window::shift(int x, int y) {
+    SDL_Rect p = {x, y, static_cast<int>(_X), static_cast<int>(_Y)};
+    SDL_Texture* currentTexture = SDL_GetRenderTarget(_renderer);
+
+    SDL_SetRenderTarget(_renderer, _auxTexture);
+    SDL_RenderCopy(_renderer, currentTexture, NULL, NULL);
+
+    SDL_SetRenderTarget(_renderer, currentTexture);
+    clear();
+    SDL_RenderCopy(_renderer, _auxTexture, NULL, &p);
 }
