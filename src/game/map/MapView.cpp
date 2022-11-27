@@ -199,7 +199,7 @@ void MapView::displayFromCoordinate(double x, double y) {
     displayAll(xCenter, yCenter);
 }
 
-void MapView::shiftMap(long double newX, long double newY, long double aBlock, long double bBlock) {
+void MapView::shiftMap(double newX,double newY,double aBlock,double bBlock) {
     _window.shift(aBlock * BLOCK_SIZE, bBlock * BLOCK_SIZE);
 
     _XShift = BLOCK_SIZE * modf(newX, NULL) + (_X%2 ? BLOCK_SIZE/2 : 0);
@@ -209,7 +209,7 @@ void MapView::shiftMap(long double newX, long double newY, long double aBlock, l
     if (aBlock > 0) {
         a = 0;
         b = 0;
-        c = BLOCK_SIZE *(int)aBlock + 1;
+        c = (int)aBlock + 1;
         d = _Y;
     } else if (aBlock < 0) {
         a = _X + (int)aBlock - 1;

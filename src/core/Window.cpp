@@ -212,7 +212,7 @@ void Window::changeColor( Uint8 r, Uint8 v, Uint8 b) {
     _color = {r, v, b};
 }
 
-void Window::writeText(unsigned x,unsigned y, const string& s) {
+void Window::writeText(int x, int y, const string& s) {
     SDL_Surface * text = TTF_RenderText_Solid(_font,s.c_str(), _color);
     SDL_Rect p;
     p.x = x;

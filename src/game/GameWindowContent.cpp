@@ -3,12 +3,12 @@
 //
 
 #include "game/GameWindowContent.h"
-#define PAS 0.25
+#define PAS 1.5
 
 using namespace std;
 
 void GameWindowContent::process(Player& player, Window& window) {
-    //_frameRate.display();
+    _frameRate.display();
 
     static double a = 132.3, b = 210.9;
     static MapGenerator mapGenerator(400, 400, 1);
@@ -16,8 +16,8 @@ void GameWindowContent::process(Player& player, Window& window) {
     static bool firstTime = true;
 
     if (firstTime) {
-        //mapGenerator.generate();
-        //mapGenerator(132, 210) = 17;
+        mapGenerator.generate();
+        mapGenerator(132, 210) = 17;
         window.drawOn(BACKGROUND);
         mapView.displayFromCoordinate(a, b);
         firstTime = false;

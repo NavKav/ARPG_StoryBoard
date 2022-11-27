@@ -19,7 +19,7 @@ public :
     void displayLiquid(int x, int y);
     void displayAll(int x, int y);
     void displayFromCoordinate(double x, double y);
-    void shiftMap(long double newX, long double newY, long double aBlock, long double bBlock);
+    void shiftMap(double newX,double newY,double aBlock,double bBlock);
     ~MapView();
 private :
 
@@ -41,7 +41,6 @@ private :
     void setDrawBlockValue(bool v = false);
     void changeDrawBlockValue(unsigned int a, unsigned int b, unsigned int c, unsigned int d);
     void cornerFromCenter(double x, double y, int& a, int& b);
-
 };
 
 
