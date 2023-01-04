@@ -97,7 +97,15 @@ void Window::refresh() {
 }
 
 void Window::clear() {
-    SDL_RenderClear(_renderer);
+    SDL_Texture * texture = IMG_LoadTexture(_renderer, "ressource/image/clear.bmp");
+
+    if (texture == NULL) {
+        cout << "Window::drawTexture() : " << SDL_GetError() << endl;
+    }
+
+    SDL_RenderCopy(_renderer, texture, NULL, NULL);
+
+    SDL_DestroyTexture(texture);
 }
 
 void Window::drawPartIMG(unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d, const string &name) {
@@ -187,8 +195,10 @@ void Window::changeColor( Uint8 r, Uint8 v, Uint8 b) {
     _color = {r, v, b};
 }
 
-void Window::writeText(unsigned x,unsigned y, const string& s) {
+void Window::writeText(int x,int y, const string& s) {
     SDL_Surface * text = TTF_RenderText_Solid(_font,s.c_str(), _color);
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(_renderer, text);
+
     SDL_Rect p;
     p.x = x;
     p.y = y;
@@ -196,6 +206,8 @@ void Window::writeText(unsigned x,unsigned y, const string& s) {
     p.h = 0;
 
     SDL_BlitSurface(text,NULL, _surface, &p);
+    SDL_RenderCopy(_renderer, texture, NULL, &p);
+    SDL_FreeSurface(text);
 }
 
 unsigned int Window::getX() const {
@@ -204,4 +216,8 @@ unsigned int Window::getX() const {
 
 unsigned int Window::getY() const {
     return _Y;
+}
+
+void Window::textSizeOf(std::string s, int& w, int& h) {
+    TTF_SizeText(_font, s.c_str(), &w, &h);
 }

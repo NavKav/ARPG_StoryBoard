@@ -1,3 +1,3 @@
-C:/Users/navid/CLionProjects/ARPG_StoryBoard/cmake-build-debug/CMakeFiles/Dice_Game_Project.dir
-C:/Users/navid/CLionProjects/ARPG_StoryBoard/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/navid/CLionProjects/ARPG_StoryBoard/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/33783/CLionProjects/ARPG_StoryBoard/cmake-build-debug/CMakeFiles/Dice_Game_Project.dir
+C:/Users/33783/CLionProjects/ARPG_StoryBoard/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/33783/CLionProjects/ARPG_StoryBoard/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -8,7 +8,7 @@ using namespace std;
 
 int main( int argc, char *argv[] )
 {
-    Window window("ARPG_StoryBoard", 32 * 22, 32 * 22);
+    Window window("ARPG_StoryBoard", 22 * 22, 41 * 22);
     window.refresh();
 
     //Player p(window, new MenuWindowContent());

@@ -6,6 +6,9 @@
 #define ARPG_STORYBOARD_OPTIONWINDOWCONTENT_H
 
 #include "core/WindowContent.h"
+#include "game/option/Windowframe.h"
+#include "game/option/OptionLineToCheck.h"
+#include "game/option/OptionLineMultiChoice.h"
 
 class OptionWindowContent : public WindowContent {
 public :
