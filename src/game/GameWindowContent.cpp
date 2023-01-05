@@ -3,7 +3,7 @@
 //
 
 #include "game/GameWindowContent.h"
-#define PAS 1.5
+#define P 3.562
 
 using namespace std;
 
@@ -17,13 +17,14 @@ void GameWindowContent::process(Player& player, Window& window) {
 
     if (firstTime) {
         mapGenerator.generate();
-        mapGenerator(132, 210) = 17;
+        mapGenerator(a, b) = 17;
         window.drawOn(BACKGROUND);
         mapView.displayFromCoordinate(a, b);
         firstTime = false;
     }
 
     window.drawOn(BACKGROUND);
+    double PAS = P;
     if (player[SDL_SCANCODE_UP].pressed) {
         b -= PAS;
         mapView.shiftMap(a, b, 0, PAS);
@@ -40,6 +41,5 @@ void GameWindowContent::process(Player& player, Window& window) {
         a += PAS;
         mapView.shiftMap(a, b, -PAS, 0);
     }
-    window.drawBackgroundIMG();
     window.refresh();
 }

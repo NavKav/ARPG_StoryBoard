@@ -461,7 +461,6 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/menu/MenuButton.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/option/OptionWindowContent.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/GameWindowContent.h \
- C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapView.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapGenerator.h \
  C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h \
@@ -483,4 +482,5 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
- C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/util/FrameRate.h
+ C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/util/FrameRate.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h

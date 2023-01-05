@@ -9,6 +9,7 @@
 #include "core/Window.h"
 
 #define BLOCK_SIZE 32 // size in pixel of a block in game
+#define REFRESHING_LIMIT 10 //number of shift increment before refreshing
 
 typedef unsigned int Uint;
 
@@ -31,6 +32,7 @@ private :
     int _X, _Y;
 
     bool** _drawBlock = nullptr;
+    double _sX = 0, _sY = 0;
 
     void display(unsigned int x, unsigned int y);
     void drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, unsigned int b);

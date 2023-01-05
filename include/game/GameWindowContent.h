@@ -5,7 +5,7 @@
 #ifndef ARPG_STORYBOARD_GAMEWINDOWCONTENT_H
 #define ARPG_STORYBOARD_GAMEWINDOWCONTENT_H
 
-#include <sys/time.h>
+#include <cstdlib>
 
 #include "core/WindowContent.h"
 #include "core/Player.h"

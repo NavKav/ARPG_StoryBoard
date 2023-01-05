@@ -39,6 +39,7 @@ public :
     unsigned int getY() const;
     unsigned int getX() const;
     void shift(int x, int y);
+    void textSizeOf(std::string s, int& w, int& h);
 
 private :
     SDL_Texture* _backgroundTexture = nullptr;

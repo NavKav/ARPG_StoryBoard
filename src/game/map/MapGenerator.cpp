@@ -36,6 +36,7 @@ void MapGenerator::blank() {
         for (unsigned int j = 0; j < _Y; j++) {
             /*_mapGround[i][j] = 0;
             _mapLiquid[i][j] = 143;*/
+            _mapLiquid[i][j] = 143;
             _mapGround[i][j] = ((i+j)%2 ? 17 : 80);
         }
     }
@@ -157,22 +158,27 @@ void MapGenerator::blockFromPerlin(double i, double j, float noiseHeight) const 
     }
     else if (noiseHeight < -0.07)
     {
+        _mapLiquid[a][b] = 143;
         _mapGround[a][b] = 80;
     }
     else if (noiseHeight < 0.4)
     {
+        _mapLiquid[a][b] = 143;
         _mapGround[a][b] = 81;
     }
     else if (noiseHeight < 0.8)
     {
+        _mapLiquid[a][b] = 143;
         _mapGround[a][b] = 83;
     }
     else if (noiseHeight < 0.9)
     {
+        _mapLiquid[a][b] = 143;
         _mapGround[a][b] = 83;
     }
     else
     {
+        _mapLiquid[a][b] = 143;
         _mapGround[a][b] = 83;
     }
 }

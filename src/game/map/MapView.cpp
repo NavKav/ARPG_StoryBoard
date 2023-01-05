@@ -200,7 +200,10 @@ void MapView::displayFromCoordinate(double x, double y) {
 }
 
 void MapView::shiftMap(double newX,double newY,double aBlock,double bBlock) {
-    _window.shift(aBlock * BLOCK_SIZE, bBlock * BLOCK_SIZE);
+    _sX += aBlock * BLOCK_SIZE, _sY += bBlock * BLOCK_SIZE;
+    _window.shift(_sX,_sY);
+    _sX = modf(_sX, nullptr);
+    _sY = modf(_sY, nullptr);
 
     _XShift = BLOCK_SIZE * modf(newX, NULL) + (_X%2 ? BLOCK_SIZE/2 : 0);
     _YShift = BLOCK_SIZE * modf(newY, NULL) + (_Y%2 ? BLOCK_SIZE/2 : 0);
@@ -241,8 +244,8 @@ void MapView::shiftMap(double newX,double newY,double aBlock,double bBlock) {
 
 
 void MapView::displayAll(int x, int y) {
-    displayLiquid(x, y);
     displayGround(x, y);
+    displayLiquid(x, y);
 }
 
 void MapView::cornerFromCenter(double x, double y, int& a, int& b) {

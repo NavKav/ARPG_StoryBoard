@@ -224,6 +224,8 @@ void Window::writeText(int x, int y, const string& s) {
     SDL_RenderCopy(_renderer, texture, NULL, &p);
 }
 
+
+
 unsigned int Window::getX() const {
     return _X;
 }
@@ -261,4 +263,8 @@ void Window::shift(int x, int y) {
     SDL_SetRenderTarget(_renderer, currentTexture);
     clear();
     SDL_RenderCopy(_renderer, _auxTexture, NULL, &p);
+}
+
+void Window::textSizeOf(std::string s, int& w, int& h) {
+    TTF_SizeText(_font, s.c_str(), &w, &h);
 }
