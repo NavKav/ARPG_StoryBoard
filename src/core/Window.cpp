@@ -212,16 +212,19 @@ void Window::changeColor( Uint8 r, Uint8 v, Uint8 b) {
     _color = {r, v, b};
 }
 
-void Window::writeText(int x, int y, const string& s) {
+void Window::writeText(int x,int y, const string& s) {
     SDL_Surface * text = TTF_RenderText_Solid(_font,s.c_str(), _color);
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(_renderer, text);
+
     SDL_Rect p;
     p.x = x;
     p.y = y;
     p.w = 0;
     p.h = 0;
 
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(_renderer, text);
+    SDL_BlitSurface(text,NULL, _surface, &p);
     SDL_RenderCopy(_renderer, texture, NULL, &p);
+    SDL_FreeSurface(text);
 }
 
 
@@ -263,6 +266,10 @@ void Window::shift(int x, int y) {
     SDL_SetRenderTarget(_renderer, currentTexture);
     clear();
     SDL_RenderCopy(_renderer, _auxTexture, NULL, &p);
+}
+
+void Window::textSizeOf(std::string s, int& w, int& h) {
+    TTF_SizeText(_font, s.c_str(), &w, &h);
 }
 
 void Window::textSizeOf(std::string s, int& w, int& h) {

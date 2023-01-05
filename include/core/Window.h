@@ -38,9 +38,8 @@ public :
     void changeColor( Uint8 r, Uint8 v, Uint8 b);
     unsigned int getY() const;
     unsigned int getX() const;
-    void shift(int x, int y);
     void textSizeOf(std::string s, int& w, int& h);
-
+    void shift(int x, int y);
 private :
     SDL_Texture* _backgroundTexture = nullptr;
     SDL_Texture* _defaultTexture = nullptr;
