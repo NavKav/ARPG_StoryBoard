@@ -13,13 +13,13 @@ void MenuWindowContent::process(Player& player, Window& window) {
     menuHitboxStart(0.5*window.getX() - 125, 0.5*window.getY(), 250, 70, "/menu/Start.png");
 
     if (player[SDL_SCANCODE_LEFTCLICK].pressed && menuHitboxQuit.isInside(player[SDL_SCANCODE_LEFTCLICK].mouseX,player[SDL_SCANCODE_LEFTCLICK].mouseY)) {
-        std::cout << "quit"  << std::endl;
+        player.stop();
     }
     if (player[SDL_SCANCODE_LEFTCLICK].pressed && menuHitboxOption.isInside(player[SDL_SCANCODE_LEFTCLICK].mouseX,player[SDL_SCANCODE_LEFTCLICK].mouseY)) {
         player.setWindowContent(new OptionWindowContent());
     }
     if (player[SDL_SCANCODE_LEFTCLICK].pressed && menuHitboxStart.isInside(player[SDL_SCANCODE_LEFTCLICK].mouseX,player[SDL_SCANCODE_LEFTCLICK].mouseY)) {
-        std::cout << "start"  << std::endl;
+        player.setWindowContent(new GameWindowContent());
     }
 
     if (truc == false) {
