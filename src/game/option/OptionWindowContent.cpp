@@ -5,6 +5,7 @@
 #include "game/option/OptionWindowContent.h"
 
 void OptionWindowContent::process(Player& player, Window& window) {
+    window.drawOn(BACKGROUND);
     window.drawIMG(0, 0, "fond.bmp");
     WindowFrame generalFrame(5,window);
 

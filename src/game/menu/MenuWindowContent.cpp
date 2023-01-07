@@ -5,7 +5,7 @@
 #include "game/menu/MenuWindowContent.h"
 
 void MenuWindowContent::process(Player& player, Window& window) {
-    bool truc = false;
+    bool firstTime = false;
     // images must be 250*70, if you want to change the dimensions, change the width and length parameters respectively
     // - 125 is width/2 to make the buttons centered
     MenuButton menuHitboxQuit(0.5*window.getX() - 125, 0.7*window.getY(), 250, 70, "/menu/Quit.png"),
@@ -22,12 +22,12 @@ void MenuWindowContent::process(Player& player, Window& window) {
         player.setWindowContent(new GameWindowContent());
     }
 
-    if (truc == false) {
-        window.drawIMG(0, 0, "fond.bmp");
+    if (firstTime == false) {
+        window.scaleIMG(0, 0, window.getX(), window.getY(), "fond.bmp");
         menuHitboxStart.display(window);
         menuHitboxOption.display(window);
         menuHitboxQuit.display(window);
         window.refresh();
-        truc = true;
+        firstTime = true;
     }
 }
