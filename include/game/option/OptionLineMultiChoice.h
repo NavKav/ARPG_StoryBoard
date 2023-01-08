@@ -4,7 +4,8 @@
 
 #ifndef ARPG_STORYBOARD_OPTIONLINEMULTICHOICE_H
 #define ARPG_STORYBOARD_OPTIONLINEMULTICHOICE_H
-#define MARGE 1.2
+
+#define MARGIN 10
 
 #include <list>
 #include <string>

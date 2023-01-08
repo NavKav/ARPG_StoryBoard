@@ -569,9 +569,7 @@ typedef struct _SDL_iconv_t *SDL_iconv_t;
 extern DECLSPEC SDL_iconv_t SDLCALL SDL_iconv_open(const char *tocode,
                                                    const char *fromcode);
 extern DECLSPEC int SDLCALL SDL_iconv_close(SDL_iconv_t cd);
-extern DECLSPEC size_t SDLCALL SDL_iconv(SDL_iconv_t cd, const char **inbuf,
-                                         size_t * inbytesleft, char **outbuf,
-                                         size_t * outbytesleft);
+extern DECLSPEC size_t SDLCALL SDL_iconv();
 /**
  *  This function converts a string between encodings in one pass, returning a
  *  string that must be freed with SDL_free() or NULL on error.

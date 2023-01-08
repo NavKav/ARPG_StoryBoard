@@ -18,9 +18,10 @@ void OptionLineMultiChoice::display(int x, int y) {
     int x0 = w;
 
     for (std::string s : _choices){
-        _window.writeText(x0 + x + MARGE *position, y, s);
         _window.textSizeOf(s,w,h);
-        position += w;
+        _window.scaleIMG(x0 + x + MARGIN + position - w/30, y - h/15, 1.05*w, 1.125*h, "/option/box.png");
+        _window.writeText(x0 + x + MARGIN + position, y, s);
+        position += w + 10;
     }
 
 

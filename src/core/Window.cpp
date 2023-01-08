@@ -219,8 +219,7 @@ void Window::writeText(int x,int y, const string& s) {
     SDL_Rect p;
     p.x = x;
     p.y = y;
-    p.w = 0;
-    p.h = 0;
+    SDL_QueryTexture(texture, NULL, NULL, &(p.w), &(p.h));
 
     SDL_RenderCopy(_renderer, texture, NULL, &p);
     SDL_FreeSurface(text);
