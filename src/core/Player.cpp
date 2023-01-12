@@ -2,7 +2,7 @@
 // Created by navid on 15/08/2021.
 //
 
-#include "core/Player.h"
+#include "Player.h"
 
 using namespace std;
 
@@ -16,7 +16,6 @@ void Player::start() {
     while(_boolLoop) {
         SDL_Event input;
         while(SDL_PollEvent(&input)){takeInput(input);}
-
         if (_windowContent) {_windowContent->process(*this, _window);}
     }
 }

@@ -88,97 +88,82 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/ConcurrentRunnerBase.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Input.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Player.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/Window.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/WindowContent.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/core/requirement.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/GameWindowContent.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapGenerator.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/MapView.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/map/PerlinNoise.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/menu/MenuButton.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/menu/MenuWindowContent.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/option/OptionLine.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/option/OptionLineMultiChoice.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/option/OptionLineToCheck.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/option/OptionWindowContent.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/game/option/WindowFrame.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/include/util/FrameRate.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Player.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Player.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/GameWindowContent.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/GameWindowContent.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapGenerator.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapGenerator.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapView.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapView.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuButton.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuButton.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuWindowContent.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuWindowContent.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionLine.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionLineMultiChoice.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionLineMultiChoice.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionLineToCheck.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionLineToCheck.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionWindowContent.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionWindowContent.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/WindowFrame.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/WindowFrame.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/CMakeLists.txt">

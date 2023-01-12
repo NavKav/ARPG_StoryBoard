@@ -1,8 +1,8 @@
 //
 // Created by navid on 13/05/2021.
 //
-#include "core/requirement.h"
-#include "core/Window.h"
+#include "requirement.h"
+#include "Window.h"
 
 using namespace std;
 
@@ -15,12 +15,14 @@ _Y(sizeY)
     _actualWindow = SDL_CreateWindow(windowName.c_str(),
                                      SDL_WINDOWPOS_UNDEFINED,
                                      SDL_WINDOWPOS_UNDEFINED,
-                                     (int) sizeX, (int) sizeY, 0);
+                                     (int) sizeX, (int) sizeY,  0);
     if (_actualWindow == nullptr) {
         std::cout << "Window::Window() :" << SDL_GetError()
                   << std::endl;
     }
-    _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC | SDL_RENDERER_TARGETTEXTURE);
+    _renderer = SDL_CreateRenderer(_actualWindow, -1, SDL_RENDERER_ACCELERATED
+                                                                        | SDL_RENDERER_PRESENTVSYNC
+                                                                        | SDL_RENDERER_TARGETTEXTURE);
 
     _defaultTexture = SDL_CreateTexture(_renderer,
                                 SDL_PIXELFORMAT_RGBA8888,
@@ -223,6 +225,7 @@ void Window::writeText(int x,int y, const string& s) {
 
     SDL_RenderCopy(_renderer, texture, NULL, &p);
     SDL_FreeSurface(text);
+    SDL_DestroyTexture(texture);
 }
 
 
@@ -235,7 +238,8 @@ unsigned int Window::getY() const {
     return _Y;
 }
 
-void Window::drawBackgroundIMG() {
+void Window::debug() {
+    drawOn(DEFAULT);
     drawIMG(_X/2, _Y/2,"clear.bmp");
 }
 

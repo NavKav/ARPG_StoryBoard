@@ -8,11 +8,11 @@ using namespace std;
 
 int main( int argc, char *argv[] )
 {
-    Window window("ARPG_StoryBoard", 32 * 40, 32 * 23);
+    Window window("ARPG_StoryBoard", 32 * 40, 32 * 10);
 
     //Player p(window, new MenuWindowContent());
-    Player p(window, new OptionWindowContent());
-    //Player p(window, new GameWindowContent());
+    //Player p(window, new OptionWindowContent());
+    Player p(window, new GameWindowContent());
     //Player p(window, nullptr);
     p.start();
 

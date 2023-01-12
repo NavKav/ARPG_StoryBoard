@@ -2,7 +2,7 @@
 // Created by David on 27/11/2022.
 //
 
-#include "game/option/OptionLineMultiChoice.h"
+#include "OptionLineMultiChoice.h"
 
 
 void OptionLineMultiChoice::display(int x, int y) {

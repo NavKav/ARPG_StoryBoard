@@ -2,7 +2,7 @@
 // Created by David on 14/10/2022.
 //
 
-#include "game/menu/MenuButton.h"
+#include "MenuButton.h"
 
 
 

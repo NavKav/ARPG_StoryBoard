@@ -37,7 +37,7 @@ file(GLOB INCLUDES
 file(GLOB_RECURSE A src/*.cpp)
 file(GLOB_RECURSE B include/*.h)
 
-add_executable(Dice_Game_Project ${A} ${B} src/game/menu/MenuButton.cpp include/game/menu/MenuButton.h src/game/option/WindowFrame.cpp include/game/option/WindowFrame.h include/game/option/OptionLine.h src/game/option/OptionLineToCheck.cpp include/game/option/OptionLineToCheck.h src/game/option/OptionLineMultiChoice.cpp include/game/option/OptionLineMultiChoice.h)
+add_executable(Dice_Game_Project ${A} ${B} src/game/menu/MenuButton.cpp src/game/menu/MenuButton.h src/game/option/WindowFrame.cpp src/game/option/WindowFrame.h src/game/option/OptionLine.h src/game/option/OptionLineToCheck.cpp src/game/option/OptionLineToCheck.h src/game/option/OptionLineMultiChoice.cpp src/game/option/OptionLineMultiChoice.h)
 #TFF
 include_directories(${PROJECT_SOURCE_DIR}/include ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
 #développement avec SDL2

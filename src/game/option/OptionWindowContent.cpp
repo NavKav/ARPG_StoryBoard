@@ -2,7 +2,7 @@
 // Created by Navid on 21/10/2022.
 //
 
-#include "game/option/OptionWindowContent.h"
+#include "OptionWindowContent.h"
 
 void OptionWindowContent::process(Player& player, Window& window) {
     window.drawOn(BACKGROUND);

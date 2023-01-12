@@ -2,7 +2,7 @@
 // Created by navid on 18/06/2022.
 //
 
-#include "game/map/MapView.h"
+#include "MapView.h"
 
 using namespace std;
 
@@ -47,10 +47,12 @@ void MapView::displayLiquid(int x, int y) {
     display(x, y);
 }
 
-void MapView::display(unsigned int x, unsigned int y) {
+void MapView::display(int x, int y) {
     _window.open(_floorName, _floorName + ".jpg");
-    for (unsigned int i = 0; i < _X + 1; i++) {
-        for (unsigned int j = 0; j < _Y + 1; j++) {
+    _window.changeFont("arial", 12);
+    _window.changeColor(0, 0, 0);
+    for (int i = 0; i < _X + 1; i++) {
+        for (int j = 0; j < _Y + 1; j++) {
             if (_drawBlock[i][j]) {
                 if (_mapGenerator(x + i, y + j) != 143) {
                     drawLeftUp(x + i, y + j, i, j);
@@ -58,6 +60,7 @@ void MapView::display(unsigned int x, unsigned int y) {
                     drawBottomLeft(x + i, y + j, i, j);
                     drawBottomRight(x + i, y + j, i, j);
                 }
+                _window.writeText(i * BLOCK_SIZE - _XShift, j*BLOCK_SIZE - _YShift, to_string(y + j));
             }
         }
     }
@@ -189,40 +192,28 @@ void MapView::getCaseView(unsigned int& f, unsigned int& s, string& file,unsigne
 }
 
 void MapView::displayFromCoordinate(double x, double y) {
-    _XShift = BLOCK_SIZE * modf(x, NULL) + (_X%2 ? BLOCK_SIZE/2 : 0);
-    _YShift = BLOCK_SIZE * modf(y, NULL) + (_Y%2 ? BLOCK_SIZE/2 : 0);
+    _XShift = BLOCK_SIZE * CORRECT_SHIFT(modf(x, NULL)) + (_X % 2 ? BLOCK_SIZE / 2 : 0);
+    _YShift = BLOCK_SIZE * CORRECT_SHIFT(modf(y, NULL)) + (_Y % 2 ? BLOCK_SIZE / 2 : 0);
 
     int xCenter, yCenter;
     cornerFromCenter(x, y, xCenter, yCenter);
-
     setDrawBlockValue(true);
-    displayAll(xCenter, yCenter);
+    displayAll(xCenter - (x < 0 && modf(x, NULL) != 0), yCenter - (y < 0 && modf(y, NULL) != 0));
 }
 
 void MapView::shiftMap(double newX,double newY,double aBlock,double bBlock) {
+    if (aBlock == 0 && bBlock == 0) return;
+
+    setDrawBlockValue();
     _sX += aBlock * BLOCK_SIZE, _sY += bBlock * BLOCK_SIZE;
     _window.shift(_sX,_sY);
     _sX = modf(_sX, nullptr);
     _sY = modf(_sY, nullptr);
 
-    _XShift = BLOCK_SIZE * modf(newX, NULL) + (_X%2 ? BLOCK_SIZE/2 : 0);
-    _YShift = BLOCK_SIZE * modf(newY, NULL) + (_Y%2 ? BLOCK_SIZE/2 : 0);
+    _XShift = BLOCK_SIZE * CORRECT_SHIFT(modf(newX, NULL)) + (_X % 2 ? BLOCK_SIZE / 2 : 0);
+    _YShift = BLOCK_SIZE * CORRECT_SHIFT(modf(newY, NULL)) + (_Y % 2 ? BLOCK_SIZE / 2 : 0);
 
     int a = 0, b = 0, c = 0, d = 0;
-    if (aBlock > 0) {
-        a = 0;
-        b = 0;
-        c = (int)aBlock + 1;
-        d = _Y;
-    } else if (aBlock < 0) {
-        a = _X + (int)aBlock - 1;
-        b = 0;
-        c = _X;
-        d = _Y;
-    }
-    setDrawBlockValue();
-    changeDrawBlockValue(a, b, c,  d);
-
     if (bBlock > 0) {
         a = 0;
         b = 0;
@@ -234,12 +225,24 @@ void MapView::shiftMap(double newX,double newY,double aBlock,double bBlock) {
         c = _X;
         d = _Y;
     }
-    setDrawBlockValue();
+    changeDrawBlockValue(a, b, c,  d);
+
+    if (aBlock > 0) {
+        a = 0;
+        b = 0;
+        c = (int)aBlock + 1;
+        d = _Y;
+    } else if (aBlock < 0) {
+        a = _X + (int)aBlock - 1;
+        b = 0;
+        c = _X;
+        d = _Y;
+    }
     changeDrawBlockValue(a, b, c,  d);
 
     int xCenter, yCenter;
     cornerFromCenter(newX, newY, xCenter, yCenter);
-    displayAll(xCenter, yCenter);
+    displayAll(xCenter - (newX < 0 && modf(newX, NULL) != 0), yCenter - (newY < 0 && modf(newY, NULL) != 0));
 }
 
 
@@ -259,6 +262,14 @@ void MapView::cornerFromCenter(double x, double y, int& a, int& b) {
     if (_YShift >= BLOCK_SIZE) {
         _YShift = _YShift%BLOCK_SIZE;
         b ++;
+    }
+    if (_XShift <= -BLOCK_SIZE) {
+        _XShift = _XShift%BLOCK_SIZE;
+        a --;
+    }
+    if (_YShift <= -BLOCK_SIZE) {
+        _YShift = _YShift%BLOCK_SIZE;
+        b --;
     }
 }
 

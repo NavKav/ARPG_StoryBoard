@@ -2,7 +2,7 @@
 // Created by David on 27/11/2022.
 //
 
-#include "game/option/OptionLineToCheck.h"
+#include "OptionLineToCheck.h"
 
 void OptionLineToCheck::display(int x, int y) {
     _window.changeColor(255, 255, 255); // 255,255,255 = noir

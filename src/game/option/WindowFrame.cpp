@@ -2,7 +2,7 @@
 // Created by David on 23/10/2022.
 //
 
-#include "game/option/WindowFrame.h"
+#include "WindowFrame.h"
 
 WindowFrame::WindowFrame(Window& window) :
 _window(window)
