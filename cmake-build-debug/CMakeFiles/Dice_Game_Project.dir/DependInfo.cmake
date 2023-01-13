@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/WindowFrame.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/option/WindowFrame.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/option/WindowFrame.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp" "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.cpp" "CMakeFiles/Dice_Game_Project.dir/src/util/FrameRate.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/util/FrameRate.cpp.obj.d"
+  "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.cpp" "CMakeFiles/Dice_Game_Project.dir/src/util/Pair.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/util/Pair.cpp.obj.d"
   )
 
 # Targets to which this target links.

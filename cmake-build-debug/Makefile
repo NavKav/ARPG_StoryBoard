@@ -440,6 +440,30 @@ src/util/FrameRate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/util/FrameRate.cpp.s
 .PHONY : src/util/FrameRate.cpp.s
 
+src/util/Pair.obj: src/util/Pair.cpp.obj
+.PHONY : src/util/Pair.obj
+
+# target to build an object file
+src/util/Pair.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/util/Pair.cpp.obj
+.PHONY : src/util/Pair.cpp.obj
+
+src/util/Pair.i: src/util/Pair.cpp.i
+.PHONY : src/util/Pair.i
+
+# target to preprocess a source file
+src/util/Pair.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/util/Pair.cpp.i
+.PHONY : src/util/Pair.cpp.i
+
+src/util/Pair.s: src/util/Pair.cpp.s
+.PHONY : src/util/Pair.s
+
+# target to generate assembly for a file
+src/util/Pair.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/util/Pair.cpp.s
+.PHONY : src/util/Pair.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -488,6 +512,9 @@ help:
 	@echo ... src/util/FrameRate.obj
 	@echo ... src/util/FrameRate.i
 	@echo ... src/util/FrameRate.s
+	@echo ... src/util/Pair.obj
+	@echo ... src/util/Pair.i
+	@echo ... src/util/Pair.s
 .PHONY : help
 
 

@@ -28,15 +28,15 @@ Uint MapGenerator::operator()(unsigned int x, unsigned int y) {
 bool MapGenerator::sameTile(unsigned int x, unsigned int y, unsigned int d) {
     switch (d) {
         case 1:
-            if (getBlock(x - 1,y - 1) != getBlock(x, y))
+            if (getBlock(x - 1,y + 1) != getBlock(x, y))
                 return false;
             return true;
         case 2:
-            if ( getBlock(x, y - 1) != getBlock(x, y))
+            if ( getBlock(x, y + 1) != getBlock(x, y))
                 return false;
             return true;
         case 3:
-            if (getBlock(x + 1,y - 1) != getBlock(x, y))
+            if (getBlock(x + 1,y + 1) != getBlock(x, y))
                 return false;
             return true;
         case 4:
@@ -44,15 +44,15 @@ bool MapGenerator::sameTile(unsigned int x, unsigned int y, unsigned int d) {
                 return false;
             return true;
         case 5:
-            if (getBlock(x + 1,y + 1) != getBlock(x, y))
+            if (getBlock(x + 1,y - 1) != getBlock(x, y))
                 return false;
             return true;
         case 6:
-            if (getBlock(x,y + 1) != getBlock(x, y))
+            if (getBlock(x,y - 1) != getBlock(x, y))
                 return false;
             return true;
         case 7:
-            if (getBlock(x - 1, y + 1) != getBlock(x, y))
+            if (getBlock(x - 1, y - 1) != getBlock(x, y))
                 return false;
             return true;
         default :
@@ -63,16 +63,11 @@ bool MapGenerator::sameTile(unsigned int x, unsigned int y, unsigned int d) {
 }
 
 Uint MapGenerator::getBlock(int x, int y){
-    if ((x + y) % 2) {
-        return 80;
-    }
-    return 81;
-    /*
     if (_currentMap == GROUND) {
         return getGroundBlock(x, y, computeNoiseHeight(x, y));
     } else {
         return getLiquidBlock(x, y, computeNoiseHeight(x, y));
-    }*/
+    }
 }
 
 /* Default :

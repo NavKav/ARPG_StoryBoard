@@ -6,10 +6,12 @@
 #define ARPG_STORYBOARD_MAPVIEW_H
 
 #include "MapGenerator.h"
-#include "../../core/Window.h"
+#include "core/Window.h"
+#include "util/Pair.h"
 
 #define BLOCK_SIZE 32 // size in pixel of a block in game
-#define CORRECT_SHIFT(x) (x < 0 ? 1+x : x)
+#define CORRECT_SHIFT_X(x) (x < 0 ? 1+x : x)
+#define CORRECT_SHIFT_Y(x) (x > 0 ? 1-x : -x)
 
 typedef unsigned int Uint;
 
@@ -20,7 +22,7 @@ public :
     void displayLiquid(int x, int y);
     void displayAll(int x, int y);
     void displayFromCoordinate(double x, double y);
-    void shiftMap(double newX,double newY,double aBlock,double bBlock);
+    void shiftMap(double newX,double newY,Velocity speed);
     ~MapView();
 private :
 
@@ -35,6 +37,7 @@ private :
     double _sX = 0, _sY = 0;
 
     void display(int x, int y);
+    void shiftMap(double newX,double newY,double aBlock,double bBlock);
     void drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
     void drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
     void drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b);

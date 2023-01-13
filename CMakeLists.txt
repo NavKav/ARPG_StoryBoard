@@ -23,23 +23,17 @@ find_package(SDL2_Image REQUIRED)
 #TFF
 find_package(SDL2_ttf REQUIRED)
 
-file(GLOB SOURCES
+file(GLOB_RECURSE SOURCES
         src/*.cpp
         src/*/*.cpp
         src/*/*/*.cpp
-        )
-file(GLOB INCLUDES
-        include/*.h
-        include/*/*.h
-        include/*/*/*.h
+        src/*/*/*/*.cpp
+        src/*/*/*/*/*.cpp
         )
 
-file(GLOB_RECURSE A src/*.cpp)
-file(GLOB_RECURSE B include/*.h)
-
-add_executable(Dice_Game_Project ${A} ${B} src/game/menu/MenuButton.cpp src/game/menu/MenuButton.h src/game/option/WindowFrame.cpp src/game/option/WindowFrame.h src/game/option/OptionLine.h src/game/option/OptionLineToCheck.cpp src/game/option/OptionLineToCheck.h src/game/option/OptionLineMultiChoice.cpp src/game/option/OptionLineMultiChoice.h)
+add_executable(Dice_Game_Project ${SOURCES})
 #TFF
-include_directories(${PROJECT_SOURCE_DIR}/include ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
+include_directories(${PROJECT_SOURCE_DIR}/src ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
 #développement avec SDL2
 #TFF
 target_link_libraries(Dice_Game_Project ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ${SDL2_TTF_LIBRARY}) #inclusion des bibliothèques nécessaire pour

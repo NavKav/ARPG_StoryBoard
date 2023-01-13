@@ -10,7 +10,7 @@ using namespace std;
 void GameWindowContent::process(Player& player, Window& window) {
     //_frameRate.display();
 
-    static double a = -10, b = -10.1;
+    static double a = 10.5, b = 10.5;
     static MapGenerator mapGenerator( 1);
     static MapView mapView(window, mapGenerator);
     static bool firstTime = true;
@@ -22,32 +22,24 @@ void GameWindowContent::process(Player& player, Window& window) {
     }
 
     window.drawOn(BACKGROUND);
-    double PAS = P;
-    double aBlock = 0, bBlock = 0;
+    Pair speed(0, 0);
     if (player[SDL_SCANCODE_UP].pressed) {
-        b -= PAS;
-        aBlock += 0;
-        bBlock += PAS;
+        b += P;
+        speed += Pair(0, P);
     }
     if (player[SDL_SCANCODE_DOWN].pressed) {
-        b += PAS;
-        aBlock += 0;
-        bBlock += -PAS;
+        b += -P;
+        speed += Pair(0, -P);
     }
     if (player[SDL_SCANCODE_LEFT].pressed) {
-        a -= PAS;
-        aBlock += PAS;
-        bBlock += 0;
+        a -= P;
+        speed += Pair(P, 0);
     }
     if (player[SDL_SCANCODE_RIGHT].pressed){
-        a += PAS;
-        aBlock += -PAS;
-        bBlock += 0;
+        a += P;
+        speed += Pair(-P, 0);
     }
-    if (player[SDL_SCANCODE_SPACE].pressed) {
-        cout << a << " " << b << endl;
-    }
-    mapView.shiftMap(a, b, aBlock, bBlock);
-    window.debug();
+
+    mapView.shiftMap(a, b, speed);
     window.refresh();
 }
