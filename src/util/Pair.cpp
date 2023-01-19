@@ -58,8 +58,20 @@ float Pair::y() {
     return _y;
 }
 
-Pair &Pair::operator*(float x) {
+Pair Pair::operator*(float x) {
     _x *= x;
     _y *= x;
+    return Pair(_x*x, _y*x);
+}
+
+Pair &Pair::operator*=(float x) {
+    _x *= x;
+    _y *= x;
+    return *this;
+}
+
+Pair& Pair::operator()(float x, float y) {
+    _x += x;
+    _y += y;
     return *this;
 }

@@ -10,9 +10,9 @@
 #include <utility>
 #include "PerlinNoise.h"
 
-#define GROUND 1
-#define LIQUID 2
-#define MOUNT 3
+#define GROUND 0
+#define LIQUID 1
+#define ASPECT 2
 
 typedef unsigned int Uint;
 
@@ -29,10 +29,10 @@ public:
     Uint getBlock(int x, int y);
 
 private:
-    void blockFromPerlin(double i, double j, float noiseHeight) const;
     float computeNoiseHeight(int x, int y);
     Uint getGroundBlock(int x, int y, float noiseHeight);
     Uint getLiquidBlock(int x, int y, float noiseHeight);
+    Uint getAspectBlock(int x, int y, float noiseHeight);
 
     PerlinNoise _perlinNoise;
 

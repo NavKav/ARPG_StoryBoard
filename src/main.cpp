@@ -1,6 +1,7 @@
 #include "core/Window.h"
 #include "game/menu/MenuWindowContent.h"
 #include "game/GameWindowContent.h"
+#include "util/Pair.h"
 
 #undef main
 
@@ -8,7 +9,8 @@ using namespace std;
 
 int main( int argc, char *argv[] )
 {
-    Window window("ARPG_StoryBoard", 32 * 40, 32 * 10);
+
+    Window window("ARPG_StoryBoard", 32 * 40, 32 * 25);
 
     //Player p(window, new MenuWindowContent());
     //Player p(window, new OptionWindowContent());
@@ -17,5 +19,4 @@ int main( int argc, char *argv[] )
     p.start();
 
     return 0;
-
 }

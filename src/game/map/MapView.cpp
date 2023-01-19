@@ -249,6 +249,7 @@ void MapView::shiftMap(double newX, double newY, Velocity v) {
 void MapView::displayAll(int x, int y) {
     displayGround(x, y);
     displayLiquid(x, y);
+    //displayAspect(x, y);
 }
 
 void MapView::cornerFromCenter(double x, double y, int& a, int& b) {
@@ -279,6 +280,12 @@ void MapView::changeDrawBlockValue(unsigned int a, unsigned int b, unsigned int 
             _drawBlock[i][j] = true;
         }
     }
+}
+
+void MapView::displayAspect(int x, int y) {
+    _floorName = "aspect";
+    _mapGenerator.setCurrentMap(ASPECT);
+    display(x, y);
 }
 
 

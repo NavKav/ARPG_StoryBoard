@@ -20,6 +20,7 @@ public :
     MapView(Window& window, MapGenerator& mapGenerator);
     void displayGround(int x, int y);
     void displayLiquid(int x, int y);
+    void displayAspect(int x, int y);
     void displayAll(int x, int y);
     void displayFromCoordinate(double x, double y);
     void shiftMap(double newX,double newY,Velocity speed);

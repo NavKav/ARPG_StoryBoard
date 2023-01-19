@@ -24,6 +24,8 @@ _Y(sizeY)
                                                                         | SDL_RENDERER_PRESENTVSYNC
                                                                         | SDL_RENDERER_TARGETTEXTURE);
 
+    SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1"); // check usefulness
+
     _defaultTexture = SDL_CreateTexture(_renderer,
                                 SDL_PIXELFORMAT_RGBA8888,
                                 SDL_TEXTUREACCESS_TARGET,

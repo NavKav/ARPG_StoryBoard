@@ -1,6 +1,8 @@
 //
 // Created by navid on 11/06/2022.
 //
+#include <unistd.h>
+#include <synchapi.h>
 #include "MapGenerator.h"
 
 using namespace std;
@@ -18,7 +20,7 @@ void MapGenerator::display() {
 }
 
 void MapGenerator::setCurrentMap(unsigned int cm) {
-    _currentMap = cm;
+    _currentMap = cm % 3;
 }
 
 Uint MapGenerator::operator()(unsigned int x, unsigned int y) {
@@ -63,39 +65,39 @@ bool MapGenerator::sameTile(unsigned int x, unsigned int y, unsigned int d) {
 }
 
 Uint MapGenerator::getBlock(int x, int y){
+    float noiseHeight = computeNoiseHeight(x, y);
     if (_currentMap == GROUND) {
-        return getGroundBlock(x, y, computeNoiseHeight(x, y));
-    } else {
-        return getLiquidBlock(x, y, computeNoiseHeight(x, y));
+        return getGroundBlock(x, y, noiseHeight);
+    } else if (_currentMap == LIQUID) {
+        return getLiquidBlock(x, y, noiseHeight);
+    } else { //_currentMap == ASPECT
+        return getAspectBlock(x, y, noiseHeight);
     }
 }
 
 /* Default :
  * scale  = 100
- * persistance= 0.5
+ * persistence= 0.5
  * lacunarity = 2
  * octave = 5
  * amplitude = 1
  * frequency = 1
  * */
 float MapGenerator::computeNoiseHeight(int x, int y) {
-    float scale = 100, persistance= 0.5, lacunarity = 2;
+    float scale = 100, persistence= 0.5, lacunarity = 2;
     int octave = 5;
     double tmp;
-    auto X = (double)400, Y = (double) 400;
-
-    double hX = X/2., hY =Y/2.;
 
     float amplitude = 1;
     float frequency = 1.5;
     float noiseHeight = 0;
     for (unsigned int aux = 0; aux < octave; aux++) {
-        double sx = (x - hX) / scale * frequency /*+ offset[aux].first*/;
-        double sy = (y - hY) / scale * frequency /*+ offset[aux].second*/;
+        double sx = x / scale * frequency /*+ offset[aux].first*/;
+        double sy = y / scale * frequency /*+ offset[aux].second*/;
         tmp = _perlinNoise.noise(sx, sy) * 2 - 1;
         noiseHeight += tmp * amplitude;
 
-        amplitude *= persistance;
+        amplitude *= persistence;
         frequency *= lacunarity;
     }
 
@@ -138,4 +140,11 @@ Uint MapGenerator::getLiquidBlock(int x, int y, float noiseHeight) {
     {
         return 143;
     }
+}
+
+Uint MapGenerator::getAspectBlock(int x, int y, float noiseHeight) {
+    if (getGroundBlock(x, y, noiseHeight) == 81 && (int)(noiseHeight*100) % 2) {
+        return 67;
+    }
+    return 0;
 }

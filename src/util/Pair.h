@@ -16,13 +16,15 @@ public :
     Pair operator+(const Pair& rhs) const;
     Pair& operator+=(const Pair& rhs);
     Pair& operator+=(float x);
+    Pair& operator*=(float x);
     float norm() const;
     float operator^(Pair rhs) const;
     bool isLeftSide() const;
     bool isRightSide() const;
     float x();
     float y();
-    Pair& operator*(float x);
+    Pair operator*(float x);
+    Pair& operator()(float x, float y);
 private :
     double _x, _y;
 } Velocity;

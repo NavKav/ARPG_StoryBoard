@@ -7,10 +7,10 @@
 
 #include <cstdlib>
 
-#include "../core/WindowContent.h"
-#include "../core/Player.h"
+#include "core/WindowContent.h"
+#include "core/Player.h"
 #include "map/MapView.h"
-#include "../util/FrameRate.h"
+#include "util/FrameRate.h"
 
 class GameWindowContent : public WindowContent {
 public :
