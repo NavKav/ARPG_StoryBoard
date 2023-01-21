@@ -113,20 +113,20 @@ CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\game\GameWindowContent.cpp -o CMakeFiles\Dice_Game_Project.dir\src\game\GameWindowContent.cpp.s
 
-CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj: CMakeFiles/Dice_Game_Project.dir/flags.make
-CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj: CMakeFiles/Dice_Game_Project.dir/includes_CXX.rsp
-CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj: ../src/game/map/MapGenerator.cpp
-CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj: CMakeFiles/Dice_Game_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj -MF CMakeFiles\Dice_Game_Project.dir\src\game\map\MapGenerator.cpp.obj.d -o CMakeFiles\Dice_Game_Project.dir\src\game\map\MapGenerator.cpp.obj -c C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\game\map\MapGenerator.cpp
+CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj: CMakeFiles/Dice_Game_Project.dir/flags.make
+CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj: CMakeFiles/Dice_Game_Project.dir/includes_CXX.rsp
+CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj: ../src/game/map/MapModel.cpp
+CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj: CMakeFiles/Dice_Game_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\navid\CLionProjects\ARPG_StoryBoard\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj -MF CMakeFiles\Dice_Game_Project.dir\src\game\map\MapModel.cpp.obj.d -o CMakeFiles\Dice_Game_Project.dir\src\game\map\MapModel.cpp.obj -c C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\game\map\MapModel.cpp
 
-CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\game\map\MapGenerator.cpp > CMakeFiles\Dice_Game_Project.dir\src\game\map\MapGenerator.cpp.i
+CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\game\map\MapModel.cpp > CMakeFiles\Dice_Game_Project.dir\src\game\map\MapModel.cpp.i
 
-CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\game\map\MapGenerator.cpp -o CMakeFiles\Dice_Game_Project.dir\src\game\map\MapGenerator.cpp.s
+CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\navid\CLionProjects\ARPG_StoryBoard\src\game\map\MapModel.cpp -o CMakeFiles\Dice_Game_Project.dir\src\game\map\MapModel.cpp.s
 
 CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj: CMakeFiles/Dice_Game_Project.dir/flags.make
 CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj: CMakeFiles/Dice_Game_Project.dir/includes_CXX.rsp
@@ -283,7 +283,7 @@ Dice_Game_Project_OBJECTS = \
 "CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj" \
 "CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj" \
 "CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.obj" \
-"CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj" \
+"CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj" \
 "CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj" \
 "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.obj" \
 "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj" \
@@ -301,7 +301,7 @@ Dice_Game_Project_EXTERNAL_OBJECTS =
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.obj
-Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj
+Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.obj
 Dice_Game_Project.exe: CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj

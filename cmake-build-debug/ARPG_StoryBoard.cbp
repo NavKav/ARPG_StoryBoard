@@ -106,10 +106,10 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/GameWindowContent.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapGenerator.cpp">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapModel.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapGenerator.h">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapModel.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapView.cpp">

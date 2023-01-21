@@ -200,29 +200,29 @@ src/game/GameWindowContent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.s
 .PHONY : src/game/GameWindowContent.cpp.s
 
-src/game/map/MapGenerator.obj: src/game/map/MapGenerator.cpp.obj
-.PHONY : src/game/map/MapGenerator.obj
+src/game/map/MapModel.obj: src/game/map/MapModel.cpp.obj
+.PHONY : src/game/map/MapModel.obj
 
 # target to build an object file
-src/game/map/MapGenerator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.obj
-.PHONY : src/game/map/MapGenerator.cpp.obj
+src/game/map/MapModel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj
+.PHONY : src/game/map/MapModel.cpp.obj
 
-src/game/map/MapGenerator.i: src/game/map/MapGenerator.cpp.i
-.PHONY : src/game/map/MapGenerator.i
+src/game/map/MapModel.i: src/game/map/MapModel.cpp.i
+.PHONY : src/game/map/MapModel.i
 
 # target to preprocess a source file
-src/game/map/MapGenerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.i
-.PHONY : src/game/map/MapGenerator.cpp.i
+src/game/map/MapModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.i
+.PHONY : src/game/map/MapModel.cpp.i
 
-src/game/map/MapGenerator.s: src/game/map/MapGenerator.cpp.s
-.PHONY : src/game/map/MapGenerator.s
+src/game/map/MapModel.s: src/game/map/MapModel.cpp.s
+.PHONY : src/game/map/MapModel.s
 
 # target to generate assembly for a file
-src/game/map/MapGenerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/MapGenerator.cpp.s
-.PHONY : src/game/map/MapGenerator.cpp.s
+src/game/map/MapModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.s
+.PHONY : src/game/map/MapModel.cpp.s
 
 src/game/map/MapView.obj: src/game/map/MapView.cpp.obj
 .PHONY : src/game/map/MapView.obj
@@ -482,9 +482,9 @@ help:
 	@echo ... src/game/GameWindowContent.obj
 	@echo ... src/game/GameWindowContent.i
 	@echo ... src/game/GameWindowContent.s
-	@echo ... src/game/map/MapGenerator.obj
-	@echo ... src/game/map/MapGenerator.i
-	@echo ... src/game/map/MapGenerator.s
+	@echo ... src/game/map/MapModel.obj
+	@echo ... src/game/map/MapModel.i
+	@echo ... src/game/map/MapModel.s
 	@echo ... src/game/map/MapView.obj
 	@echo ... src/game/map/MapView.i
 	@echo ... src/game/map/MapView.s

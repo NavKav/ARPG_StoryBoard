@@ -39,25 +39,37 @@ bool Player::takeInput(const SDL_Event &event) {
         return true;
     }
     if (event.type == SDL_KEYDOWN) {
-        _inputArr[event.key.keysym.scancode] = {true, 0, 0};
+        if (!_inputArr[event.key.keysym.scancode].pressed)
+            _inputArr[event.key.keysym.scancode] = {true, static_cast<long>(time(nullptr)), 0};
         return true;
     } else if (event.type == SDL_KEYUP) {
-        _inputArr[event.key.keysym.scancode] = {false, 0, 0};
+        if (_inputArr[event.key.keysym.scancode].pressed) {
+            _inputArr[event.key.keysym.scancode].pressed = false;
+            _inputArr[event.key.keysym.scancode].v = static_cast<long>(time(nullptr));
+        }
         return true;
     } else if (event.type == SDL_MOUSEBUTTONDOWN) {
         if (event.button.button == SDL_BUTTON_RIGHT) {
-            _inputArr[SDL_SCANCODE_RIGHTCLICK] = {true, 0, 0, event.button.x, event.button.y};
+            if (!_inputArr[SDL_SCANCODE_RIGHTCLICK].pressed)
+                _inputArr[SDL_SCANCODE_RIGHTCLICK] = {true, static_cast<long>(time(nullptr)), 0,  event.button.x, event.button.y};
             return true;
         } else { // SDL_BUTTON_LEFT
-            _inputArr[SDL_SCANCODE_LEFTCLICK] = {true, 0, 0, event.button.x, event.button.y};
+            if (!_inputArr[SDL_SCANCODE_LEFTCLICK].pressed)
+                _inputArr[SDL_SCANCODE_LEFTCLICK] = {true, static_cast<long>(time(nullptr)), 0,  event.button.x, event.button.y};
             return true;
         }
     } else if (event.type == SDL_MOUSEBUTTONUP) {
         if (event.button.button == SDL_BUTTON_RIGHT) {
-            _inputArr[SDL_SCANCODE_RIGHTCLICK] = {false, 0, 0, event.button.x, event.button.y};
+            if (_inputArr[SDL_SCANCODE_RIGHTCLICK].pressed) {
+                _inputArr[SDL_SCANCODE_RIGHTCLICK].pressed = false;
+                _inputArr[SDL_SCANCODE_RIGHTCLICK].v = static_cast<long>(time(nullptr));
+            }
             return true;
         } else { // SDL_BUTTON_LEFT
-            _inputArr[SDL_SCANCODE_LEFTCLICK] = {false, 0, 0, event.button.x, event.button.y};
+            if (_inputArr[SDL_SCANCODE_LEFTCLICK].pressed) {
+                _inputArr[SDL_SCANCODE_LEFTCLICK].pressed = false;
+                _inputArr[SDL_SCANCODE_LEFTCLICK].v = static_cast<long>(time(nullptr));
+            }
             return true;
         }
     }

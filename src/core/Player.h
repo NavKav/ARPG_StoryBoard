@@ -26,14 +26,12 @@ public :
     ~Player();
     void getMousePosition(int& x, int& y);
     bool keyDown();
-    void send(const Input& input);
     Input operator[](unsigned int i);
     void setWindowContent(WindowContent *windowContent);
 
 private :
     bool _boolLoop = true;
     Input _inputArr[NUM_SDLK] = {{false, 0, 0}};
-    void manageInput();
     bool takeInput(const SDL_Event& event);
     unsigned int _numberKeyDown = 0;
     WindowContent* _windowContent;

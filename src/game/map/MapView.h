@@ -5,19 +5,20 @@
 #ifndef ARPG_STORYBOARD_MAPVIEW_H
 #define ARPG_STORYBOARD_MAPVIEW_H
 
-#include "MapGenerator.h"
+#include "MapModel.h"
 #include "core/Window.h"
 #include "util/Pair.h"
 
 #define BLOCK_SIZE 32 // size in pixel of a block in game
 #define CORRECT_SHIFT_X(x) (x < 0 ? 1+x : x)
 #define CORRECT_SHIFT_Y(x) (x > 0 ? 1-x : -x)
+#define ABS(x) (x>0 ? x : -x)
 
 typedef unsigned int Uint;
 
 class MapView {
 public :
-    MapView(Window& window, MapGenerator& mapGenerator);
+    MapView(Window& window, MapModel& mapGenerator);
     void displayGround(int x, int y);
     void displayLiquid(int x, int y);
     void displayAspect(int x, int y);
@@ -27,7 +28,7 @@ public :
     ~MapView();
 private :
 
-    MapGenerator& _mapGenerator;
+    MapModel& _mapGenerator;
     Window& _window;
     string _floorName = "ground";
 

@@ -3,7 +3,7 @@
 //
 
 #include "GameWindowContent.h"
-#define P 5 //0.18
+#define P 3.18 //0.18
 
 using namespace std;
 
@@ -11,7 +11,7 @@ void GameWindowContent::process(Player& player, Window& window) {
     _frameRate.display(window);
 
     static double a = 10.5, b = 10.5;
-    static MapGenerator mapGenerator( 1);
+    static MapModel mapGenerator(1);
     static MapView mapView(window, mapGenerator);
     static bool firstTime = true;
 
@@ -20,12 +20,14 @@ void GameWindowContent::process(Player& player, Window& window) {
         mapView.displayFromCoordinate(a, b);
         firstTime = false;
     }
+    static int z = 0;
 
     window.drawOn(BACKGROUND);
     Pair speed(0, 0);
     if (player[SDL_SCANCODE_UP].pressed) {
         b += P;
         speed(0, P);
+        z++;
     }
     if (player[SDL_SCANCODE_DOWN].pressed) {
         b += -P;
@@ -40,10 +42,8 @@ void GameWindowContent::process(Player& player, Window& window) {
         speed(-P, 0);
     }
     if (player[SDL_SCANCODE_SPACE].pressed){
-        mapGenerator.setCurrentMap(LIQUID);
-        cout << mapGenerator(a, b) << endl;
-        mapGenerator.setCurrentMap(GROUND);
-        cout << mapGenerator(a, b) << endl << endl;
+        cout << speed.x() << endl;
+        cout << speed.y() << endl << endl;
     }
 
     mapView.shiftMap(a, b, speed);

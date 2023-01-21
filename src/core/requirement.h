@@ -15,8 +15,7 @@
 #include <iostream>
 #include <memory>
 #include <unistd.h>
-#include <time.h>
-#include <set>
+#include <ctime>
 
 #include "SDL2/SDL.h"
 #include "SDL_image.h"
@@ -26,7 +25,7 @@
 
 struct Input {
     bool pressed;
-    unsigned int u,v;
+    long int u,v;
     Sint32 mouseX = 0, mouseY = 0;
 };
 

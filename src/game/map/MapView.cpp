@@ -6,7 +6,7 @@
 
 using namespace std;
 
-MapView::MapView(Window& window, MapGenerator& mapGenerator) :
+MapView::MapView(Window& window, MapModel& mapGenerator) :
 _window(window),
 _mapGenerator(mapGenerator)
 {
@@ -243,7 +243,12 @@ void MapView::shiftMap(double newX,double newY,double aBlock,double bBlock) {
 }
 
 void MapView::shiftMap(double newX, double newY, Velocity v) {
-    shiftMap(newX, newY, v.x(), v.y());
+    if (ABS(v.x()) >= _X || ABS(v.y()) >= _Y) {
+        displayFromCoordinate(newX, newY);
+    }
+    else {
+        shiftMap(newX, newY, v.x(), v.y());
+    }
 }
 
 void MapView::displayAll(int x, int y) {
