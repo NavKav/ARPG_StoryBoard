@@ -5,11 +5,12 @@
 #ifndef ARPG_STORYBOARD_NPCMODEL_H
 #define ARPG_STORYBOARD_NPCMODEL_H
 
-#include "Unit.h"
+#include "UnitModel.h"
 
-class NPCModel : private Unit {
+class NPCModel : private UnitModel {
 public :
-
+    NPCModel();
+    void initialize() override;
 private :
 };
 

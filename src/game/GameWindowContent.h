@@ -8,15 +8,13 @@
 #include <cstdlib>
 
 #include "core/WindowContent.h"
-#include "core/Player.h"
-#include "map/MapView.h"
-#include "util/FrameRate.h"
+#include "game/Game.h"
 
 class GameWindowContent : public WindowContent {
 public :
     void process(Player& player, Window& window) override;
 private :
-    FrameRate _frameRate;
+    Game _game;
 
 };
 

@@ -176,6 +176,30 @@ src/core/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.s
 .PHONY : src/core/Window.cpp.s
 
+src/game/Game.obj: src/game/Game.cpp.obj
+.PHONY : src/game/Game.obj
+
+# target to build an object file
+src/game/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/Game.cpp.obj
+.PHONY : src/game/Game.cpp.obj
+
+src/game/Game.i: src/game/Game.cpp.i
+.PHONY : src/game/Game.i
+
+# target to preprocess a source file
+src/game/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/Game.cpp.i
+.PHONY : src/game/Game.cpp.i
+
+src/game/Game.s: src/game/Game.cpp.s
+.PHONY : src/game/Game.s
+
+# target to generate assembly for a file
+src/game/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/Game.cpp.s
+.PHONY : src/game/Game.cpp.s
+
 src/game/GameWindowContent.obj: src/game/GameWindowContent.cpp.obj
 .PHONY : src/game/GameWindowContent.obj
 
@@ -392,6 +416,54 @@ src/game/option/WindowFrame.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/option/WindowFrame.cpp.s
 .PHONY : src/game/option/WindowFrame.cpp.s
 
+src/game/unit/NPCModel.obj: src/game/unit/NPCModel.cpp.obj
+.PHONY : src/game/unit/NPCModel.obj
+
+# target to build an object file
+src/game/unit/NPCModel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCModel.cpp.obj
+.PHONY : src/game/unit/NPCModel.cpp.obj
+
+src/game/unit/NPCModel.i: src/game/unit/NPCModel.cpp.i
+.PHONY : src/game/unit/NPCModel.i
+
+# target to preprocess a source file
+src/game/unit/NPCModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCModel.cpp.i
+.PHONY : src/game/unit/NPCModel.cpp.i
+
+src/game/unit/NPCModel.s: src/game/unit/NPCModel.cpp.s
+.PHONY : src/game/unit/NPCModel.s
+
+# target to generate assembly for a file
+src/game/unit/NPCModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCModel.cpp.s
+.PHONY : src/game/unit/NPCModel.cpp.s
+
+src/game/unit/NPCView.obj: src/game/unit/NPCView.cpp.obj
+.PHONY : src/game/unit/NPCView.obj
+
+# target to build an object file
+src/game/unit/NPCView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCView.cpp.obj
+.PHONY : src/game/unit/NPCView.cpp.obj
+
+src/game/unit/NPCView.i: src/game/unit/NPCView.cpp.i
+.PHONY : src/game/unit/NPCView.i
+
+# target to preprocess a source file
+src/game/unit/NPCView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCView.cpp.i
+.PHONY : src/game/unit/NPCView.cpp.i
+
+src/game/unit/NPCView.s: src/game/unit/NPCView.cpp.s
+.PHONY : src/game/unit/NPCView.s
+
+# target to generate assembly for a file
+src/game/unit/NPCView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCView.cpp.s
+.PHONY : src/game/unit/NPCView.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -479,6 +551,9 @@ help:
 	@echo ... src/core/Window.obj
 	@echo ... src/core/Window.i
 	@echo ... src/core/Window.s
+	@echo ... src/game/Game.obj
+	@echo ... src/game/Game.i
+	@echo ... src/game/Game.s
 	@echo ... src/game/GameWindowContent.obj
 	@echo ... src/game/GameWindowContent.i
 	@echo ... src/game/GameWindowContent.s
@@ -506,6 +581,12 @@ help:
 	@echo ... src/game/option/WindowFrame.obj
 	@echo ... src/game/option/WindowFrame.i
 	@echo ... src/game/option/WindowFrame.s
+	@echo ... src/game/unit/NPCModel.obj
+	@echo ... src/game/unit/NPCModel.i
+	@echo ... src/game/unit/NPCModel.s
+	@echo ... src/game/unit/NPCView.obj
+	@echo ... src/game/unit/NPCView.i
+	@echo ... src/game/unit/NPCView.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

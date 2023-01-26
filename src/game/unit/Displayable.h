@@ -8,7 +8,7 @@
 
 class Displayable {
 public :
-    virtual void display() = 0;
+    virtual void display(int x, int y) = 0;
 private :
 };
 

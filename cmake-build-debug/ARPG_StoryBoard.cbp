@@ -100,6 +100,12 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/Game.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/Game.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/GameWindowContent.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
@@ -152,6 +158,18 @@
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/WindowFrame.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCModel.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCModel.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp">
