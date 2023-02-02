@@ -9,6 +9,7 @@
 #include "map/MapView.h"
 #include "util/FrameRate.h"
 #include "game/unit/NPCView.h"
+#include "game/unit/UnitViewHandler.h"
 
 class Game {
 public :

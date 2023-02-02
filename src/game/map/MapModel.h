@@ -6,7 +6,7 @@
 #define ARPG_STORYBOARD_MAPMODEL_H
 
 #include <iostream>
-#include <stdlib.h>
+#include <cstdlib>
 #include <utility>
 #include "PerlinNoise.h"
 

@@ -160,6 +160,18 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/WindowFrame.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCModel.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
@@ -170,6 +182,18 @@
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitViewHandler.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitViewHandler.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp">

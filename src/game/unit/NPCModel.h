@@ -7,10 +7,12 @@
 
 #include "UnitModel.h"
 
-class NPCModel : private UnitModel {
+class NPCModel : public UnitModel {
 public :
     NPCModel();
+    NPCModel(double x, double y);
     void initialize() override;
+    UnitDecision choice();
 private :
 };
 

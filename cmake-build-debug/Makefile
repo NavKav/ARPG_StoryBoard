@@ -416,6 +416,54 @@ src/game/option/WindowFrame.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/option/WindowFrame.cpp.s
 .PHONY : src/game/option/WindowFrame.cpp.s
 
+src/game/unit/HeroModel.obj: src/game/unit/HeroModel.cpp.obj
+.PHONY : src/game/unit/HeroModel.obj
+
+# target to build an object file
+src/game/unit/HeroModel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/HeroModel.cpp.obj
+.PHONY : src/game/unit/HeroModel.cpp.obj
+
+src/game/unit/HeroModel.i: src/game/unit/HeroModel.cpp.i
+.PHONY : src/game/unit/HeroModel.i
+
+# target to preprocess a source file
+src/game/unit/HeroModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/HeroModel.cpp.i
+.PHONY : src/game/unit/HeroModel.cpp.i
+
+src/game/unit/HeroModel.s: src/game/unit/HeroModel.cpp.s
+.PHONY : src/game/unit/HeroModel.s
+
+# target to generate assembly for a file
+src/game/unit/HeroModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/HeroModel.cpp.s
+.PHONY : src/game/unit/HeroModel.cpp.s
+
+src/game/unit/HeroView.obj: src/game/unit/HeroView.cpp.obj
+.PHONY : src/game/unit/HeroView.obj
+
+# target to build an object file
+src/game/unit/HeroView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/HeroView.cpp.obj
+.PHONY : src/game/unit/HeroView.cpp.obj
+
+src/game/unit/HeroView.i: src/game/unit/HeroView.cpp.i
+.PHONY : src/game/unit/HeroView.i
+
+# target to preprocess a source file
+src/game/unit/HeroView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/HeroView.cpp.i
+.PHONY : src/game/unit/HeroView.cpp.i
+
+src/game/unit/HeroView.s: src/game/unit/HeroView.cpp.s
+.PHONY : src/game/unit/HeroView.s
+
+# target to generate assembly for a file
+src/game/unit/HeroView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/HeroView.cpp.s
+.PHONY : src/game/unit/HeroView.cpp.s
+
 src/game/unit/NPCModel.obj: src/game/unit/NPCModel.cpp.obj
 .PHONY : src/game/unit/NPCModel.obj
 
@@ -463,6 +511,54 @@ src/game/unit/NPCView.s: src/game/unit/NPCView.cpp.s
 src/game/unit/NPCView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCView.cpp.s
 .PHONY : src/game/unit/NPCView.cpp.s
+
+src/game/unit/UnitView.obj: src/game/unit/UnitView.cpp.obj
+.PHONY : src/game/unit/UnitView.obj
+
+# target to build an object file
+src/game/unit/UnitView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitView.cpp.obj
+.PHONY : src/game/unit/UnitView.cpp.obj
+
+src/game/unit/UnitView.i: src/game/unit/UnitView.cpp.i
+.PHONY : src/game/unit/UnitView.i
+
+# target to preprocess a source file
+src/game/unit/UnitView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitView.cpp.i
+.PHONY : src/game/unit/UnitView.cpp.i
+
+src/game/unit/UnitView.s: src/game/unit/UnitView.cpp.s
+.PHONY : src/game/unit/UnitView.s
+
+# target to generate assembly for a file
+src/game/unit/UnitView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitView.cpp.s
+.PHONY : src/game/unit/UnitView.cpp.s
+
+src/game/unit/UnitViewHandler.obj: src/game/unit/UnitViewHandler.cpp.obj
+.PHONY : src/game/unit/UnitViewHandler.obj
+
+# target to build an object file
+src/game/unit/UnitViewHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitViewHandler.cpp.obj
+.PHONY : src/game/unit/UnitViewHandler.cpp.obj
+
+src/game/unit/UnitViewHandler.i: src/game/unit/UnitViewHandler.cpp.i
+.PHONY : src/game/unit/UnitViewHandler.i
+
+# target to preprocess a source file
+src/game/unit/UnitViewHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitViewHandler.cpp.i
+.PHONY : src/game/unit/UnitViewHandler.cpp.i
+
+src/game/unit/UnitViewHandler.s: src/game/unit/UnitViewHandler.cpp.s
+.PHONY : src/game/unit/UnitViewHandler.s
+
+# target to generate assembly for a file
+src/game/unit/UnitViewHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitViewHandler.cpp.s
+.PHONY : src/game/unit/UnitViewHandler.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -581,12 +677,24 @@ help:
 	@echo ... src/game/option/WindowFrame.obj
 	@echo ... src/game/option/WindowFrame.i
 	@echo ... src/game/option/WindowFrame.s
+	@echo ... src/game/unit/HeroModel.obj
+	@echo ... src/game/unit/HeroModel.i
+	@echo ... src/game/unit/HeroModel.s
+	@echo ... src/game/unit/HeroView.obj
+	@echo ... src/game/unit/HeroView.i
+	@echo ... src/game/unit/HeroView.s
 	@echo ... src/game/unit/NPCModel.obj
 	@echo ... src/game/unit/NPCModel.i
 	@echo ... src/game/unit/NPCModel.s
 	@echo ... src/game/unit/NPCView.obj
 	@echo ... src/game/unit/NPCView.i
 	@echo ... src/game/unit/NPCView.s
+	@echo ... src/game/unit/UnitView.obj
+	@echo ... src/game/unit/UnitView.i
+	@echo ... src/game/unit/UnitView.s
+	@echo ... src/game/unit/UnitViewHandler.obj
+	@echo ... src/game/unit/UnitViewHandler.i
+	@echo ... src/game/unit/UnitViewHandler.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

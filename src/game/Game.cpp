@@ -9,9 +9,10 @@
 using namespace std;
 
 void Game::process(Player &player, Window &window) {
+    srand(time(NULL));
     _frameRate.display(window);
 
-    static double x = 0, y = -10;
+    static double x = 0, y = 0;
     static MapView mapView(window, _mapGenerator);
 
     static bool firstTime = true;
@@ -24,9 +25,19 @@ void Game::process(Player &player, Window &window) {
     /*************************************************************************/
     /*************************  UNITS TESTS  *********************************/
     /*************************************************************************/
-    NPCModel npcModel;
-    NPCView npc(window, npcModel);
-    npc.display(window.getX()/2, window.getY()/2);
+    static NPCModel npcModel1(-1,-1);
+    NPCView npc1(window, npcModel1);
+    static NPCModel npcModel2(-1, -1);
+    NPCView npc2(window, npcModel2);
+
+    static UnitViewHandler unitViewHandler(window);
+    unitViewHandler.add(&npc1);
+    unitViewHandler.add(&npc2);
+    unitViewHandler.displayAll(x, y);
+
+    /*************************************************************************/
+    /*************************  UNITS TESTS END  *****************************/
+    /*************************************************************************/
     window.refresh();
 }
 

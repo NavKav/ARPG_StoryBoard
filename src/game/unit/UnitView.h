@@ -7,11 +7,20 @@
 
 #include <string>
 #include "Displayable.h"
+#include "core/Window.h"
+#include "UnitModel.h"
+#include "game/map/MapView.h"
 
 class UnitView : private Displayable {
 public :
-    void display(int x, int y) override = 0;
+    UnitView(UnitModel& unitModel, Window& window);
+    void display(double x, double y) override = 0;
+    virtual ~UnitView() = default;
+    bool isInScreen(double x, double y);
+    bool operator>(const UnitView& aux) const;
 protected :
+    UnitModel& _unitModel;
+    Window& _window;
 };
 
 

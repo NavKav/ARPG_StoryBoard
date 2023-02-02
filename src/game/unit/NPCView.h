@@ -8,14 +8,15 @@
 #include "UnitView.h"
 #include "NPCModel.h"
 #include "core/Window.h"
+#include "game/map/MapView.h"
 
-class NPCView : private UnitView{
+#define DIST(a, b) ((a - b) < 0 ? b - a : a - b)
+
+class NPCView : public UnitView{
 public :
-    NPCView(Window& window, NPCModel& npcModel);
-    void display(int x, int y) override;
+    NPCView(Window& window, UnitModel& unitModel);
+    void display(double xCorner, double yCorner) override;
 private :
-    NPCModel& _npcModel;
-    Window& _window;
 };
 
 #endif //ARPG_STORYBOARD_NPCVIEW_H

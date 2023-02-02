@@ -59,6 +59,9 @@ void MapView::display(int x, int y) {
                     drawBottomRight(x + i, y - j, i, j);
                 }
             }
+            /*_window.changeFont("arial", 9);
+            _window.changeColor(0, 0, 0);
+            _window.writeText(i * BLOCK_SIZE, j * BLOCK_SIZE, to_string(x + i) + "," + to_string(y - j));*/
         }
     }
     _window.close(_floorName);
