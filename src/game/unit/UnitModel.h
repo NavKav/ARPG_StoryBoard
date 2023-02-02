@@ -13,11 +13,8 @@ typedef Pair Speed;
 class UnitModel {
     friend class UnitView;
     friend class NPCView;
+    friend class UnitModelHandler;
 public:
-    virtual void initialize() = 0;
-    virtual ~UnitModel() = default;
-
-protected :
     enum UnitDecision {
         MOVE_UP = 1 << 0,
         MOVE_DOWN = 1 << 1,
@@ -25,6 +22,10 @@ protected :
         MOVE_RIGHT = 1 << 3
     };
 
+    virtual UnitDecision play() = 0;
+    virtual ~UnitModel() = default;
+
+protected :
     int _health = 0;
     int _maxHealth = 0;
     std::string _name;

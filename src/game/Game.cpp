@@ -4,8 +4,6 @@
 
 #include "Game.h"
 
-#define P 3.18 //0.18
-
 using namespace std;
 
 void Game::process(Player &player, Window &window) {
@@ -29,6 +27,11 @@ void Game::process(Player &player, Window &window) {
     NPCView npc1(window, npcModel1);
     static NPCModel npcModel2(-1, -1);
     NPCView npc2(window, npcModel2);
+
+    static UnitModelHandler unitModelHandler;
+    unitModelHandler.add(&npcModel1);
+    unitModelHandler.add(&npcModel2);
+    unitModelHandler.play();
 
     static UnitViewHandler unitViewHandler(window);
     unitViewHandler.add(&npc1);

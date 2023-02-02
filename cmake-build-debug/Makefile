@@ -512,6 +512,30 @@ src/game/unit/NPCView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCView.cpp.s
 .PHONY : src/game/unit/NPCView.cpp.s
 
+src/game/unit/UnitModelHandler.obj: src/game/unit/UnitModelHandler.cpp.obj
+.PHONY : src/game/unit/UnitModelHandler.obj
+
+# target to build an object file
+src/game/unit/UnitModelHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitModelHandler.cpp.obj
+.PHONY : src/game/unit/UnitModelHandler.cpp.obj
+
+src/game/unit/UnitModelHandler.i: src/game/unit/UnitModelHandler.cpp.i
+.PHONY : src/game/unit/UnitModelHandler.i
+
+# target to preprocess a source file
+src/game/unit/UnitModelHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitModelHandler.cpp.i
+.PHONY : src/game/unit/UnitModelHandler.cpp.i
+
+src/game/unit/UnitModelHandler.s: src/game/unit/UnitModelHandler.cpp.s
+.PHONY : src/game/unit/UnitModelHandler.s
+
+# target to generate assembly for a file
+src/game/unit/UnitModelHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitModelHandler.cpp.s
+.PHONY : src/game/unit/UnitModelHandler.cpp.s
+
 src/game/unit/UnitView.obj: src/game/unit/UnitView.cpp.obj
 .PHONY : src/game/unit/UnitView.obj
 
@@ -689,6 +713,9 @@ help:
 	@echo ... src/game/unit/NPCView.obj
 	@echo ... src/game/unit/NPCView.i
 	@echo ... src/game/unit/NPCView.s
+	@echo ... src/game/unit/UnitModelHandler.obj
+	@echo ... src/game/unit/UnitModelHandler.i
+	@echo ... src/game/unit/UnitModelHandler.s
 	@echo ... src/game/unit/UnitView.obj
 	@echo ... src/game/unit/UnitView.i
 	@echo ... src/game/unit/UnitView.s

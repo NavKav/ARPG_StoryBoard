@@ -184,6 +184,12 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModelHandler.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModelHandler.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>

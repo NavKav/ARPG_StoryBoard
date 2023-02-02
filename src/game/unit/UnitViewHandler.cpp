@@ -23,7 +23,6 @@ UnitViewHandler::~UnitViewHandler() {
 
 void UnitViewHandler::add(UnitView *unitView) {
     _unitViewList.insert(unitView);
-    cout << _unitViewList.size() << endl;
 }
 
 void UnitViewHandler::displayAll(double heroX, double heroY) {

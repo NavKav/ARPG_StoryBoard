@@ -11,8 +11,7 @@ class NPCModel : public UnitModel {
 public :
     NPCModel();
     NPCModel(double x, double y);
-    void initialize() override;
-    UnitDecision choice();
+    UnitDecision play() override;
 private :
 };
 

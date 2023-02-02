@@ -10,6 +10,7 @@
 #include "util/FrameRate.h"
 #include "game/unit/NPCView.h"
 #include "game/unit/UnitViewHandler.h"
+#include "game/unit/UnitModelHandler.h"
 
 class Game {
 public :
