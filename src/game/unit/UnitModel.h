@@ -16,20 +16,26 @@ class UnitModel {
     friend class UnitModelHandler;
 public:
     enum UnitDecision {
-        MOVE_UP = 1 << 0,
-        MOVE_DOWN = 1 << 1,
-        MOVE_LEFT = 1 << 2,
-        MOVE_RIGHT = 1 << 3
+        DO_NOTHING = 1 << 0,
+        MOVE_UP = 1 << 1,
+        MOVE_DOWN = 1 << 2,
+        MOVE_LEFT = 1 << 3,
+        MOVE_RIGHT = 1 << 4
     };
 
     virtual UnitDecision play() = 0;
+    virtual bool isHero() = 0;
     virtual ~UnitModel() = default;
-
+    double getX() const;
+    double getY() const;
+    double getMovementSpeed() const;
+    const Speed& getSpeed() const;
 protected :
     int _health = 0;
     int _maxHealth = 0;
     std::string _name;
     double _x = 0, _y = 0;
+    double _movementSpeed = 0;
     Speed _speed = Speed(0, 0);
 };
 

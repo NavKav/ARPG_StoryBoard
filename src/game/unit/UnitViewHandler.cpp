@@ -23,9 +23,14 @@ UnitViewHandler::~UnitViewHandler() {
 
 void UnitViewHandler::add(UnitView *unitView) {
     _unitViewList.insert(unitView);
+    for (auto x : _unitViewList) {
+        cout << x->getName() + " ";
+    }
+    cout << endl;
 }
 
 void UnitViewHandler::displayAll(double heroX, double heroY) {
+    _window.drawOn(DEFAULT);
     double aCorner, bCorner;
     cornerFromHero(heroX, heroY, aCorner, bCorner);
     for (auto npc :_unitViewList) {

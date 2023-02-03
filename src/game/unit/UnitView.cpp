@@ -29,3 +29,7 @@ bool UnitView::operator>(const UnitView& aux) const {
     || this->_unitModel._y == aux._unitModel._y
     && this->_unitModel._x < aux._unitModel._x;
 }
+
+const std::string& UnitView::getName() const {
+    return _unitModel._name;
+}

@@ -117,17 +117,13 @@ Uint MapModel::getGroundBlock(int x, int y, float noiseHeight) {
     {
         return 81;
     }
-    else if (noiseHeight < 0.8)
-    {
-        return 83;
-    }
     else if (noiseHeight < 0.9)
     {
-        return 83;
+        return 82;
     }
     else
     {
-        return 83;
+        return 82;
     }
 }
 

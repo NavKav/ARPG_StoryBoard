@@ -31,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCModel.cpp.obj.d"
   "CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCView.cpp.obj"
   "CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCView.cpp.obj.d"
+  "CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitModel.cpp.obj"
+  "CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitModel.cpp.obj.d"
   "CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitModelHandler.cpp.obj"
   "CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitModelHandler.cpp.obj.d"
   "CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitView.cpp.obj"

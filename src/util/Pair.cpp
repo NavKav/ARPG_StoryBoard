@@ -12,10 +12,10 @@ _y(y)
 }
 
 Pair Pair::operator+(const Pair& rhs) const {
-    return Pair(this->_x + rhs._x, this->_y + rhs._y);
+    return {this->_x + rhs._x, this->_y + rhs._y};
 }
 
-Pair &Pair::operator+=(float x) {
+Pair &Pair::operator+=(double x) {
     _x += x;
     _y += x;
     return (*this);
@@ -27,11 +27,11 @@ Pair &Pair::operator+=(const Pair& rhs) {
     return *this;
 }
 
-float Pair::norm() const {
+double Pair::norm() const {
     return sqrt(_x*_x + _y*_y);
 }
 
-float Pair::operator^(Pair rhs) const{
+double Pair::operator^(const Pair& rhs) const{
     return _x*rhs._x + _y*rhs._y;
 }
 
@@ -50,28 +50,32 @@ _y(rhs._y)
 
 }
 
-float Pair::x() {
+double Pair::x() const {
     return _x;
 }
 
-float Pair::y() {
+double Pair::y() const {
     return _y;
 }
 
-Pair Pair::operator*(float x) {
+Pair Pair::operator*(double x) {
     _x *= x;
     _y *= x;
-    return Pair(_x*x, _y*x);
+    return {_x*x, _y*x};
 }
 
-Pair &Pair::operator*=(float x) {
+Pair &Pair::operator*=(double x) {
     _x *= x;
     _y *= x;
     return *this;
 }
 
-Pair& Pair::operator()(float x, float y) {
+Pair& Pair::operator()(double x, double y) {
     _x += x;
     _y += y;
     return *this;
+}
+
+Pair Pair::operator-() const {
+    return {-_x, -_y};
 }

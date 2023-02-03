@@ -202,6 +202,7 @@ void MapView::displayFromCoordinate(double x, double y) {
 }
 
 void MapView::shiftMap(double newX,double newY,double aBlock,double bBlock) {
+    _window.drawOn(BACKGROUND);
     if (aBlock == 0 && bBlock == 0) return;
 
     setDrawBlockValue();
@@ -250,7 +251,7 @@ void MapView::shiftMap(double newX, double newY, Velocity v) {
         displayFromCoordinate(newX, newY);
     }
     else {
-        shiftMap(newX, newY, v.x(), v.y());
+        shiftMap(newX, newY, -v.x(), v.y());
     }
 }
 

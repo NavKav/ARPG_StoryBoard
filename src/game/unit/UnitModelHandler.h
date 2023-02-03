@@ -13,9 +13,11 @@ class UnitModelHandler {
 public :
     void add(UnitModel* unitModel);
     void play();
-    void applyChange(UnitModel* unit);
 private :
+    void applyChange(UnitModel* unit);
+
     std::set<UnitModel*> _unitModelList;
+
 };
 
 

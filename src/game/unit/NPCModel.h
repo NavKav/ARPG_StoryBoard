@@ -12,6 +12,7 @@ public :
     NPCModel();
     NPCModel(double x, double y);
     UnitDecision play() override;
+    bool isHero() override;
 private :
 };
 

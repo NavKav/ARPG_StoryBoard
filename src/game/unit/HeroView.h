@@ -6,10 +6,14 @@
 #define ARPG_STORYBOARD_HEROVIEW_H
 
 #include "UnitView.h"
+#include "HeroModel.h"
 
-class HeroView : private UnitView {
+class HeroView : public UnitView {
 public :
-
+    HeroView(HeroModel& heroModel, Window& window);
+    void display(double xCorner, double yCorner) override;
+    bool isInScreen(double x, double y) override;
+    bool isHero() override;
 private :
 };
 

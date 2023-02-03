@@ -16,6 +16,7 @@ class NPCView : public UnitView{
 public :
     NPCView(Window& window, UnitModel& unitModel);
     void display(double xCorner, double yCorner) override;
+    bool isHero() override;
 private :
 };
 

@@ -11,6 +11,8 @@
 #include "game/unit/NPCView.h"
 #include "game/unit/UnitViewHandler.h"
 #include "game/unit/UnitModelHandler.h"
+#include "game/unit/HeroModel.h"
+#include "game/unit/HeroView.h"
 
 class Game {
 public :

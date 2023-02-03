@@ -20,3 +20,7 @@ void NPCView::display(double xCorner, double yCorner) {
                     (int)((DIST(yCorner, _unitModel._y) + _window.getY()/BLOCK_SIZE%2) * BLOCK_SIZE - 101),
                     "unit/golem.png");
 }
+
+bool NPCView::isHero() {
+    return _unitModel.isHero();
+}

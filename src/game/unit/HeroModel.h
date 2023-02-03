@@ -6,12 +6,16 @@
 #define ARPG_STORYBOARD_HEROMODEL_H
 
 #include "UnitModel.h"
+#include "core/Player.h"
 
-class HeroModel : private UnitModel {
+class HeroModel : public UnitModel {
 public :
-
+    explicit HeroModel(Player& player);
+    HeroModel(Player& player, double x, double y);
+    bool isHero() override;
 private :
-
+    UnitDecision play() override;
+    Player& _player;
 };
 
 

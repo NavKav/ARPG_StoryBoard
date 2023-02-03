@@ -14,14 +14,16 @@
 class UnitView : private Displayable {
 public :
     UnitView(UnitModel& unitModel, Window& window);
-    void display(double x, double y) override = 0;
+    virtual void display(double x, double y) override = 0;
     virtual ~UnitView() = default;
-    bool isInScreen(double x, double y);
+    virtual bool isInScreen(double x, double y);
     bool operator>(const UnitView& aux) const;
+    virtual bool isHero() = 0;
+    const std::string& getName() const;
+
 protected :
     UnitModel& _unitModel;
     Window& _window;
 };
-
 
 #endif //ARPG_STORYBOARD_UNITVIEW_H

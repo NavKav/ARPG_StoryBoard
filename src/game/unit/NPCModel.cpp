@@ -11,6 +11,7 @@ NPCModel::NPCModel() {
     _health = 0;
     _maxHealth = 0;
     _name = "Golem";
+    _movementSpeed = 0.18;
     _x = rand()%10 - 5, _y = rand()%10 - 5;
 }
 
@@ -19,9 +20,12 @@ NPCModel()
 {
     _x = x;
     _y = y;
-    cout << _x << " " << _y << endl;
 }
 
 UnitModel::UnitDecision NPCModel::play() {
-    return MOVE_UP;
+    return DO_NOTHING;
+}
+
+bool NPCModel::isHero() {
+    return false;
 }
