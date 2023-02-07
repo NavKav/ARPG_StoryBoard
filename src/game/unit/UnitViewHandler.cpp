@@ -22,22 +22,24 @@ UnitViewHandler::~UnitViewHandler() {
 }
 
 void UnitViewHandler::add(UnitView *unitView) {
-    _unitViewList.insert(unitView);
     for (auto x : _unitViewList) {
-        cout << x->getName() + " ";
+        if (x == unitView) return;
     }
-    cout << endl;
+    _unitViewList.push_front(unitView);
 }
 
 void UnitViewHandler::displayAll(double heroX, double heroY) {
     _window.drawOn(DEFAULT);
     double aCorner, bCorner;
     cornerFromHero(heroX, heroY, aCorner, bCorner);
+    sortUnitSet();
     for (auto npc :_unitViewList) {
         if (npc->isInScreen(aCorner, bCorner)) {
             npc->display(aCorner, bCorner);
         }
     }
+    cout << endl;
+
 }
 
 void UnitViewHandler::cornerFromHero(double heroX, double heroY, double &a, double &b) const {
@@ -45,4 +47,7 @@ void UnitViewHandler::cornerFromHero(double heroX, double heroY, double &a, doub
     b = heroY + (double)_window.getY()/(2 * BLOCK_SIZE);
 }
 
+void UnitViewHandler::sortUnitSet() {
+    _unitViewList.sort(cmp);
 
+}

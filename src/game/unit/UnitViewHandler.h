@@ -5,7 +5,8 @@
 #ifndef ARPG_STORYBOARD_UNITVIEWHANDLER_H
 #define ARPG_STORYBOARD_UNITVIEWHANDLER_H
 
-#include <set>
+#include <list>
+#include <algorithm>
 #include "game/map/MapView.h"
 #include "UnitView.h"
 #include "core/Window.h"
@@ -17,17 +18,17 @@ public :
     void add(UnitView* unitView);
     void displayAll(double heroX, double heroY);
 private :
-    struct cmp {
+    struct {
         bool operator() (UnitView* a, UnitView* b) const {
-            if (a == b) return false;
             return !a->operator>(*b);
         }
-    };
+    } cmp;
 
     Window& _window;
-    std::set<UnitView*, cmp> _unitViewList;
+    std::list<UnitView*> _unitViewList;
 
     void cornerFromHero(double heroX, double heroY, double& a, double& b) const;
+    void sortUnitSet();
 };
 
 

@@ -19,7 +19,6 @@ void Game::process(Player &player, Window &window) {
     if (firstTime) {
         window.drawOn(BACKGROUND);
         mapView.displayFromCoordinate(x, y);
-        firstTime = false;
     }
 
     /*************************************************************************/
@@ -36,19 +35,30 @@ void Game::process(Player &player, Window &window) {
     static NPCView npc1(window, npcModel1);
     static NPCModel npcModel2;
     static NPCView npc2(window, npcModel2);
-
     static UnitModelHandler unitModelHandler;
-    unitModelHandler.add(&npcModel1);
-    unitModelHandler.add(&npcModel2);
-    unitModelHandler.add(&heroModel);
-    unitModelHandler.play();
-    mapView.shiftMap(heroModel.getX(), heroModel.getY(), heroModel.getSpeed());
-
     static UnitViewHandler unitViewHandler(window);
+
+
+    if (firstTime) {
+        unitModelHandler.add(&npcModel1);
+        unitModelHandler.add(&npcModel2);
+        unitModelHandler.add(&heroModel);
+
+        unitViewHandler.add(&npc1);
+        unitViewHandler.add(&npc2);
+        unitViewHandler.add(&_heroView);
+
+        firstTime = false;
+    }
+
     unitViewHandler.add(&npc1);
     unitViewHandler.add(&npc2);
     unitViewHandler.add(&_heroView);
+
+    unitModelHandler.play();
+    mapView.shiftMap(heroModel.getX(), heroModel.getY(), heroModel.getSpeed());
     unitViewHandler.displayAll(heroModel.getX(), heroModel.getY());
+
     /*************************************************************************/
     /*************************  DISPLAY **************************************/
     /*************************************************************************/

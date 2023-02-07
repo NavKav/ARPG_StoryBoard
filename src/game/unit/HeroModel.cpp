@@ -10,7 +10,7 @@ _player(player)
     _health = 0;
     _maxHealth = 0;
     _name = "Hero";
-    _movementSpeed = 0.18;
+    _movementSpeed = 1.18;
     _x = 0, _y = 0;
 }
 

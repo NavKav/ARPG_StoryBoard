@@ -25,9 +25,9 @@ _window(window)
 }
 
 bool UnitView::operator>(const UnitView& aux) const {
-    return this->_unitModel._y < aux._unitModel._y
-    || this->_unitModel._y == aux._unitModel._y
-    && this->_unitModel._x < aux._unitModel._x;
+    return (this->_unitModel.getY() <= aux._unitModel.getY())
+    //|| (this->_unitModel.getX() == aux._unitModel.getX() && this->_unitModel.isHero())
+    ;
 }
 
 const std::string& UnitView::getName() const {
