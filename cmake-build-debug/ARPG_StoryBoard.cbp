@@ -100,16 +100,16 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/Game.cpp">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/Game.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/Game.h">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/Game.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/GameWindowContent.cpp">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/GameWindowContent.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/GameWindowContent.h">
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/GameWindowContent.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapModel.cpp">

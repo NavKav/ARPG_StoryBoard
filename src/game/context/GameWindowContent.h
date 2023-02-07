@@ -8,7 +8,7 @@
 #include <cstdlib>
 
 #include "core/WindowContent.h"
-#include "game/Game.h"
+#include "game/context/Game.h"
 
 class GameWindowContent : public WindowContent {
 public :

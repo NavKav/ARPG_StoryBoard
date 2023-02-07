@@ -11,7 +11,7 @@
 #include "../../core/Player.h"
 #include "MenuButton.h"
 #include "../option/OptionWindowContent.h"
-#include "../GameWindowContent.h"
+#include "game/context/GameWindowContent.h"
 
 class MenuWindowContent : public WindowContent{
 public :

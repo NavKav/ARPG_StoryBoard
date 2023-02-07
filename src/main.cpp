@@ -1,6 +1,6 @@
 #include "core/Window.h"
 #include "game/menu/MenuWindowContent.h"
-#include "game/GameWindowContent.h"
+#include "game/context/GameWindowContent.h"
 
 #undef main
 

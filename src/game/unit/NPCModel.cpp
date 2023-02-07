@@ -7,7 +7,9 @@
 
 using namespace std;
 
-NPCModel::NPCModel() {
+NPCModel::NPCModel(HeroModel& heroModel) :
+_heroModel(heroModel)
+{
     _health = 0;
     _maxHealth = 0;
     _name = "Golem";
@@ -15,8 +17,8 @@ NPCModel::NPCModel() {
     _x = rand()%10 - 5, _y = rand()%10 - 5;
 }
 
-NPCModel::NPCModel(double x, double y) :
-NPCModel()
+NPCModel::NPCModel(double x, double y, HeroModel& heroModel) :
+NPCModel(heroModel)
 {
     _x = x;
     _y = y;

@@ -31,9 +31,9 @@ void Game::process(Player &player, Window &window) {
     /*************************************************************************/
     /*************************  UNITS TESTS  *********************************/
     /*************************************************************************/
-    static NPCModel npcModel1;
+    static NPCModel npcModel1(heroModel);
     static NPCView npc1(window, npcModel1);
-    static NPCModel npcModel2;
+    static NPCModel npcModel2(heroModel);
     static NPCView npc2(window, npcModel2);
     static UnitModelHandler unitModelHandler;
     static UnitViewHandler unitViewHandler(window);

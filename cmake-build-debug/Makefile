@@ -176,53 +176,53 @@ src/core/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.s
 .PHONY : src/core/Window.cpp.s
 
-src/game/Game.obj: src/game/Game.cpp.obj
-.PHONY : src/game/Game.obj
+src/game/context/Game.obj: src/game/context/Game.cpp.obj
+.PHONY : src/game/context/Game.obj
 
 # target to build an object file
-src/game/Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/Game.cpp.obj
-.PHONY : src/game/Game.cpp.obj
+src/game/context/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/context/Game.cpp.obj
+.PHONY : src/game/context/Game.cpp.obj
 
-src/game/Game.i: src/game/Game.cpp.i
-.PHONY : src/game/Game.i
+src/game/context/Game.i: src/game/context/Game.cpp.i
+.PHONY : src/game/context/Game.i
 
 # target to preprocess a source file
-src/game/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/Game.cpp.i
-.PHONY : src/game/Game.cpp.i
+src/game/context/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/context/Game.cpp.i
+.PHONY : src/game/context/Game.cpp.i
 
-src/game/Game.s: src/game/Game.cpp.s
-.PHONY : src/game/Game.s
+src/game/context/Game.s: src/game/context/Game.cpp.s
+.PHONY : src/game/context/Game.s
 
 # target to generate assembly for a file
-src/game/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/Game.cpp.s
-.PHONY : src/game/Game.cpp.s
+src/game/context/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/context/Game.cpp.s
+.PHONY : src/game/context/Game.cpp.s
 
-src/game/GameWindowContent.obj: src/game/GameWindowContent.cpp.obj
-.PHONY : src/game/GameWindowContent.obj
+src/game/context/GameWindowContent.obj: src/game/context/GameWindowContent.cpp.obj
+.PHONY : src/game/context/GameWindowContent.obj
 
 # target to build an object file
-src/game/GameWindowContent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.obj
-.PHONY : src/game/GameWindowContent.cpp.obj
+src/game/context/GameWindowContent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.obj
+.PHONY : src/game/context/GameWindowContent.cpp.obj
 
-src/game/GameWindowContent.i: src/game/GameWindowContent.cpp.i
-.PHONY : src/game/GameWindowContent.i
+src/game/context/GameWindowContent.i: src/game/context/GameWindowContent.cpp.i
+.PHONY : src/game/context/GameWindowContent.i
 
 # target to preprocess a source file
-src/game/GameWindowContent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.i
-.PHONY : src/game/GameWindowContent.cpp.i
+src/game/context/GameWindowContent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.i
+.PHONY : src/game/context/GameWindowContent.cpp.i
 
-src/game/GameWindowContent.s: src/game/GameWindowContent.cpp.s
-.PHONY : src/game/GameWindowContent.s
+src/game/context/GameWindowContent.s: src/game/context/GameWindowContent.cpp.s
+.PHONY : src/game/context/GameWindowContent.s
 
 # target to generate assembly for a file
-src/game/GameWindowContent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.s
-.PHONY : src/game/GameWindowContent.cpp.s
+src/game/context/GameWindowContent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.s
+.PHONY : src/game/context/GameWindowContent.cpp.s
 
 src/game/map/MapModel.obj: src/game/map/MapModel.cpp.obj
 .PHONY : src/game/map/MapModel.obj
@@ -695,12 +695,12 @@ help:
 	@echo ... src/core/Window.obj
 	@echo ... src/core/Window.i
 	@echo ... src/core/Window.s
-	@echo ... src/game/Game.obj
-	@echo ... src/game/Game.i
-	@echo ... src/game/Game.s
-	@echo ... src/game/GameWindowContent.obj
-	@echo ... src/game/GameWindowContent.i
-	@echo ... src/game/GameWindowContent.s
+	@echo ... src/game/context/Game.obj
+	@echo ... src/game/context/Game.i
+	@echo ... src/game/context/Game.s
+	@echo ... src/game/context/GameWindowContent.obj
+	@echo ... src/game/context/GameWindowContent.i
+	@echo ... src/game/context/GameWindowContent.s
 	@echo ... src/game/map/MapModel.obj
 	@echo ... src/game/map/MapModel.i
 	@echo ... src/game/map/MapModel.s

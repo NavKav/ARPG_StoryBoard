@@ -6,7 +6,7 @@
 #define ARPG_STORYBOARD_GAME_H
 
 #include "core/Player.h"
-#include "map/MapView.h"
+#include "game/map/MapView.h"
 #include "util/FrameRate.h"
 #include "game/unit/NPCView.h"
 #include "game/unit/UnitViewHandler.h"

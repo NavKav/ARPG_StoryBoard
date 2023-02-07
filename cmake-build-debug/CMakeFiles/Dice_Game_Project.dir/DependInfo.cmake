@@ -10,8 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Player.cpp" "CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/core/Player.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.cpp" "CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/core/Window.cpp.obj.d"
-  "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/Game.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/Game.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/Game.cpp.obj.d"
-  "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/GameWindowContent.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/GameWindowContent.cpp.obj.d"
+  "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/Game.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/context/Game.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/context/Game.cpp.obj.d"
+  "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/GameWindowContent.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapModel.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/map/MapModel.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapView.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj.d"
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuButton.cpp" "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.obj.d"
