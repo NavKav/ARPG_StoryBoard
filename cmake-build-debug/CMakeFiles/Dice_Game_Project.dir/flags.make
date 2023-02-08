@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/Dice_Game_Project.dir/includes_CXX.rsp
 
-CXX_FLAGS =  -std=c++20 -g -std=gnu++17
+CXX_FLAGS =  -std=c++20 -O3 -g -std=gnu++17
 
