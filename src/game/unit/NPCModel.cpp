@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include "NPCModel.h"
+#include "game/ai/AIZombie.h"
+#include <cmath>
 
 using namespace std;
 
@@ -24,8 +26,10 @@ NPCModel(heroModel)
     _y = y;
 }
 
-UnitModel::UnitDecision NPCModel::play() {
-    return DO_NOTHING;
+UnitModel::UnitDecision NPCModel::play(){
+    Blackboard blackboard(_heroModel);
+    AIZombie ai(blackboard);
+    return ai.process(*this);
 }
 
 bool NPCModel::isHero() {
