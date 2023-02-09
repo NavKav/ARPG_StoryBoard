@@ -14,7 +14,7 @@ public :
     HeroModel(Player& player, double x, double y);
     bool isHero() override;
 private :
-    UnitDecision play() override;
+    void play() override;
     Player& _player;
 };
 

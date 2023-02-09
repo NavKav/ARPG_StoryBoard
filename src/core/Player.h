@@ -25,7 +25,6 @@ public :
     void stop();
     ~Player();
     void getMousePosition(int& x, int& y);
-    bool keyDown();
     Input operator[](unsigned int i);
     void setWindowContent(WindowContent *windowContent);
 

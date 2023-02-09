@@ -19,3 +19,6 @@ const Speed &UnitModel::getSpeed() const {
 double UnitModel::getMovementSpeed() const {
     return _movementSpeed;
 }
+std::bitset<COUNT> &UnitModel::getDecision() {
+    return _decision;
+}

@@ -18,6 +18,8 @@ private :
 
     std::set<UnitModel*> _unitModelList;
 
+    std::bitset<COUNT> _auxBitset;
+
 };
 
 

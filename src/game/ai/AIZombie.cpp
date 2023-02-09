@@ -11,16 +11,16 @@ double in(double a, double b, int n) {
     return a > b - n && a < b + n;
 }
 
-UnitModel::UnitDecision AIZombie::process(NPCModel& npcmodel) {
+void AIZombie::process(NPCModel& npcmodel) {
 
     double x = _blackboard.getheromodel().getX();
     double y = _blackboard.getheromodel().getY();
     if (!in(npcmodel.getX(), x, 1)) {
-        return npcmodel.getX() > x ? UnitModel::MOVE_LEFT : UnitModel::MOVE_RIGHT;
-    } else if (!in(npcmodel.getY(), y, 1)) {
-        return npcmodel.getY() > y ? UnitModel::MOVE_DOWN : UnitModel::MOVE_UP;
+        npcmodel.getX() > x ? npcmodel.getDecision().set(MOVE_LEFT) : npcmodel.getDecision().set(MOVE_RIGHT);
+    } if (!in(npcmodel.getY(), y, 1)) {
+        npcmodel.getY() > y ? npcmodel.getDecision().set(MOVE_DOWN) : npcmodel.getDecision().set(MOVE_UP);
     }
-    return UnitModel::DO_NOTHING;
+    npcmodel.getDecision().set(DO_NOTHING);
 }
 
 AIZombie::AIZombie(Blackboard &blackboard) : AI(blackboard) {

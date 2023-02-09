@@ -12,7 +12,7 @@ class NPCModel : public UnitModel {
 public :
     NPCModel(HeroModel& heroModel);
     NPCModel(double x, double y, HeroModel& heroModel);
-    UnitDecision play() override;
+    void play() override;
     bool isHero() override;
 private :
     HeroModel& _heroModel;

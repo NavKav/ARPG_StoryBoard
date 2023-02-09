@@ -11,7 +11,7 @@
 
 class AI {
 public:
-    virtual UnitModel::UnitDecision process(NPCModel& npcmodel) = 0;
+    virtual void process(NPCModel& npcmodel) = 0;
     AI(Blackboard& blackboard);
 protected:
     Blackboard& _blackboard;

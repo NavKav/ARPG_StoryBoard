@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}-static-libgcc -static-libstdc++")
 
 set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Wno-dev") #Affiche TOUS les warnings en mode debug
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20")
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20 -O3")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/SDL2/cmake") #chemin pour accéder au fichier cmake
 #qui vont trouver les différents fichiers nécessaire pour utiliser SDL2
 
@@ -32,7 +32,7 @@ file(GLOB_RECURSE SOURCES
         src/*/*/*/*/*.cpp
         )
 
-add_executable(Dice_Game_Project ${SOURCES} src/game/ai/Blackboard.cpp src/game/ai/Blackboard.h src/game/ai/AI.cpp src/game/ai/AI.h src/game/ai/AIZombie.cpp src/game/ai/AIZombie.h)
+add_executable(Dice_Game_Project ${SOURCES})
 #TFF
 include_directories(${PROJECT_SOURCE_DIR}/src ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR}) #inclusion des dossier nécessaire pour le
 #développement avec SDL2

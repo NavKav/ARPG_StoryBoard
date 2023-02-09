@@ -26,7 +26,7 @@ NPCModel(heroModel)
     _y = y;
 }
 
-UnitModel::UnitDecision NPCModel::play(){
+void NPCModel::play(){
     Blackboard blackboard(_heroModel);
     AIZombie ai(blackboard);
     return ai.process(*this);

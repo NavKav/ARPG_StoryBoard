@@ -14,23 +14,22 @@ _player(player)
     _x = 0, _y = 0;
 }
 
-UnitModel::UnitDecision HeroModel::play() {
+void HeroModel::play() {
     if (_player[SDL_SCANCODE_UP].pressed) {
-        return MOVE_UP;
+        _decision.set(MOVE_UP);
     }
     if (_player[SDL_SCANCODE_DOWN].pressed) {
-        return MOVE_DOWN;
+        _decision.set(MOVE_DOWN);
     }
     if (_player[SDL_SCANCODE_LEFT].pressed) {
-        return MOVE_LEFT;
+        _decision.set(MOVE_LEFT);
     }
     if (_player[SDL_SCANCODE_RIGHT].pressed){
-        return MOVE_RIGHT;
+        _decision.set(MOVE_RIGHT);
     }
     if (_player[SDL_SCANCODE_SPACE].pressed){
-        return DO_NOTHING;
+        _decision.set(DO_NOTHING);
     }
-    return DO_NOTHING;
 }
 
 HeroModel::HeroModel(Player& player, double x, double y) :

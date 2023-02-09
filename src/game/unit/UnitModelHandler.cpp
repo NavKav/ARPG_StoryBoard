@@ -16,26 +16,21 @@ void UnitModelHandler::play() {
 
 void UnitModelHandler::applyChange(UnitModel* unit) {
     double P = unit->getMovementSpeed();
-    switch(unit->play()) {
-        case UnitModel::MOVE_UP :
-            unit->_y += P;
-            unit->_speed = Speed(0, P);
-            break;
-        case UnitModel::MOVE_DOWN :
-            unit->_y -= P;
-            unit->_speed = Speed(0, -P);
-            break;
-        case UnitModel::MOVE_LEFT :
-            unit->_x -= P;
-            unit->_speed = Speed(-P, 0);
-            break;
-        case UnitModel::MOVE_RIGHT :
-            unit->_x += P;
-            unit->_speed = Speed(P, 0);
-            break;
-        case UnitModel::DO_NOTHING :
-            unit->_speed = Speed(0, 0);
-        default :
-            break;
+    unit->play();
+    _auxBitset = unit->getDecision();
+    unit->_speed = Speed(0, 0);
+    if (_auxBitset[MOVE_UP]) {
+        unit->_y += P;
+        unit->_speed += Speed(0, P);
+    } if (_auxBitset[MOVE_DOWN]) {
+        unit->_y -= P;
+        unit->_speed += Speed(0, -P);
+    } if (_auxBitset[MOVE_LEFT]) {
+        unit->_x -= P;
+        unit->_speed += Speed(-P, 0);
+    } if (_auxBitset[MOVE_RIGHT]) {
+        unit->_x += P;
+        unit->_speed += Speed(P, 0);
     }
+    unit->getDecision().reset();
 }

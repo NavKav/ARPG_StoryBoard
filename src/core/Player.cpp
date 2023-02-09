@@ -29,10 +29,6 @@ Player::~Player() {
     if (_windowContent) {delete _windowContent;}
 }
 
-bool Player::keyDown() {
-    return !(_numberKeyDown == 0);
-}
-
 bool Player::takeInput(const SDL_Event &event) {
     if (event.type == SDL_QUIT || event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
         stop();

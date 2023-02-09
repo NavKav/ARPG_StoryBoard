@@ -9,7 +9,7 @@
 
 class AIZombie: public AI {
 public:
-    UnitModel::UnitDecision process(NPCModel& npcmodel) override;
+    void process(NPCModel& npcmodel) override;
     explicit AIZombie(Blackboard& blackboard);
 private:
 };
