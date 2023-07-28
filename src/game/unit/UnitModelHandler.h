@@ -7,19 +7,24 @@
 
 #include <set>
 #include <iostream>
+#include <vector>
+#include <functional>
 #include "game/unit/UnitModel.h"
+#include "util/ConcurrentRunnerBase.h"
+
+#define MAX_NUMBER_MODEL 100 // maximum number of unit model that can be managed by UnitModelHandler
 
 class UnitModelHandler {
 public :
     void add(UnitModel* unitModel);
+    void remove (UnitModel* unitModel);
     void play();
 private :
     void applyChange(UnitModel* unit);
 
     std::set<UnitModel*> _unitModelList;
-
+    std::vector<std::function<TYPE>> _auxVector;
     std::bitset<COUNT> _auxBitset;
-
 };
 
 

@@ -1061,7 +1061,7 @@ extern "C" {
 #define SDL_HINT_ANDROID_TRAP_BACK_BUTTON "SDL_ANDROID_TRAP_BACK_BUTTON"
 
 /**
- * \brief A variable to control whether the event loop will block itself when the app is paused.
+ * \brief A variable to control whether the event loop will BlockIndex itself when the app is paused.
  *
  * The variable can be set to the following values:
  *   "0"       - Non blocking.
@@ -1376,15 +1376,15 @@ extern "C" {
  *  \brief  Controls how a truncated WAVE file is handled.
  *
  *  A WAVE file is considered truncated if any of the chunks are incomplete or
- *  the data chunk size is not a multiple of the block size. By default, SDL
- *  decodes until the first incomplete block, as most applications seem to do.
+ *  the data chunk size is not a multiple of the BlockIndex size. By default, SDL
+ *  decodes until the first incomplete BlockIndex, as most applications seem to do.
  *
  *  This variable can be set to the following values:
  *
  *    "verystrict" - Raise an error if the file is truncated
  *    "strict"     - Like "verystrict", but the size of the RIFF chunk is ignored
  *    "dropframe"  - Decode until the first incomplete sample frame
- *    "dropblock"  - Decode until the first incomplete block (default)
+ *    "dropblock"  - Decode until the first incomplete BlockIndex (default)
  */
 #define SDL_HINT_WAVE_TRUNCATION   "SDL_WAVE_TRUNCATION"
 
@@ -1395,7 +1395,7 @@ extern "C" {
  *  file. The Standards Update from Microsoft notes that this value can be used
  *  to 'determine the length of the data in seconds'. This is especially useful
  *  for compressed formats (for which this is a mandatory chunk) if they produce
- *  multiple sample frames per block and truncating the block is not allowed.
+ *  multiple sample frames per BlockIndex and truncating the BlockIndex is not allowed.
  *  The fact chunk can exactly specify how many sample frames there should be
  *  in this case.
  *

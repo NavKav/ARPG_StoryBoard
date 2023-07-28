@@ -127,7 +127,7 @@ extern DECLSPEC int SDLCALL SDL_SemWait(SDL_sem * sem);
  *  Non-blocking variant of SDL_SemWait().
  *
  *  \return 0 if the wait succeeds, ::SDL_MUTEX_TIMEDOUT if the wait would
- *          block, and -1 on error.
+ *          BlockIndex, and -1 on error.
  */
 extern DECLSPEC int SDLCALL SDL_SemTryWait(SDL_sem * sem);
 

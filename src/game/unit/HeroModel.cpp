@@ -14,6 +14,11 @@ _player(player)
     _x = 0, _y = 0;
 }
 
+
+/**
+
+ * @warning must stay thread-safe
+ */
 void HeroModel::play() {
     if (_player[SDL_SCANCODE_UP].pressed) {
         _decision.set(MOVE_UP);

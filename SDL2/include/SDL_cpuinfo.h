@@ -218,12 +218,12 @@ extern DECLSPEC size_t SDLCALL SDL_SIMDGetAlignment(void);
 /**
  * \brief Allocate memory in a SIMD-friendly way.
  *
- * This will allocate a block of memory that is suitable for use with SIMD
+ * This will allocate a BlockIndex of memory that is suitable for use with SIMD
  *  instructions. Specifically, it will be properly aligned and padded for
  *  the system's supported vector instructions.
  *
  * The memory returned will be padded such that it is safe to read or write
- *  an incomplete vector at the end of the memory block. This can be useful
+ *  an incomplete vector at the end of the memory BlockIndex. This can be useful
  *  so you don't have to drop back to a scalar fallback at the end of your
  *  SIMD processing loop to deal with the final elements without overflowing
  *  the allocated buffer.
@@ -241,9 +241,9 @@ extern DECLSPEC size_t SDLCALL SDL_SIMDGetAlignment(void);
  * SDL_AllocSIMD(0) will return a non-NULL pointer, assuming the system isn't
  *  out of memory.
  *
- *  \param len The length, in bytes, of the block to allocated. The actual
- *             allocated block might be larger due to padding, etc.
- * \return Pointer to newly-allocated block, NULL if out of memory.
+ *  \param len The length, in bytes, of the BlockIndex to allocated. The actual
+ *             allocated BlockIndex might be larger due to padding, etc.
+ * \return Pointer to newly-allocated BlockIndex, NULL if out of memory.
  *
  * \sa SDL_SIMDAlignment
  * \sa SDL_SIMDRealloc
@@ -261,11 +261,11 @@ extern DECLSPEC void * SDLCALL SDL_SIMDAlloc(const size_t len);
  *  \param mem The pointer obtained from SDL_SIMDAlloc. This function also
  *             accepts NULL, at which point this function is the same as
  *             calling SDL_realloc with a NULL pointer.
- *  \param len The length, in bytes, of the block to allocated. The actual
- *             allocated block might be larger due to padding, etc. Passing 0
+ *  \param len The length, in bytes, of the BlockIndex to allocated. The actual
+ *             allocated BlockIndex might be larger due to padding, etc. Passing 0
  *             will return a non-NULL pointer, assuming the system isn't out of
  *             memory.
- * \return Pointer to newly-reallocated block, NULL if out of memory.
+ * \return Pointer to newly-reallocated BlockIndex, NULL if out of memory.
  *
  * \sa SDL_SIMDAlignment
  * \sa SDL_SIMDAlloc

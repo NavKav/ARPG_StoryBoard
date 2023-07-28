@@ -6,6 +6,18 @@
 
 using namespace std;
 
+#include <string>
+#include <iostream>
+#include <filesystem>
+using namespace std::filesystem;
+/**
+std::string path = "ressource/index/unit";
+    for (const auto & entry : directory_iterator(path))
+        std::cout << entry.path() << std::endl;
+
+    return 0;
+ */
+
 int main( int argc, char *argv[] )
 {
     Window window("ARPG_StoryBoard", 32 * 40, 32 * 24);

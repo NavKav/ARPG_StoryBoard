@@ -441,7 +441,7 @@ extern DECLSPEC int SDLCALL SDL_UpdateTexture(SDL_Texture * texture,
  *  \return 0 on success, or -1 if the texture is not valid.
  *
  *  \note You can use SDL_UpdateTexture() as long as your pixel data is
- *        a contiguous block of Y and U/V planes in the proper order, but
+ *        a contiguous BlockIndex of Y and U/V planes in the proper order, but
  *        this function is available if your pixel data is not contiguous.
  */
 extern DECLSPEC int SDLCALL SDL_UpdateYUVTexture(SDL_Texture * texture,

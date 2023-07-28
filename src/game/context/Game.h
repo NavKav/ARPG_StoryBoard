@@ -13,6 +13,7 @@
 #include "game/unit/UnitModelHandler.h"
 #include "game/unit/HeroModel.h"
 #include "game/unit/HeroView.h"
+#include "game/index/UnitIndex.h"
 
 class Game {
 public :

@@ -38,8 +38,6 @@ void UnitViewHandler::displayAll(double heroX, double heroY) {
             npc->display(aCorner, bCorner);
         }
     }
-    cout << endl;
-
 }
 
 void UnitViewHandler::cornerFromHero(double heroX, double heroY, double &a, double &b) const {

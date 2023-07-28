@@ -115,7 +115,7 @@ typedef struct
  *
  *  \note This function should be called on the thread that created the parent
  *        window, or on the main thread if the messagebox has no parent.  It will
- *        block execution of that thread until the user clicks a button or
+ *        BlockIndex execution of that thread until the user clicks a button or
  *        closes the messagebox.
  */
 extern DECLSPEC int SDLCALL SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid);

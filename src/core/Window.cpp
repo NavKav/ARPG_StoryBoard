@@ -241,8 +241,7 @@ unsigned int Window::getY() const {
 }
 
 void Window::debug() {
-    drawOn(DEFAULT);
-    drawIMG(_X/2, _Y/2,"clear.bmp");
+    cout << _hashmap.size() << endl;
 }
 
 void Window::drawOn(unsigned int layer) {

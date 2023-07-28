@@ -9,7 +9,7 @@
 #include "core/Window.h"
 #include "util/Pair.h"
 
-#define BLOCK_SIZE 32 // size in pixel of a block in game
+#define BLOCK_SIZE 32 // size in pixel of a BlockIndex in game
 #define CORRECT_SHIFT_X(x) (x < 0 ? 1+x : x)
 #define CORRECT_SHIFT_Y(x) (x > 0 ? 1-x : -x)
 #define ABS(x) (x>0 ? x : -x)

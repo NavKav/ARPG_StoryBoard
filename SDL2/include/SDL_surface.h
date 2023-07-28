@@ -408,7 +408,7 @@ extern DECLSPEC SDL_Surface *SDLCALL SDL_ConvertSurfaceFormat
     (SDL_Surface * src, Uint32 pixel_format, Uint32 flags);
 
 /**
- * \brief Copy a block of pixels of one format to another format
+ * \brief Copy a BlockIndex of pixels of one format to another format
  *
  *  \return 0 on success, or -1 if there was an error
  */

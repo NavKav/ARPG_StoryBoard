@@ -26,6 +26,11 @@ NPCModel(heroModel)
     _y = y;
 }
 
+
+/**
+ *
+ * @warning must stay thread-safe
+ */
 void NPCModel::play(){
     Blackboard blackboard(_heroModel);
     AIZombie ai(blackboard);
