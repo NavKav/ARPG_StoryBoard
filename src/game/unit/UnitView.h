@@ -19,7 +19,6 @@ public :
     virtual bool isInScreen(double x, double y);
     bool operator>(const UnitView& aux) const;
     virtual bool isHero() = 0;
-    const std::string& getName() const;
 
 protected :
     UnitModel& _unitModel;

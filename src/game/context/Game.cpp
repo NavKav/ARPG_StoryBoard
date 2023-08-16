@@ -22,53 +22,43 @@ void Game::process(Player &player, Window &window) {
     }
 
     /*************************************************************************/
-    /*************************  HERO TESTS  **********************************/
-    /*************************************************************************/
-
-    static HeroModel heroModel(player, x, y);
-    static HeroView _heroView(heroModel, window);
-
-    /*************************************************************************/
     /*************************  UNITS TESTS  *********************************/
     /*************************************************************************/
-    UnitIndex unitIndex;
-    for (auto t : unitIndex) {
-        t.name = "tre";
-        cout << t.name << endl;
-    }
-    exit(0);
+    static UnitIndex unitIndex(window);
+    static HeroModel heroModel(player, unitIndex.get("paladin"), x, y);
+    static HeroView _heroView(heroModel, window);
 
-    static NPCModel npcModel1(heroModel);
+    static NPCModel npcModel1(unitIndex.get("golem"), heroModel);
     static NPCView npc1(window, npcModel1);
-    static NPCModel npcModel2(heroModel);
+    static NPCModel npcModel2(unitIndex.get("golem"), heroModel);
     static NPCView npc2(window, npcModel2);
-    static NPCModel npcModel3(heroModel);
+    static NPCModel npcModel3(unitIndex.get("golem"), heroModel);
     static NPCView npc3(window, npcModel3);
-    static NPCModel npcModel4(heroModel);
+    static NPCModel npcModel4(unitIndex.get("golem"), heroModel);
     static NPCView npc4(window, npcModel4);
-    static NPCModel npcModel5(heroModel);
+    static NPCModel npcModel5(unitIndex.get("golem"), heroModel);
     static NPCView npc5(window, npcModel5);
-    static NPCModel npcModel6(heroModel);
+    static NPCModel npcModel6(unitIndex.get("golem"), heroModel);
     static NPCView npc6(window, npcModel6);
-    static NPCModel npcModel7(heroModel);
+    static NPCModel npcModel7(unitIndex.get("golem"), heroModel);
     static NPCView npc7(window, npcModel7);
-    static NPCModel npcModel8(heroModel);
+    static NPCModel npcModel8(unitIndex.get("golem"), heroModel);
     static NPCView npc8(window, npcModel8);
-    static NPCModel npcModel9(heroModel);
+    static NPCModel npcModel9(unitIndex.get("golem"), heroModel);
     static NPCView npc9(window, npcModel9);
-    static NPCModel npcModel10(heroModel);
+    static NPCModel npcModel10(unitIndex.get("golem"), heroModel);
     static NPCView npc10(window, npcModel10);
-    static NPCModel npcModel11(heroModel);
+    static NPCModel npcModel11(unitIndex.get("golem"), heroModel);
     static NPCView npc11(window, npcModel11);
-    static NPCModel npcModel12(heroModel);
+    static NPCModel npcModel12(unitIndex.get("golem"), heroModel);
     static NPCView npc12(window, npcModel12);
-    static NPCModel npcModel13(heroModel);
+    static NPCModel npcModel13(unitIndex.get("golem"), heroModel);
     static NPCView npc13(window, npcModel13);
-    static NPCModel npcModel14(heroModel);
+    static NPCModel npcModel14(unitIndex.get("golem"), heroModel);
     static NPCView npc14(window, npcModel14);
-    static NPCModel npcModel15(heroModel);
+    static NPCModel npcModel15(unitIndex.get("golem"), heroModel);
     static NPCView npc15(window, npcModel15);
-    static NPCModel npcModel16(heroModel);
+    static NPCModel npcModel16(unitIndex.get("golem"), heroModel);
     static NPCView npc16(window, npcModel16);
     static UnitModelHandler unitModelHandler;
     static UnitViewHandler unitViewHandler(window);
@@ -91,7 +81,6 @@ void Game::process(Player &player, Window &window) {
         unitModelHandler.add(&npcModel14);
         unitModelHandler.add(&npcModel15);
         unitModelHandler.add(&npcModel16);
-        //unitModelHandler.
 
         unitModelHandler.add(&heroModel);
 
@@ -116,6 +105,7 @@ void Game::process(Player &player, Window &window) {
 
         firstTime = false;
     }
+
     unitModelHandler.play();
     mapView.shiftMap(heroModel.getX(), heroModel.getY(), heroModel.getSpeed());
     unitViewHandler.displayAll(heroModel.getX(), heroModel.getY());

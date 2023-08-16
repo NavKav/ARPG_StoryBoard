@@ -10,8 +10,8 @@
 
 class HeroModel : public UnitModel {
 public :
-    explicit HeroModel(Player& player);
-    HeroModel(Player& player, double x, double y);
+    explicit HeroModel(Player& player, const UnitIndex::UnitTemplate& unitTemplate);
+    HeroModel(Player& player, const UnitIndex::UnitTemplate& unitTemplate, double x, double y);
     bool isHero() override;
 private :
     void play() override;

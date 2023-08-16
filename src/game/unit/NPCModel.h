@@ -10,8 +10,8 @@
 
 class NPCModel : public UnitModel {
 public :
-    NPCModel(HeroModel& heroModel);
-    NPCModel(double x, double y, HeroModel& heroModel);
+    NPCModel(const UnitIndex::UnitTemplate& unitTemplate, HeroModel& heroModel);
+    NPCModel(const UnitIndex::UnitTemplate& unitTemplate, double x, double y, HeroModel& heroModel);
     void play() override;
     bool isHero() override;
 private :

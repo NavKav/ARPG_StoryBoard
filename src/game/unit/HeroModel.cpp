@@ -4,13 +4,11 @@
 
 #include "HeroModel.h"
 
-HeroModel::HeroModel(Player &player) :
+HeroModel::HeroModel(Player &player, const UnitIndex::UnitTemplate& unitTemplate) :
+UnitModel(unitTemplate),
 _player(player)
 {
-    _health = 0;
-    _maxHealth = 0;
-    _name = "Hero";
-    _movementSpeed = 1.18;
+    _health = 10;
     _x = 0, _y = 0;
 }
 
@@ -37,8 +35,8 @@ void HeroModel::play() {
     }
 }
 
-HeroModel::HeroModel(Player& player, double x, double y) :
-HeroModel(player)
+HeroModel::HeroModel(Player& player, const UnitIndex::UnitTemplate& unitTemplate, double x, double y) :
+HeroModel(player, unitTemplate)
 {
     _x = x;
     _y = y;

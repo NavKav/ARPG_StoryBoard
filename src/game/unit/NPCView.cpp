@@ -16,8 +16,7 @@ UnitView(unitModel, window)
  */
 void NPCView::display(double xCorner, double yCorner) {
     _window.drawOn(DEFAULT);
-    _window.open("golem", "unit/golem.png");
-    _window.drawIMG("golem", (int)((DIST(xCorner, _unitModel._x) + _window.getX()/BLOCK_SIZE%2) * BLOCK_SIZE -  46),
+    _window.drawIMG(_unitModel._unitTemplate->_icon, (int)((DIST(xCorner, _unitModel._x) + _window.getX()/BLOCK_SIZE%2) * BLOCK_SIZE -  46),
                     (int)((DIST(yCorner, _unitModel._y) + _window.getY()/BLOCK_SIZE%2) * BLOCK_SIZE - 101));
 }
 

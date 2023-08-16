@@ -31,6 +31,7 @@ public :
     Window() = delete;
     ~Window();
     void clear();
+    bool exists(std::string name) const;
     void close(string name);
     void open(string name, string file);
     void writeText(int x,int y, const string& s);

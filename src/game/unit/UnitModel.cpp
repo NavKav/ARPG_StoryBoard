@@ -4,6 +4,8 @@
 
 #include "UnitModel.h"
 
+
+
 double UnitModel::getX() const {
     return _x;
 }
@@ -17,8 +19,13 @@ const Speed &UnitModel::getSpeed() const {
 }
 
 double UnitModel::getMovementSpeed() const {
-    return _movementSpeed;
+    return _unitTemplate->_movementSpeed;
 }
 std::bitset<COUNT> &UnitModel::getDecision() {
     return _decision;
+}
+
+UnitModel::UnitModel(const UnitIndex::UnitTemplate &unitTemplate) :
+_unitTemplate(&unitTemplate)
+{
 }

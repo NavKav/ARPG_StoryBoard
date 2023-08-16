@@ -2,25 +2,22 @@
 // Created by navid on 21/01/2023.
 //
 
-#include <iostream>
 #include "NPCModel.h"
 #include "game/ai/AIZombie.h"
 #include <cmath>
 
 using namespace std;
 
-NPCModel::NPCModel(HeroModel& heroModel) :
+NPCModel::NPCModel(const UnitIndex::UnitTemplate& unitTemplate, HeroModel& heroModel) :
+UnitModel(unitTemplate),
 _heroModel(heroModel)
 {
-    _health = 0;
-    _maxHealth = 0;
-    _name = "Golem";
-    _movementSpeed = 0.18;
+    _health = 400;
     _x = rand()%10 - 5, _y = rand()%10 - 5;
 }
 
-NPCModel::NPCModel(double x, double y, HeroModel& heroModel) :
-NPCModel(heroModel)
+NPCModel::NPCModel(const UnitIndex::UnitTemplate& unitTemplate, double x, double y, HeroModel& heroModel) :
+NPCModel(unitTemplate, heroModel)
 {
     _x = x;
     _y = y;

@@ -8,6 +8,7 @@
 #include <string>
 #include <bitset>
 #include "util/Pair.h"
+#include "game/index/UnitIndex.h"
 
 typedef Pair Speed;
 
@@ -23,9 +24,10 @@ enum UnitDecision {
 class UnitModel {
     friend class UnitView;
     friend class NPCView;
+    friend class HeroView;
     friend class UnitModelHandler;
 public:
-
+    explicit UnitModel(const UnitIndex::UnitTemplate& unitTemplate);
     virtual void play() = 0;
     virtual bool isHero() = 0;
     virtual ~UnitModel() = default;
@@ -35,15 +37,14 @@ public:
     const Speed& getSpeed() const;
     std::bitset<COUNT>& getDecision();
 protected :
-    int _health = 0;
-    int _maxHealth = 0;
-    std::string _name;
+    unsigned int _health = 0;
     double _x = 0, _y = 0;
 
-    double _movementSpeed = 0;
     Speed _speed = Speed(0, 0);
 
     std::bitset<COUNT> _decision;
+private :
+    UnitIndex::constUnitTemplate* _unitTemplate;
 };
 
 

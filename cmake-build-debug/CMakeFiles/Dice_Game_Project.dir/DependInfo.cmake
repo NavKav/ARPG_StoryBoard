@@ -38,8 +38,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.cpp" "CMakeFiles/Dice_Game_Project.dir/src/util/Pair.cpp.obj" "gcc" "CMakeFiles/Dice_Game_Project.dir/src/util/Pair.cpp.obj.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

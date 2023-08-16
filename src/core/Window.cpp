@@ -274,3 +274,7 @@ void Window::shift(int x, int y) {
 void Window::textSizeOf(std::string s, int& w, int& h) {
     TTF_SizeText(_font, s.c_str(), &w, &h);
 }
+
+bool Window::exists(std::string name) const {
+    return !(_hashmap.find(name) == _hashmap.end());
+}
