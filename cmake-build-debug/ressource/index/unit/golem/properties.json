@@ -1,0 +1,6 @@
+{
+"name":"golem",
+"max health":400,
+"icon":"golem.png",
+"movement speed":0.18
+}
