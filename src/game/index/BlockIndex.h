@@ -16,10 +16,21 @@
 class BlockIndex {
 public :
     class BlockTemplate {
-    public :
+    friend class BlockIndex;
+    public:
+        const std::string& getIconPath() const {
+            return _iconPath;
+        }
+        const std::string &getName() const {
+            return _name;
+        }
+        const unsigned int &getId() const {
+            return _id;
+        }
+    protected :
         unsigned int _id;
         std::string _name;
-        std::string _icon;
+        std::string _iconPath;
     };
 
     typedef const BlockTemplate constBlockTemplate;

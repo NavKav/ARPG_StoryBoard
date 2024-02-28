@@ -61,12 +61,12 @@ bool BlockIndex::loadTemplate(json &data, const string &path) {
     }
 
     try {
-        _auxTemplate._icon = data.at("icon");
+        _auxTemplate._iconPath = data.at("icon");
     } catch (json::exception& e) {
         cout << "BlockIndex::loadTemplate() (nlohmann::json) : " << e.what() << "(" << typeid(e).name() << ")" << '\n';
         return false;
     }
-    _auxTemplate._icon = "/index/block/" + getCurrentDir(path) + "/" + _auxTemplate._icon;
+    _auxTemplate._iconPath = "index/block/" + getCurrentDir(path) + "/" + _auxTemplate._iconPath;
 
     return true;
 }

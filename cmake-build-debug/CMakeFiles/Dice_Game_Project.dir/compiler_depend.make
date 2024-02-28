@@ -3227,14 +3227,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/context/Game.cpp.obj: C:/Users/navid/C
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
@@ -3294,6 +3287,14 @@ CMakeFiles/Dice_Game_Project.dir/src/game/context/Game.cpp.obj: C:/Users/navid/C
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/assert.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitViewHandler.h \
@@ -3311,8 +3312,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/context/Game.cpp.obj: C:/Users/navid/C
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.h
 
 CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.obj: C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/GameWindowContent.cpp \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/GameWindowContent.h \
@@ -3838,14 +3838,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.obj: C:/
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
@@ -3905,6 +3898,14 @@ CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.obj: C:/
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/assert.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitViewHandler.h \
@@ -3922,8 +3923,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.obj: C:/
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.h
 
 CMakeFiles/Dice_Game_Project.dir/src/game/index/BlockIndex.cpp.obj: C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.cpp \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
@@ -5592,7 +5592,67 @@ CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.obj: C:/Users/navid/CL
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/begin_code.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_ttf.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.h
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/json.hpp \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/forward_list \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/valarray \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_array.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_before.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/slice_array.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/valarray_after.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/gslice_array.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/mask_array.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/indirect_array.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/version \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/assert.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any
 
 CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuButton.cpp.obj: C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuButton.cpp \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuButton.h \
@@ -6612,14 +6672,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj: C:/Use
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
@@ -6679,6 +6732,14 @@ CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj: C:/Use
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/assert.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitViewHandler.h \
@@ -6693,8 +6754,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/menu/MenuWindowContent.cpp.obj: C:/Use
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.h
 
 CMakeFiles/Dice_Game_Project.dir/src/game/option/OptionLineMultiChoice.cpp.obj: C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionLineMultiChoice.cpp \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/option/OptionLineMultiChoice.h \
@@ -9794,6 +9854,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/unit/HeroView.cpp.obj: C:/Users/navid/
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.tcc \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Player.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/WindowContent.h \
@@ -10966,6 +11027,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/unit/NPCView.cpp.obj: C:/Users/navid/C
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.tcc \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Player.h \
@@ -12708,7 +12770,8 @@ CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitView.cpp.obj: C:/Users/navid/
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.tcc
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.tcc \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h
 
 CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitViewHandler.cpp.obj: C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitViewHandler.cpp \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitViewHandler.h \
@@ -13231,11 +13294,7 @@ CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitViewHandler.cpp.obj: C:/Users
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/close_code.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/SDL2/include/SDL_ttf.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
@@ -13294,7 +13353,12 @@ CMakeFiles/Dice_Game_Project.dir/src/game/unit/UnitViewHandler.cpp.obj: C:/Users
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/assert.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h
 
 CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/main.cpp \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.h \
@@ -13837,14 +13901,7 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: C:/Users/navid/CLionProjects/
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/core/Window.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/Pair.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
-  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
@@ -13904,6 +13961,14 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: C:/Users/navid/CLionProjects/
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/assert.h \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/time.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitView.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/Displayable.h \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitModel.h \
+  C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bitset \
+  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/NPCModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/UnitViewHandler.h \
@@ -13919,7 +13984,6 @@ CMakeFiles/Dice_Game_Project.dir/src/main.cpp.obj: C:/Users/navid/CLionProjects/
   C:/Program\ Files/JetBrains/CLion\ 2021.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroModel.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/unit/HeroView.h \
-  C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h \
   C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/GameWindowContent.h
 
 CMakeFiles/Dice_Game_Project.dir/src/util/FrameRate.cpp.obj: C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/util/FrameRate.cpp \

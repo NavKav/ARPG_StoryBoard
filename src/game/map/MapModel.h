@@ -23,16 +23,16 @@ public:
     ~MapModel(){};
     void generate() const;
     void display(); /* debug */
-    Uint operator()(unsigned int x, unsigned int y);
+    std::string operator()(unsigned int x, unsigned int y);
     bool sameTile(unsigned int x, unsigned int y, unsigned int d);
     void setCurrentMap(unsigned int cm);
-    Uint getBlock(int x, int y);
+    std::string getBlock(int x, int y);
 
 private:
     float computeNoiseHeight(int x, int y);
-    Uint getGroundBlock(int x, int y, float noiseHeight);
-    Uint getLiquidBlock(int x, int y, float noiseHeight);
-    Uint getAspectBlock(int x, int y, float noiseHeight);
+    std::string getGroundBlock(int x, int y, float noiseHeight);
+    std::string getLiquidBlock(int x, int y, float noiseHeight);
+    std::string getAspectBlock(int x, int y, float noiseHeight);
 
     PerlinNoise _perlinNoise;
 

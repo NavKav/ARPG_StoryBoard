@@ -23,7 +23,7 @@ void MapModel::setCurrentMap(unsigned int cm) {
     _currentMap = cm % 3;
 }
 
-Uint MapModel::operator()(unsigned int x, unsigned int y) {
+string MapModel::operator()(unsigned int x, unsigned int y) {
         return getBlock(x, y);
 }
 
@@ -64,7 +64,7 @@ bool MapModel::sameTile(unsigned int x, unsigned int y, unsigned int d) {
     }
 }
 
-Uint MapModel::getBlock(int x, int y){
+string MapModel::getBlock(int x, int y){
     float noiseHeight = computeNoiseHeight(x, y);
     if (_currentMap == GROUND) {
         return getGroundBlock(x, y, noiseHeight);
@@ -104,43 +104,40 @@ float MapModel::computeNoiseHeight(int x, int y) {
     return noiseHeight;
 }
 
-Uint MapModel::getGroundBlock(int x, int y, float noiseHeight) {
+string MapModel::getGroundBlock(int x, int y, float noiseHeight) {
     if (noiseHeight < -0.1)
     {
-        return 80;
+        return "block0";
     }
     else if (noiseHeight < -0.07)
     {
-        return 80;
+        return "block1";
     }
     else if (noiseHeight < 0.4)
     {
-        return 81;
+        return "block2";
     }
     else if (noiseHeight < 0.9)
     {
-        return 82;
+        return "block3";
     }
     else
     {
-        return 82;
+        return "block4";
     }
 }
 
-Uint MapModel::getLiquidBlock(int x, int y, float noiseHeight) {
+string MapModel::getLiquidBlock(int x, int y, float noiseHeight) {
     if (noiseHeight < -0.1)
     {
-        return 66;
+        return "block9";
     }
     else
     {
-        return 143;
+        return "";
     }
 }
 
-Uint MapModel::getAspectBlock(int x, int y, float noiseHeight) {
-    if (getGroundBlock(x, y, noiseHeight) == 81 && (int)(noiseHeight*100) % 2) {
-        return 67;
-    }
-    return 0;
+string MapModel::getAspectBlock(int x, int y, float noiseHeight) {
+    return "";
 }

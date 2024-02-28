@@ -6,9 +6,10 @@
 
 using namespace std;
 
-MapView::MapView(Window& window, MapModel& mapGenerator) :
+MapView::MapView(Window& window, MapModel& mapGenerator, BlockIndex& blockIndex) :
 _window(window),
-_mapGenerator(mapGenerator)
+_mapGenerator(mapGenerator),
+_blockIndex(blockIndex)
 {
     _X = (int)window.getX()/BLOCK_SIZE;
     _Y = (int)window.getY()/BLOCK_SIZE;
@@ -51,7 +52,7 @@ void MapView::display(int x, int y) {
     for (int i = 0; i < _X + 1; i++) {
         for (int j = 0; j < _Y + 1; j++) {
             if (_drawBlock[i][j]) {
-                if (_mapGenerator(x + i, y - j) != 143) {
+                if (_mapGenerator(x + i, y - j) != "") {
                     drawLeftUp(x + i, y - j, i, j);
                     drawRightUp(x + i, y - j, i, j);
                     drawBottomLeft(x + i, y - j, i, j);
@@ -67,12 +68,7 @@ void MapView::display(int x, int y) {
 
 
 void MapView::drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
-    unsigned int X0 = 0, Y0 = 0;
-    unsigned int f , s;
-    string file;
-    getCaseView(f, s, file, x, y);
-    X0 += f * 64;
-    Y0 += s * 96;
+    string file = _blockIndex.get(_mapGenerator(x, y)).getIconPath();
     unsigned int A = 0, B = 0;
     int X = a * 32, Y = b * 32;
     X -= _XShift; Y -= _YShift;
@@ -96,12 +92,7 @@ void MapView::drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigne
 }
 
 void MapView::drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
-    unsigned int X0 = 0, Y0 = 0;
-    unsigned int f , s;
-    string file;
-    getCaseView(f, s, file, x, y);
-    X0 += f * 64;
-    Y0 += s * 96;
+    string file = _blockIndex.get(_mapGenerator(x, y)).getIconPath();
     unsigned int A = 0, B = 0;
     int X = a * 32 + 16, Y = b * 32;
     X -= _XShift; Y -= _YShift;
@@ -125,12 +116,7 @@ void MapView::drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsign
 }
 
 void MapView::drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
-    unsigned int X0 = 0, Y0 = 0;
-    unsigned int f , s;
-    string file;
-    getCaseView(f, s, file, x, y);
-    X0 += f * 64;
-    Y0 += s * 96;
+    string file = _blockIndex.get(_mapGenerator(x, y)).getIconPath();
     unsigned int A = 0, B = 0;
     int X = a * 32, Y = b * 32 + 16;
     X -= _XShift; Y -= _YShift;
@@ -154,12 +140,7 @@ void MapView::drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, uns
 }
 
 void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
-    unsigned int X0 = 0, Y0 = 0;
-    unsigned int f , s; // first, second
-    string file;
-    getCaseView(f, s, file, x, y);
-    X0 += f * 64;
-    Y0 += s * 96;
+    string file = _blockIndex.get(_mapGenerator(x, y)).getIconPath();
     unsigned int A = 0, B = 0;
     int X = a * 32 + 16, Y = b * 32 + 16;
     X -= _XShift; Y -= _YShift;
@@ -182,12 +163,12 @@ void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, un
     _window.drawPartIMG(X, Y, A, B, 16, 16, file);
 }
 
-void MapView::getCaseView(unsigned int& f, unsigned int& s, string& file,unsigned int& x, unsigned int& y) {
+/*void MapView::getCaseView(unsigned int& f, unsigned int& s, string& file,unsigned int& x, unsigned int& y) {
     unsigned int c = _mapGenerator(x, y);
     f = c % 6;
     s = c / 6;
     file = "image/" + _floorName + ".jpg";
-}
+}*/
 
 void MapView::displayFromCoordinate(double x, double y) {
     _XShift = BLOCK_SIZE * CORRECT_SHIFT_X(modf(x, NULL)) + (_X % 2 ? BLOCK_SIZE / 2 : 0);

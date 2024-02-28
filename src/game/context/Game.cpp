@@ -8,12 +8,17 @@ using namespace std;
 
 void Game::process(Player &player, Window &window) {
     /*************************************************************************/
+    /*************************  INDEX  ***************************************/
+    /*************************************************************************/
+    static UnitIndex unitIndex;
+    static BlockIndex blockIndex;
+    /*************************************************************************/
     /*************************  INITIALIZATION  ******************************/
     /*************************************************************************/
     srand(time(NULL));
     _frameRate.display(window);
 
-    static MapView mapView(window, _mapGenerator);
+    static MapView mapView(window, _mapGenerator, blockIndex);
     static double x = 0, y = 0;
     static bool firstTime = true;
     if (firstTime) {
@@ -24,8 +29,6 @@ void Game::process(Player &player, Window &window) {
     /*************************************************************************/
     /*************************  UNITS TESTS  *********************************/
     /*************************************************************************/
-    static UnitIndex unitIndex;
-    static BlockIndex blockIndex;
     static HeroModel heroModel(player, unitIndex.get("paladin"), x, y);
     static HeroView _heroView(heroModel, window);
 

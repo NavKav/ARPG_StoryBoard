@@ -8,6 +8,7 @@
 #include "MapModel.h"
 #include "core/Window.h"
 #include "util/Pair.h"
+#include "game/index/BlockIndex.h"
 
 #define BLOCK_SIZE 32 // size in pixel of a BlockIndex in game
 #define CORRECT_SHIFT_X(x) (x < 0 ? 1+x : x)
@@ -18,7 +19,7 @@ typedef unsigned int Uint;
 
 class MapView {
 public :
-    MapView(Window& window, MapModel& mapGenerator);
+    MapView(Window& window, MapModel& mapGenerator, BlockIndex& blockIndex);
     void displayGround(int x, int y);
     void displayLiquid(int x, int y);
     void displayAspect(int x, int y);
@@ -29,6 +30,9 @@ public :
 private :
 
     MapModel& _mapGenerator;
+
+    BlockIndex& _blockIndex;
+
     Window& _window;
     string _floorName = "ground";
 
@@ -44,7 +48,9 @@ private :
     void drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
     void drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
     void drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b);
+/*
     void getCaseView(unsigned int& f, unsigned int& s, string& file,unsigned int& x, unsigned int& y);
+*/
     void setDrawBlockValue(bool v = false);
     void changeDrawBlockValue(unsigned int a, unsigned int b, unsigned int c, unsigned int d);
     void cornerFromCenter(double x, double y, int& a, int& b);
