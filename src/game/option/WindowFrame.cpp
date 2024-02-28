@@ -15,7 +15,7 @@ void WindowFrame::display() {
     if (_numberOption > (_window.getY() - 2*_window.getY()/10) / OPTION_SIZE ) {
         _numberOption = (_window.getY() - 2*_window.getY()/10) / OPTION_SIZE ;
     }
-    _window.scaleIMG(_window.getX()/10,_window.getY()/10,_window.getX()/1.25,OPTION_SIZE * _numberOption + SHIFT,"option/frame.png");
+    _window.scaleIMG(_window.getX()/10,_window.getY()/10,_window.getX()/1.25,OPTION_SIZE * _numberOption + SHIFT,"image/option/frame.png");
     int n = _numberOption;
 
     auto it = _optionList.begin();

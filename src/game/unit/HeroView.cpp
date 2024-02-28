@@ -11,7 +11,7 @@ UnitView(heroModel, window)
 }
 
 void HeroView::display(double xCorner, double yCorner) {
-    _window.drawIMG(_unitModel._unitTemplate->_icon ,_window.getX()/2 - 45, _window.getY()/2 - 90);
+    _window.drawIMG(_window.getX()/2 - 45, _window.getY()/2 - 90, _unitModel._unitTemplate->_icon);
 }
 
 bool HeroView::isInScreen(double x, double y) {

@@ -14,8 +14,6 @@
 #include "util/json.hpp"
 #include "core/Window.h"
 
-#define UNIT_PATH "ressource/index/unit"
-
 class UnitIndex {
 public :
     class UnitTemplate {
@@ -29,8 +27,7 @@ public :
 
     typedef const UnitTemplate constUnitTemplate;
 
-    UnitIndex() = delete;
-    explicit UnitIndex(Window& window);
+    UnitIndex();
     ~UnitIndex();
     const UnitTemplate& get(const std::string& name) const;
 
@@ -50,8 +47,6 @@ private:
 
     UnitTemplate _auxTemplate;
     unsigned int _auxId;
-
-    Window& _window;
 };
 
 

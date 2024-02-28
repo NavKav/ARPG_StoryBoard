@@ -1,3 +1,3 @@
-# Dice_Game_Project
-short term project, august 2021
-hello~
+# ARPG StoryBoard
+short term project, August 2021.
+ARPG procedurally generated open world.

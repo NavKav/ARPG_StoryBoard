@@ -24,7 +24,8 @@ void Game::process(Player &player, Window &window) {
     /*************************************************************************/
     /*************************  UNITS TESTS  *********************************/
     /*************************************************************************/
-    static UnitIndex unitIndex(window);
+    static UnitIndex unitIndex;
+    static BlockIndex blockIndex;
     static HeroModel heroModel(player, unitIndex.get("paladin"), x, y);
     static HeroView _heroView(heroModel, window);
 

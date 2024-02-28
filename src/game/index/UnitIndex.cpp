@@ -8,8 +8,7 @@ using namespace std::filesystem;
 using namespace std;
 using json = nlohmann::json;
 
-UnitIndex::UnitIndex(Window &window) :
-_window(window)
+UnitIndex::UnitIndex()
 {
     _auxId = 0;
     for (const auto& dirEntry : directory_iterator("ressource/index/unit")) {
@@ -18,10 +17,6 @@ _window(window)
 }
 
 UnitIndex::~UnitIndex() {
-    for (auto& t : _dequeTemplate) {
-        if (_window.exists(t._icon))
-            _window.close(t._icon);
-    }
 }
 
 std::string UnitIndex::getCurrentDir(const std::string& p) {
@@ -89,10 +84,6 @@ bool UnitIndex::loadTemplate(json& data, const std::string& path) {
         cout << "UnitIndex::loadTemplate() (nlohmann::json) : " << e.what() << "(" << typeid(e).name() << ")" << '\n';
         return false;
     }
-    string auxString = "icon" + to_string(_auxId);
-    _window.open(auxString,
-                 "../index/unit/" + getCurrentDir(path) + "/" + _auxTemplate._icon);
-    _auxTemplate._icon = auxString;
-
+    _auxTemplate._icon = "/index/unit/" + getCurrentDir(path) + "/" + _auxTemplate._icon;
     return true;
 }

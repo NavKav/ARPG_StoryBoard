@@ -130,6 +130,12 @@
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/context/GameWindowContent.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.cpp">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/BlockIndex.h">
+			<Option target="Dice_Game_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/index/UnitIndex.cpp">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
@@ -146,12 +152,6 @@
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/MapView.h">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/block/BlockIndex.cpp">
-			<Option target="Dice_Game_Project"/>
-		</Unit>
-		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/map/block/BlockIndex.h">
 			<Option target="Dice_Game_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/navid/CLionProjects/ARPG_StoryBoard/src/game/menu/MenuButton.cpp">

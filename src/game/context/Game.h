@@ -14,6 +14,7 @@
 #include "game/unit/HeroModel.h"
 #include "game/unit/HeroView.h"
 #include "game/index/UnitIndex.h"
+#include "game/index/BlockIndex.h"
 
 class Game {
 public :

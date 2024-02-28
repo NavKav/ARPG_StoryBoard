@@ -14,7 +14,7 @@
 
 
 typedef std::string string;
-typedef std:: unordered_map<string, SDL_Texture*> hashmap;
+typedef std::unordered_map<string, SDL_Texture*> hashmap;
 
 class Window {
 public :
@@ -22,18 +22,14 @@ public :
     void setTitle(const string &windowTitle);
     void drawOn(unsigned int layer);
     void drawIMG(int x, int y, const string &name);
-    void drawIMG(const string &name, int x, int y);
     void scaleIMG(int x, int y, int width, int height, const string &name);
     void debug();
-    void drawPartIMG(unsigned int x, unsigned int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d, const string &name);
-    void drawPartIMG(const string &name, int x, int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d);
+    void drawPartIMG(int x, int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d, const string &name);
     void refresh();
     Window() = delete;
     ~Window();
     void clear();
     bool exists(std::string name) const;
-    void close(string name);
-    void open(string name, string file);
     void writeText(int x,int y, const string& s);
     void changeFont(const string& name, unsigned int points);
     void changeColor( Uint8 r, Uint8 v, Uint8 b);
@@ -57,6 +53,10 @@ private :
     hashmap _hashmap = hashmap();
 
     unsigned int _X = 0, _Y = 0;
+
+    void drawIMG(const string &name, int x, int y);
+    void drawPartIMG(const string &name, int x, int y, unsigned int a, unsigned int b, unsigned int c, unsigned int d);
+    void open(string file);
 
 };
 

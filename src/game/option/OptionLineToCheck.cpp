@@ -11,7 +11,7 @@ void OptionLineToCheck::display(int x, int y) {
     int w = 0, h = 0;
     _window.textSizeOf(_name + ": ",w,h);
     if (_checked == false) {
-        _window.scaleIMG(x + w, y, 30,25,"/option/small_box.png");
+        _window.scaleIMG(x + w, y, 30,25,"image/option/small_box.png");
     }
     else {
         _window.scaleIMG(x + 55, y + 55, _window.getX() / 1.25, _window.getY() / 10, "/option/checkedbox.png");

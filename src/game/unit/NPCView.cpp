@@ -16,8 +16,9 @@ UnitView(unitModel, window)
  */
 void NPCView::display(double xCorner, double yCorner) {
     _window.drawOn(DEFAULT);
-    _window.drawIMG(_unitModel._unitTemplate->_icon, (int)((DIST(xCorner, _unitModel._x) + _window.getX()/BLOCK_SIZE%2) * BLOCK_SIZE -  46),
-                    (int)((DIST(yCorner, _unitModel._y) + _window.getY()/BLOCK_SIZE%2) * BLOCK_SIZE - 101));
+    _window.drawIMG( (int)((DIST(xCorner, _unitModel._x) + _window.getX()/BLOCK_SIZE%2) * BLOCK_SIZE -  46),
+                    (int)((DIST(yCorner, _unitModel._y) + _window.getY()/BLOCK_SIZE%2) * BLOCK_SIZE - 101),
+                    _unitModel._unitTemplate->_icon);
 }
 
 bool NPCView::isHero() {

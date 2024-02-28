@@ -48,7 +48,6 @@ void MapView::displayLiquid(int x, int y) {
 }
 
 void MapView::display(int x, int y) {
-    _window.open(_floorName, _floorName + ".jpg");
     for (int i = 0; i < _X + 1; i++) {
         for (int j = 0; j < _Y + 1; j++) {
             if (_drawBlock[i][j]) {
@@ -64,7 +63,6 @@ void MapView::display(int x, int y) {
             _window.writeText(i * BLOCK_SIZE, j * BLOCK_SIZE, to_string(x + i) + "," + to_string(y - j));*/
         }
     }
-    _window.close(_floorName);
 }
 
 
@@ -75,7 +73,7 @@ void MapView::drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigne
     getCaseView(f, s, file, x, y);
     X0 += f * 64;
     Y0 += s * 96;
-    unsigned int A = X0, B = Y0;
+    unsigned int A = 0, B = 0;
     int X = a * 32, Y = b * 32;
     X -= _XShift; Y -= _YShift;
     if (_mapGenerator.sameTile(x, y, 2)
@@ -94,7 +92,7 @@ void MapView::drawLeftUp(unsigned int x, unsigned int y, unsigned int a, unsigne
     } else {
         A += 0; B += 32;
     }
-    _window.drawPartIMG(file, X, Y, A, B, 16, 16);
+    _window.drawPartIMG(X, Y, A, B, 16, 16, file);
 }
 
 void MapView::drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
@@ -104,7 +102,7 @@ void MapView::drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsign
     getCaseView(f, s, file, x, y);
     X0 += f * 64;
     Y0 += s * 96;
-    unsigned int A = X0, B = Y0;
+    unsigned int A = 0, B = 0;
     int X = a * 32 + 16, Y = b * 32;
     X -= _XShift; Y -= _YShift;
     if (_mapGenerator.sameTile(x, y, 2)
@@ -123,7 +121,7 @@ void MapView::drawRightUp(unsigned int x, unsigned int y, unsigned int a, unsign
     } else {
         A += 32 + 16; B += 32;
     }
-    _window.drawPartIMG(file, X, Y, A, B, 16, 16);
+    _window.drawPartIMG(X, Y, A, B, 16, 16, file);
 }
 
 void MapView::drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
@@ -133,7 +131,7 @@ void MapView::drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, uns
     getCaseView(f, s, file, x, y);
     X0 += f * 64;
     Y0 += s * 96;
-    unsigned int A = X0, B = Y0;
+    unsigned int A = 0, B = 0;
     int X = a * 32, Y = b * 32 + 16;
     X -= _XShift; Y -= _YShift;
     if (_mapGenerator.sameTile(x, y, 6)
@@ -152,7 +150,7 @@ void MapView::drawBottomLeft(unsigned int x, unsigned int y, unsigned int a, uns
     } else {
         A += 0; B += 64 + 16;
     }
-    _window.drawPartIMG(file, X, Y, A, B, 16, 16);
+    _window.drawPartIMG(X, Y, A, B, 16, 16, file);
 }
 
 void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, unsigned int b) {
@@ -162,7 +160,7 @@ void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, un
     getCaseView(f, s, file, x, y);
     X0 += f * 64;
     Y0 += s * 96;
-    unsigned int A = X0, B = Y0;
+    unsigned int A = 0, B = 0;
     int X = a * 32 + 16, Y = b * 32 + 16;
     X -= _XShift; Y -= _YShift;
     if (_mapGenerator.sameTile(x, y, 4)
@@ -181,14 +179,14 @@ void MapView::drawBottomRight(unsigned int x, unsigned int y, unsigned int a, un
     } else {
         A += 32 + 16; B += 64 + 16;
     }
-    _window.drawPartIMG(file, X, Y, A, B, 16, 16);
+    _window.drawPartIMG(X, Y, A, B, 16, 16, file);
 }
 
 void MapView::getCaseView(unsigned int& f, unsigned int& s, string& file,unsigned int& x, unsigned int& y) {
     unsigned int c = _mapGenerator(x, y);
     f = c % 6;
     s = c / 6;
-    file = _floorName;
+    file = "image/" + _floorName + ".jpg";
 }
 
 void MapView::displayFromCoordinate(double x, double y) {

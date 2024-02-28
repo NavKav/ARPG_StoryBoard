@@ -16,7 +16,7 @@ public :
 
 private :
     int _abs,_ord,_dimAbs,_dimOrd;
-    string _path = "/menu/option.png";
+    string _path = "image/menu/option.png";
 };
 
 

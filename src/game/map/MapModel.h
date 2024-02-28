@@ -40,5 +40,18 @@ private:
     Uint _currentMap;
 };
 
+enum GroundBlockId {
+    PLAIN,
+    DESERT
+};
+
+enum LiquidBlockId {
+    OCEAN,
+    SEA
+};
+
+enum AspectBlockId {
+    GRASS
+};
 
 #endif //ARPG_STORYBOARD_MAPMODEL_H

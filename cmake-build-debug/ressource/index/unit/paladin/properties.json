@@ -2,5 +2,5 @@
 "name":"paladin",
 "max health":400,
 "icon":"paladin.png",
-"movement speed":1.18
+"movement speed":0.70
 }

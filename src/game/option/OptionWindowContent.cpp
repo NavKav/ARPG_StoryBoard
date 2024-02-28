@@ -6,7 +6,7 @@
 
 void OptionWindowContent::process(Player& player, Window& window) {
     window.drawOn(BACKGROUND);
-    window.drawIMG(0, 0, "fond.bmp");
+    window.drawIMG(0, 0, "image/fond.bmp");
     WindowFrame generalFrame(window);
 
     OptionLineMultiChoice optionLineMultiChoice("Languages", window);

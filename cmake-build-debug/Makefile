@@ -296,6 +296,30 @@ src/game/context/GameWindowContent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/context/GameWindowContent.cpp.s
 .PHONY : src/game/context/GameWindowContent.cpp.s
 
+src/game/index/BlockIndex.obj: src/game/index/BlockIndex.cpp.obj
+.PHONY : src/game/index/BlockIndex.obj
+
+# target to build an object file
+src/game/index/BlockIndex.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/index/BlockIndex.cpp.obj
+.PHONY : src/game/index/BlockIndex.cpp.obj
+
+src/game/index/BlockIndex.i: src/game/index/BlockIndex.cpp.i
+.PHONY : src/game/index/BlockIndex.i
+
+# target to preprocess a source file
+src/game/index/BlockIndex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/index/BlockIndex.cpp.i
+.PHONY : src/game/index/BlockIndex.cpp.i
+
+src/game/index/BlockIndex.s: src/game/index/BlockIndex.cpp.s
+.PHONY : src/game/index/BlockIndex.s
+
+# target to generate assembly for a file
+src/game/index/BlockIndex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/index/BlockIndex.cpp.s
+.PHONY : src/game/index/BlockIndex.cpp.s
+
 src/game/index/UnitIndex.obj: src/game/index/UnitIndex.cpp.obj
 .PHONY : src/game/index/UnitIndex.obj
 
@@ -367,30 +391,6 @@ src/game/map/MapView.s: src/game/map/MapView.cpp.s
 src/game/map/MapView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/MapView.cpp.s
 .PHONY : src/game/map/MapView.cpp.s
-
-src/game/map/block/BlockIndex.obj: src/game/map/block/BlockIndex.cpp.obj
-.PHONY : src/game/map/block/BlockIndex.obj
-
-# target to build an object file
-src/game/map/block/BlockIndex.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/block/BlockIndex.cpp.obj
-.PHONY : src/game/map/block/BlockIndex.cpp.obj
-
-src/game/map/block/BlockIndex.i: src/game/map/block/BlockIndex.cpp.i
-.PHONY : src/game/map/block/BlockIndex.i
-
-# target to preprocess a source file
-src/game/map/block/BlockIndex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/block/BlockIndex.cpp.i
-.PHONY : src/game/map/block/BlockIndex.cpp.i
-
-src/game/map/block/BlockIndex.s: src/game/map/block/BlockIndex.cpp.s
-.PHONY : src/game/map/block/BlockIndex.s
-
-# target to generate assembly for a file
-src/game/map/block/BlockIndex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Dice_Game_Project.dir\build.make CMakeFiles/Dice_Game_Project.dir/src/game/map/block/BlockIndex.cpp.s
-.PHONY : src/game/map/block/BlockIndex.cpp.s
 
 src/game/menu/MenuButton.obj: src/game/menu/MenuButton.cpp.obj
 .PHONY : src/game/menu/MenuButton.obj
@@ -830,6 +830,9 @@ help:
 	@echo ... src/game/context/GameWindowContent.obj
 	@echo ... src/game/context/GameWindowContent.i
 	@echo ... src/game/context/GameWindowContent.s
+	@echo ... src/game/index/BlockIndex.obj
+	@echo ... src/game/index/BlockIndex.i
+	@echo ... src/game/index/BlockIndex.s
 	@echo ... src/game/index/UnitIndex.obj
 	@echo ... src/game/index/UnitIndex.i
 	@echo ... src/game/index/UnitIndex.s
@@ -839,9 +842,6 @@ help:
 	@echo ... src/game/map/MapView.obj
 	@echo ... src/game/map/MapView.i
 	@echo ... src/game/map/MapView.s
-	@echo ... src/game/map/block/BlockIndex.obj
-	@echo ... src/game/map/block/BlockIndex.i
-	@echo ... src/game/map/block/BlockIndex.s
 	@echo ... src/game/menu/MenuButton.obj
 	@echo ... src/game/menu/MenuButton.i
 	@echo ... src/game/menu/MenuButton.s

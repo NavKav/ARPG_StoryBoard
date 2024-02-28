@@ -50,6 +50,4 @@ private :
     void cornerFromCenter(double x, double y, int& a, int& b);
 };
 
-double roundUp(double& x);
-
 #endif //ARPG_STORYBOARD_MAPVIEW_H
