@@ -107,11 +107,11 @@ float MapModel::computeNoiseHeight(int x, int y) {
 string MapModel::getGroundBlock(int x, int y, float noiseHeight) {
     if (noiseHeight < -0.1)
     {
-        return "block0";
+        return "block4";
     }
     else if (noiseHeight < -0.07)
     {
-        return "block1";
+        return "block0";
     }
     else if (noiseHeight < 0.4)
     {
@@ -119,11 +119,11 @@ string MapModel::getGroundBlock(int x, int y, float noiseHeight) {
     }
     else if (noiseHeight < 0.9)
     {
-        return "block3";
+        return "block5";
     }
     else
     {
-        return "block4";
+        return "block2";
     }
 }
 
